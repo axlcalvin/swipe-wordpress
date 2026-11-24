@@ -1,0 +1,360 @@
+<!-- Recho Agent Contact Us V2 | Original content preserved | Elementor HTML Widget -->
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+/* Recho Agent Contact V2 — standalone Elementor HTML widget */
+html,body{background:#061214!important}
+.rx-contact-v2{--lime:#BAFB52;--mint:#53D7B0;--dark:#061214;--panel:#102723;--border:rgba(186,251,82,.22);position:relative;isolation:isolate;width:100vw;max-width:none!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;margin-top:0!important;margin-bottom:0!important;background:radial-gradient(ellipse at 82% 6%,rgba(52,180,131,.15),transparent 38%),linear-gradient(180deg,#061214,#091D1D 48%,#061214);color:#F4FFF5;font:400 16px/1.75 Manrope,system-ui,sans-serif;overflow:hidden}
+.rx-contact-v2 *{box-sizing:border-box}
+.rx-contact-v2 :is(h1,h2,h3,p,ul,ol){margin-top:0}
+.rx-contact-v2 :is(h1,h2,h3){font-family:'Space Grotesk',Manrope,sans-serif!important;color:#F6FFF6!important;letter-spacing:-.035em;font-weight:700;line-height:1.17}
+.rx-contact-v2 p{color:#C4DAD1!important;line-height:1.83}
+.rx-contact-v2 a{text-decoration:none!important}
+.rx-contact-v2 :focus-visible{outline:3px solid #BAFB52!important;outline-offset:3px}
+.rx-contact-v2 .section-wrap,.rx-contact-v2 .contact-hero__inner{width:min(1180px,calc(100% - 64px));max-width:1180px;margin-inline:auto;position:relative;z-index:2}
+.rx-contact-v2 .section-wrap--narrow{max-width:1040px}
+.rx-contact-v2 section{position:relative;border-bottom:1px solid rgba(186,251,82,.08);padding:90px 0;min-width:0}
+.rx-contact-v2 .contact-hero{padding:140px 0 105px;min-height:480px;display:flex;align-items:center;background:radial-gradient(circle at 82% 30%,rgba(86,238,171,.12),transparent 35%)}
+.rx-contact-v2 .contact-hero__bg{pointer-events:none;position:absolute;inset:0;background-image:linear-gradient(#9aff8510 1px,transparent 1px),linear-gradient(90deg,#9aff8510 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(#000,#0000)}
+.rx-contact-v2 .contact-hero__accent{position:absolute;right:-100px;top:12%;width:360px;aspect-ratio:1;border:1px solid #BAFB5228;border-radius:50%;box-shadow:0 0 100px #54e6a520;pointer-events:none}
+.rx-contact-v2 .contact-hero__content{max-width:880px;text-align:left}
+.rx-contact-v2 .hero-index{display:flex;align-items:center;margin-bottom:21px}
+.rx-contact-v2 .hero-index__label,.rx-contact-v2 .section-label{display:inline-flex;align-items:center;gap:10px;border:1px solid #BAFB5268;border-radius:999px;padding:9px 16px;background:#BAFB5210;font-size:12px!important;font-weight:800!important;letter-spacing:.15em;text-transform:uppercase;color:#BAFB52!important;margin:0 0 20px!important}
+.rx-contact-v2 .hero-index__label:before,.rx-contact-v2 .section-label:before{content:'';width:7px;height:7px;background:#BAFB52;border-radius:50%;box-shadow:0 0 13px #BAFB52}
+.rx-contact-v2 .hero-index__rule{display:none}
+.rx-contact-v2 .contact-hero__title{font-size:clamp(36px,5vw,64px)!important;margin:0 0 27px!important;max-width:850px}
+.rx-contact-v2 .contact-hero__desc{max-width:760px;font-size:clamp(16px,1.5vw,19px)!important;margin:0 0 14px!important}
+.rx-contact-v2 .section-header{margin:0 auto 35px;text-align:center;max-width:800px}
+.rx-contact-v2 .section-title{font-size:clamp(29px,3.6vw,46px)!important;margin:0 0 17px!important}
+.rx-contact-v2 .section-subtitle{font-size:16px;margin:0 auto!important;max-width:740px}
+.rx-contact-v2 .contact-info__grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none!important;padding:0!important;margin:0!important}
+.rx-contact-v2 .contact-info__card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:29px!important;border-radius:25px;border:1px solid #BAFB5244;background:linear-gradient(145deg,rgba(22,61,48,.95),rgba(8,27,29,.98));box-shadow:0 15px 36px #0004;transition:transform .25s,border-color .25s,box-shadow .25s;list-style:none!important}
+.rx-contact-v2 .contact-info__card:hover{transform:translateY(-5px);border-color:#BAFB52;box-shadow:0 22px 48px #0006,0 0 28px #BAFB521c}
+.rx-contact-v2 .contact-info__icon{width:56px;height:56px;flex:0 0 56px;display:grid;place-items:center;color:#BAFB52;background:#BAFB5219;border:1px solid #BAFB5255;border-radius:18px}
+.rx-contact-v2 .contact-info__icon svg{display:block;width:25px;height:25px;stroke:currentColor}
+.rx-contact-v2 .contact-info__copy{min-width:0;display:flex;flex-direction:column;flex:1;width:100%}
+.rx-contact-v2 .contact-info__title{font-size:23px!important;margin:0 0 9px!important}
+.rx-contact-v2 .contact-info__desc{font-size:14px;line-height:1.75!important;margin-bottom:20px!important;flex:1}
+.rx-contact-v2 .contact-info__link{display:inline-flex;align-items:center;justify-content:space-between;gap:9px;max-width:100%;color:#11221A!important;background:linear-gradient(110deg,#D5FF7A,#95ED78,#55D9B9);border-radius:14px;padding:12px 14px;font-weight:800;font-size:13px;overflow-wrap:anywhere;transition:filter .2s,transform .2s,box-shadow .2s}
+.rx-contact-v2 .contact-info__link:after{content:'↗';font-size:19px;line-height:1}
+.rx-contact-v2 .contact-info__link:hover{transform:translateY(-2px);filter:brightness(1.09);box-shadow:0 8px 26px #BAFB522c}
+.rx-contact-v2 .contact-form{background:linear-gradient(125deg,#0B211D,#071718)}
+.rx-contact-v2 .contact-form__form{border:1px solid #BAFB5244;background:linear-gradient(140deg,#12322B,#091A1D);border-radius:30px;padding:clamp(22px,4.5vw,48px);box-shadow:0 22px 58px #0006;display:grid;gap:20px}
+.rx-contact-v2 .contact-form__row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.rx-contact-v2 .contact-form__field{display:flex;flex-direction:column;min-width:0;gap:9px}
+.rx-contact-v2 .contact-form__label{font:750 14px/1.5 Manrope,sans-serif;color:#F4FFF4!important}
+.rx-contact-v2 :is(.contact-form__input,.contact-form__select,.contact-form__textarea){display:block;width:100%;min-width:0;min-height:53px;border:1px solid #719A7566!important;background:#071816!important;color:#F6FFF4!important;border-radius:14px!important;padding:13px 16px!important;font:500 15px/1.5 Manrope,system-ui,sans-serif!important;box-shadow:none!important;outline:0;transition:border-color .2s,box-shadow .2s}
+.rx-contact-v2 .contact-form__textarea{min-height:150px;resize:vertical}
+.rx-contact-v2 :is(.contact-form__input,.contact-form__select,.contact-form__textarea):focus{border-color:#BAFB52!important;box-shadow:0 0 0 3px #BAFB5228!important}
+.rx-contact-v2 .contact-form__select{appearance:auto;cursor:pointer;color-scheme:dark}
+.rx-contact-v2 .contact-form__select option{background:#0D241E;color:#FFF}
+.rx-contact-v2 .contact-form__submit{display:inline-flex!important;align-items:center;justify-content:center;min-height:55px;width:max-content;min-width:205px;background:linear-gradient(115deg,#D7FF87,#A4F47C,#5CDDB9)!important;color:#082018!important;border:1px solid #E3FFA4!important;border-radius:999px!important;padding:14px 28px!important;font:800 15px Manrope,sans-serif!important;cursor:pointer;box-shadow:0 10px 28px #BAFB5228;transition:transform .2s,box-shadow .2s}
+.rx-contact-v2 .contact-form__submit:hover{transform:translateY(-2px);box-shadow:0 14px 34px #BAFB5245}
+.rx-contact-v2 .contact-form__submit:disabled{cursor:wait;opacity:.65}
+.rx-contact-v2 .contact-form__status[hidden]{display:none!important}
+.rx-contact-v2 .contact-form__status{padding:14px 18px;border:1px solid #729e7e;border-radius:13px;color:#F5FFF6;background:#12382c;font-size:14px}
+.rx-contact-v2 .contact-form__status.is-error{border-color:#ff7080;color:#ffdce0;background:#411922}
+.rx-contact-v2 .faq-accordion{display:grid;gap:13px}
+.rx-contact-v2 .faq-item{background:linear-gradient(110deg,#123229,#0B1C1E);border:1px solid #BAFB5240;border-radius:20px;overflow:hidden}
+.rx-contact-v2 .faq-item[open]{border-color:#BAFB52;box-shadow:0 0 24px #BAFB5217}
+.rx-contact-v2 .faq-item__question{list-style:none!important;display:grid!important;grid-template-columns:minmax(0,1fr) 40px;gap:16px;align-items:center;padding:22px 25px;cursor:pointer;color:#FFFFFF!important;font:750 16px/1.5 Manrope,sans-serif}
+.rx-contact-v2 .faq-item__question::-webkit-details-marker{display:none}.rx-contact-v2 .faq-item__question::marker{content:''}
+.rx-contact-v2 .faq-item__question:hover{background:#BAFB520a}
+.rx-contact-v2 .faq-item__icon{position:relative;display:block;width:39px;height:39px;border-radius:12px;border:1px solid #BAFB5266;background:#BAFB5213}
+.rx-contact-v2 .faq-item__icon:before,.rx-contact-v2 .faq-item__icon:after{content:'';position:absolute;top:50%;left:50%;width:15px;height:2px;border-radius:5px;background:#BAFB52;transform:translate(-50%,-50%)}
+.rx-contact-v2 .faq-item__icon:after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s}
+.rx-contact-v2 .faq-item[open] .faq-item__icon:after{transform:translate(-50%,-50%) rotate(0)}
+.rx-contact-v2 .faq-item__answer{padding:0 25px 22px;border-top:1px solid #BAFB5222}
+.rx-contact-v2 .faq-item__answer p{margin:17px 0 0!important;font-size:15px}
+@media(max-width:950px){.rx-contact-v2 .contact-info__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.rx-contact-v2 .section-wrap,.rx-contact-v2 .contact-hero__inner{width:calc(100% - 32px)}.rx-contact-v2 section{padding:65px 0}.rx-contact-v2 .contact-hero{min-height:0;padding:110px 0 62px}.rx-contact-v2 .contact-hero__title{font-size:clamp(33px,9vw,47px)!important}.rx-contact-v2 .contact-hero__desc{font-size:15px!important}.rx-contact-v2 .section-header{margin-bottom:25px}.rx-contact-v2 .contact-info__grid,.rx-contact-v2 .contact-form__row{grid-template-columns:1fr}.rx-contact-v2 .contact-info__card{padding:22px!important}.rx-contact-v2 .contact-form__form{border-radius:22px;padding:20px;gap:17px}.rx-contact-v2 .contact-form__submit{width:100%}.rx-contact-v2 .faq-item__question{padding:17px;grid-template-columns:minmax(0,1fr) 36px;font-size:14px}.rx-contact-v2 .faq-item__icon{width:35px;height:35px}.rx-contact-v2 .faq-item__answer{padding:0 17px 18px}}
+@media(prefers-reduced-motion:reduce){.rx-contact-v2 *{transition:none!important;animation:none!important}}
+
+</style>
+<div class="rx-contact-v2 rechoagent-page">
+<div class="contact-main" id="main-content">
+<!-- Hero -->
+<section aria-labelledby="contact-hero-heading" class="contact-hero">
+<div aria-hidden="true" class="contact-hero__bg">
+<div class="contact-hero__grid"></div>
+</div>
+<div aria-hidden="true" class="contact-hero__accent contact-hero__accent--circle"></div>
+<div class="contact-hero__inner">
+<div class="contact-hero__content">
+<div class="hero-index">
+<p class="hero-index__label">Contact Recho Live Agency</p>
+<div aria-hidden="true" class="hero-index__rule"></div>
+</div>
+<h1 class="contact-hero__title" id="contact-hero-heading">Get in Touch With Recho Live Agency
+                    </h1>
+<p class="contact-hero__desc">Have questions about becoming a host, building your own agency, or
+                        partnering
+                        with Recho Live Agency? Our team is here to provide the guidance and support you need to get
+                        started.</p>
+</div>
+</div>
+</section>
+<!-- Contact Information -->
+<section aria-labelledby="contact-info-heading" class="contact-info">
+<div class="section-wrap">
+<header class="section-header section-header--centered reveal-up">
+<p class="section-label">Reach Out</p>
+<h2 class="section-title" id="contact-info-heading">Contact Information</h2>
+<p class="section-subtitle">Reach out through your preferred channel, and we'll connect you with
+                        the right
+                        team as quickly as possible.</p>
+</header>
+<ul class="contact-info__grid reveal-up" role="list">
+<li class="contact-info__card" role="listitem">
+<div aria-hidden="true" class="contact-info__icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+</svg>
+</div>
+<div class="contact-info__copy">
+<h3 class="contact-info__title">WhatsApp</h3>
+
+<a class="contact-info__link" href="https://wa.me/+60163108373" rel="noopener noreferrer" target="_blank">+60 16-310 8373</a>
+</div>
+</li>
+<li class="contact-info__card" role="listitem">
+<div aria-hidden="true" class="contact-info__icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m22 2-7 20-4-9-9-4Z"></path>
+<path d="M22 2 11 13"></path>
+</svg>
+</div>
+<div class="contact-info__copy">
+<h3 class="contact-info__title">Telegram</h3>
+
+<a class="contact-info__link" href="https://telegram.me/Rechoservice" rel="noopener noreferrer" target="_blank">@Rechoservice</a>
+</div>
+</li>
+<li class="contact-info__card" role="listitem">
+<div aria-hidden="true" class="contact-info__icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+</svg>
+</div>
+<div class="contact-info__copy">
+<h3 class="contact-info__title">WhatsApp</h3>
+
+<a class="contact-info__link" href="https://wa.me/+62882000279998" rel="noopener noreferrer" target="_blank">+62 882-0002-79998</a>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Contact Form -->
+<section aria-labelledby="contact-form-heading" class="contact-form">
+<div class="section-wrap section-wrap--narrow">
+<header class="section-header section-header--centered reveal-up">
+<p class="section-label">Message</p>
+<h2 class="section-title" id="contact-form-heading">Send Us a Message</h2>
+<p class="section-subtitle">Complete the form below, and our team will get back to you as soon
+                        as possible.
+                    </p>
+</header>
+<form action="https://formsubmit.co/ajax/recholiveofficial@gmail.com" aria-label="Contact form" class="contact-form__form reveal-up" data-contact-form="" method="POST">
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="New message from Recho Agent contact form"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input data-replyto-field="" name="_replyto" type="hidden" value=""/>
+<input data-whatsapp-link-field="" name="whatsapp-link" type="hidden" value=""/>
+<div class="contact-form__row">
+<div class="contact-form__field">
+<label class="contact-form__label" for="full-name">Full Name</label>
+<input class="contact-form__input" id="full-name" name="full-name" required="" type="text"/>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="email">Email Address</label>
+<input class="contact-form__input" id="email" name="email" required="" type="email"/>
+</div>
+</div>
+<div class="contact-form__row">
+<div class="contact-form__field">
+<label class="contact-form__label" for="whatsapp">WhatsApp Number</label>
+<input class="contact-form__input" id="whatsapp" name="whatsapp" required="" type="tel"/>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="subject">Subject</label>
+<input class="contact-form__input" id="subject" name="subject" required="" type="text"/>
+</div>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="category">Support Category</label>
+<select class="contact-form__select" id="category" name="category" required="">
+<option disabled="" selected="" value="">Select a category</option>
+<option value="host-registration">Host Registration</option>
+<option value="agency-registration">Agency Registration</option>
+<option value="general-support">General Support</option>
+<option value="partnership">Partnership</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="message">Message</label>
+<textarea class="contact-form__textarea" id="message" name="message" required="" rows="5"></textarea>
+</div>
+<button class="contact-form__submit btn btn--primary btn--lg" type="submit">Send
+                        Message</button>
+<div aria-live="polite" class="contact-form__status" hidden="" role="status"></div>
+</form>
+</div>
+</section>
+<!-- FAQ -->
+<section aria-labelledby="contact-faq-heading" class="contact-faq">
+<div class="section-wrap section-wrap--narrow">
+<header class="section-header section-header--centered reveal-up">
+<p class="section-label">FAQ</p>
+<h2 class="section-title" id="contact-faq-heading">Contact FAQ</h2>
+</header>
+<div aria-label="Contact frequently asked questions" class="faq-accordion reveal-up" role="region">
+<details class="faq-item">
+<summary class="faq-item__question">
+<span>How long does it take to receive a response?</span>
+<span aria-hidden="true" class="faq-item__icon"></span>
+</summary>
+<div class="faq-item__answer">
+<p>Most inquiries receive a response within one business day.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-item__question">
+<span>Which contact should I use?</span>
+<span aria-hidden="true" class="faq-item__icon"></span>
+</summary>
+<div class="faq-item__answer">
+<p>For quick assistance or business inquiries, WhatsApp is recommended.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-item__question">
+<span>Can I apply as a host or agency partner through WhatsApp?</span>
+<span aria-hidden="true" class="faq-item__icon"></span>
+</summary>
+<div class="faq-item__answer">
+<p>Yes. Our team can guide you through the registration process and answer any questions
+                                before you get
+                                started.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contact Us — Recho Agent",
+    "description": "Contact Recho Live Agency for host and agency recruitment support. Reach us via WhatsApp, Telegram, or send a message directly.",
+    "url": "https://rechoagent.com/contact/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Recho Agent"
+    }
+  }
+  </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.documentElement.classList.add("js-reveal");
+
+        var revealItems = document.querySelectorAll(".reveal-up");
+        if ("IntersectionObserver" in window) {
+            var observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+            );
+            revealItems.forEach(function (el) {
+                observer.observe(el);
+            });
+        } else {
+            revealItems.forEach(function (el) {
+                el.classList.add("is-visible");
+            });
+        }
+
+        var form = document.querySelector("[data-contact-form]");
+        if (form) {
+            var status = form.querySelector(".contact-form__status");
+            var submitBtn = form.querySelector("button[type='submit']");
+            var originalText = submitBtn ? submitBtn.textContent : "";
+            var replyToField = form.querySelector("[data-replyto-field]");
+            var whatsappLinkField = form.querySelector("[data-whatsapp-link-field]");
+            var emailInput = document.getElementById("email");
+            var whatsappInput = document.getElementById("whatsapp");
+
+            function buildWhatsAppLink(number) {
+                var clean = number.replace(/[^0-9+]/g, "").replace(/^\+/, "");
+                if (!clean) return "";
+                return "https://wa.me/" + clean;
+            }
+
+            function showStatus(message, type) {
+                if (!status) return;
+                status.textContent = message;
+                status.hidden = false;
+                status.classList.remove("is-success", "is-error");
+                status.classList.add(type === "success" ? "is-success" : "is-error");
+            }
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = "Sending...";
+                }
+
+                if (replyToField && emailInput) {
+                    replyToField.value = emailInput.value;
+                }
+
+                if (whatsappLinkField && whatsappInput) {
+                    whatsappLinkField.value = buildWhatsAppLink(whatsappInput.value);
+                }
+
+                var formData = new FormData(form);
+                var data = {};
+                formData.forEach(function (value, key) {
+                    if (!key.startsWith("_") && key !== "_honey") {
+                        data[key] = value;
+                    }
+                });
+
+                fetch(form.action, {
+                    method: form.method || "POST",
+                    headers: { "Accept": "application/json" },
+                    body: formData
+                })
+                    .then(function (response) {
+                        if (response.ok) {
+                            showStatus("Thank you. Your message has been sent successfully.", "success");
+                            form.reset();
+                        } else {
+                            throw new Error("Server responded with status " + response.status);
+                        }
+                    })
+                    .catch(function () {
+                        showStatus("Sorry, something went wrong. Please try again or contact us directly via WhatsApp.", "error");
+                    })
+                    .finally(function () {
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = originalText;
+                        }
+                    });
+            });
+        }
+    });
+</script>

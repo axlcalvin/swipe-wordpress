@@ -1,0 +1,145 @@
+<!-- RECHO LIVE HEADER V4 · FLOATING STICKY · ALL-IN-ONE ELEMENTOR -->
+<!-- RECHO LIVE HEADER V3 — ORIGINAL MENU — Elementor HTML Widget -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+.rl2-header{font-family:Manrope,Arial,sans-serif;position:relative;z-index:9990;width:100%;color:#0a2420}
+.rl2-header *{box-sizing:border-box}
+.rl2-header a{text-decoration:none!important}
+.rl2-header .rl2-navbox{width:min(1320px,calc(100% - 42px));min-height:78px;margin:16px auto;padding:11px 19px;border-radius:999px;display:flex;gap:30px;align-items:center;justify-content:space-between;background:rgba(255,255,255,.95);border:1px solid #d0e9d6;box-shadow:0 18px 52px rgba(19,76,50,.095),inset 0 1px 0 #fff;backdrop-filter:blur(18px)}
+.rl2-header .rl2-brand{display:flex;align-items:center;gap:10px;min-width:0;white-space:nowrap;color:#09251b!important;font:700 24px 'Space Grotesk',sans-serif;letter-spacing:-.055em}
+.rl2-header .rl2-brand img{width:46px;height:46px;object-fit:contain;border-radius:13px;box-shadow:0 6px 17px rgba(39,164,89,.14)}
+.rl2-header .rl2-brand span{background:linear-gradient(105deg,#0a2420,#067a48);background-clip:text;-webkit-background-clip:text;color:transparent}
+.rl2-header .rl2-links{display:flex;align-items:center;gap:3px;margin-left:auto;list-style:none;padding:0}
+.rl2-header .rl2-links a,.rl2-header .rl2-drop a{display:block;color:#254139!important;font:800 12px/1.3 Manrope,sans-serif;white-space:nowrap;padding:13px 13px;border-radius:999px;transition:background .22s,color .22s,transform .22s,box-shadow .22s}
+.rl2-header .rl2-links a:hover,.rl2-header .rl2-links a[aria-current=page]{background:#e4ffbb;color:#0a633a!important}
+
+
+.rl2-header .rl2-toggle{display:none;flex:0 0 46px;width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid #afddbb;border-radius:15px;background:#effff5;cursor:pointer}
+.rl2-header .rl2-toggle i{width:20px;height:2px;background:#145b3e;border-radius:4px;transition:transform .22s,opacity .22s}
+.rl2-header .rl2-toggle[aria-expanded=true] i:first-child{transform:translateY(7px) rotate(45deg)}
+.rl2-header .rl2-toggle[aria-expanded=true] i:nth-child(2){opacity:0}
+.rl2-header .rl2-toggle[aria-expanded=true] i:last-child{transform:translateY(-7px) rotate(-45deg)}
+.rl2-header .rl2-drop{display:none;width:min(1320px,calc(100% - 42px));margin:-5px auto 0;padding:12px;border-radius:23px;background:rgba(255,255,255,.98);border:1px solid #d0e9d6;box-shadow:0 15px 34px rgba(12,62,44,.12)}
+.rl2-header .rl2-drop a{border-radius:13px;font-size:14px;padding:15px 18px}
+.rl2-header .rl2-drop a:hover,.rl2-header .rl2-drop a[aria-current=page]{background:#e9ffcf;color:#087a46!important}
+
+.rl2-header .rl2-drop:not([hidden]){display:block}
+.rl2-header :focus-visible{outline:3px solid #37cc83;outline-offset:3px}
+@media(max-width:1080px){.rl2-header .rl2-navbox{gap:12px}.rl2-header .rl2-links a{padding:11px 9px;font-size:11px}.rl2-header .rl2-brand{font-size:21px}}
+@media(max-width:900px){.rl2-header .rl2-links{display:none}.rl2-header .rl2-toggle{display:flex}}
+@media(max-width:580px){.rl2-header .rl2-navbox{width:calc(100% - 24px);margin:10px auto;padding:10px 13px;min-height:67px}.rl2-header .rl2-drop{width:calc(100% - 24px)}.rl2-header .rl2-brand{font-size:21px}.rl2-header .rl2-brand img{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.rl2-header *{transition:none!important}}
+
+/* V3 — soft luminous horizontal gradient, consistent header states */
+.rl2-header .rl2-navbox{
+ background:linear-gradient(108deg,rgba(255,255,255,.98) 0%,rgba(243,255,239,.97) 28%,rgba(226,255,230,.95) 61%,rgba(220,255,207,.96) 100%)!important;
+ border:1px solid rgba(124,210,143,.47)!important;
+ box-shadow:0 18px 52px rgba(12,107,62,.12),0 2px 20px rgba(154,248,110,.10),inset 0 1px 0 rgba(255,255,255,.98)!important;
+ backdrop-filter:blur(20px) saturate(1.3);
+ -webkit-backdrop-filter:blur(20px) saturate(1.3);
+}
+.rl2-header .rl2-links a:hover,
+.rl2-header .rl2-links a[aria-current="page"]{
+ background:linear-gradient(112deg,#ebffb9,#bafb52 56%,#84efb5)!important;
+ color:#0a432b!important;
+ box-shadow:0 7px 21px rgba(132,215,89,.22),inset 0 1px 0 rgba(255,255,255,.64)!important;
+ transform:translateY(-1px);
+}
+.rl2-header .rl2-drop{
+ background:linear-gradient(135deg,rgba(255,255,255,.985),rgba(225,255,233,.98))!important;
+ border-color:#b9eec7!important;
+ box-shadow:0 17px 40px rgba(17,100,58,.14)!important;
+}
+.rl2-header .rl2-drop a:hover,
+.rl2-header .rl2-drop a[aria-current=page]{
+ background:linear-gradient(105deg,#eaffbd,#bafb52,#84edb6)!important;
+ color:#0a472b!important;
+ box-shadow:0 5px 14px rgba(111,210,85,.14)!important;
+}
+.rl2-header .rl2-toggle{background:linear-gradient(135deg,#f5ffed,#ddffd9)!important;transition:box-shadow .22s,background .22s}
+.rl2-header .rl2-toggle:hover{background:linear-gradient(135deg,#edffbc,#abf5b1)!important;box-shadow:0 0 0 4px rgba(186,251,82,.16)}
+@media(max-width:580px){.rl2-header .rl2-navbox{background:linear-gradient(112deg,#fff,#e8ffdf 100%)!important}}
+
+
+
+/* Floating V4: persistent header when scrolling up or down. */
+.rl2-header.is-floating{position:fixed!important;top:0;left:0;right:0;width:100%!important;max-width:none!important;z-index:99990!important;pointer-events:none}
+.rl2-header.is-floating .rl2-navbox,.rl2-header.is-floating .rl2-drop{pointer-events:auto}
+.rl2-header.is-floating .rl2-navbox{transition:box-shadow .22s ease}
+.rl2-header.is-floating.has-scrolled .rl2-navbox{box-shadow:0 18px 52px rgba(12,107,62,.22),0 3px 22px rgba(154,248,110,.13),inset 0 1px 0 rgba(255,255,255,.98)!important}
+.rl2-header.is-floating .rl2-drop{max-height:calc(100dvh - 112px - var(--floating-top,0px));overflow-y:auto;overscroll-behavior:contain}
+.rl2-header.is-floating-editor{position:sticky!important;top:0;z-index:99990!important}
+.rl2-floating-spacer{display:block;width:100%;min-height:0;pointer-events:none}
+html:has([data-rl2-header]){scroll-padding-top:120px}
+@media(prefers-reduced-motion:reduce){.rl2-header.is-floating .rl2-navbox{transition:none!important}}
+
+</style>
+<div class="rl2-header" data-rl2-header>
+ <div class="rl2-navbox" role="banner">
+  <a class="rl2-brand" href="/" aria-label="recho home"><img src="https://recho.live/wp-content/uploads/2025/09/cropped-Logo.webp" alt="recho Logo" width="46" height="46" loading="eager"><span>Recho</span></a>
+  <nav class="rl2-links" aria-label="Desktop Navigation"><a href="/" data-rl-nav="Home">Home</a>
+<a href="/become-a-host/" data-rl-nav="Host Program">Host Program</a>
+<a href="/become-an-agency/" data-rl-nav="Agent Program">Agent Program</a>
+<a href="/about-us/" data-rl-nav="About Us">About Us</a>
+<a href="/category/blog/" data-rl-nav="Blog">Blog</a>
+<a href="/contact/" data-rl-nav="Contact Us">Contact Us</a></nav>
+  <button class="rl2-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="rl2-mobile-menu"><i></i><i></i><i></i></button>
+ </div>
+ <nav class="rl2-drop" id="rl2-mobile-menu" aria-label="Mobile Navigation" hidden><a href="/" data-rl-nav="Home">Home</a>
+<a href="/become-a-host/" data-rl-nav="Host Program">Host Program</a>
+<a href="/become-an-agency/" data-rl-nav="Agent Program">Agent Program</a>
+<a href="/about-us/" data-rl-nav="About Us">About Us</a>
+<a href="/category/blog/" data-rl-nav="Blog">Blog</a>
+<a href="/contact/" data-rl-nav="Contact Us">Contact Us</a></nav>
+</div>
+<script>
+(function(){
+ function boot(root){if(root.dataset.rl2Ready)return;root.dataset.rl2Ready='1';
+ const toggle=root.querySelector('.rl2-toggle'),panel=root.querySelector('.rl2-drop');
+ const path=location.pathname.replace(/\/$/,'')||'/';root.querySelectorAll('[data-rl-nav]').forEach(a=>{a.removeAttribute('aria-current');const href=a.getAttribute('href');if((href.replace(/\/$/,'')||'/')===path)a.setAttribute('aria-current','page')});
+ function close(){toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');panel.hidden=true}
+ toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');panel.hidden=!open});
+ panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('click',e=>{if(!root.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});window.addEventListener('resize',()=>{if(innerWidth>900)close()});
+ }document.querySelectorAll('[data-rl2-header]').forEach(boot);
+})();
+</script>
+
+<script>
+/* Floating navbar: keeps header visible on both scroll directions. Scoped per site. */
+(function(){
+  function floatingHeader(selector, spacerClass){
+    var root=document.querySelector(selector);if(!root||root.dataset.floatingReady==='1')return;
+    root.dataset.floatingReady='1';
+    /* Keep the Elementor editor structure intact while editing the template. */
+    var editing=document.body.classList.contains('elementor-editor-active')||
+      (window.elementorFrontend&&typeof window.elementorFrontend.isEditMode==='function'&&window.elementorFrontend.isEditMode());
+    if(editing){root.classList.add('is-floating-editor');return;}
+    var spacer=document.createElement('div');spacer.className=spacerClass;
+    spacer.setAttribute('aria-hidden','true');
+    var parent=root.parentNode;if(!parent)return;
+    parent.insertBefore(spacer,root);
+    /* Portal prevents transformed or overflow-clipped Elementor parents from trapping position:fixed. */
+    document.body.appendChild(root);
+    root.classList.add('is-floating');
+    var oldHeight=-1;
+    function sync(){
+      var bar=document.getElementById('wpadminbar');
+      var top=bar?Math.max(0,Math.round(bar.getBoundingClientRect().height)):0;
+      root.style.top=top+'px';
+      root.style.setProperty('--floating-top',top+'px');
+      var h=Math.ceil(root.getBoundingClientRect().height);
+      if(h!==oldHeight){spacer.style.height=h+'px';oldHeight=h;}
+      root.classList.toggle('has-scrolled',window.scrollY>12);
+    }
+    var ticking=false;
+    window.addEventListener('scroll',function(){if(ticking)return;ticking=true;requestAnimationFrame(function(){root.classList.toggle('has-scrolled',window.scrollY>12);ticking=false;});},{passive:true});
+    window.addEventListener('resize',sync,{passive:true});
+    if(window.ResizeObserver){new ResizeObserver(sync).observe(root);}
+    sync();
+    requestAnimationFrame(sync);
+  }
+  function boot(){floatingHeader('[data-rl2-header]','rl2-floating-spacer');}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
+  else boot();
+})();
+</script>

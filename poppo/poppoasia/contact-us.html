@@ -1,0 +1,146 @@
+<!-- POPPO LIVE ASIA | CONTACT_US V1 | Elementor HTML Widget All-in-One -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+.pp-info-v1{--pn-bg:#080b1f;--pn-surface:#161936;--pn-white:#f7f8ff;--pn-soft:#d7daf3;--pn-grad:linear-gradient(107deg,#3154e9 0%,#6740ef 42%,#a52bcf 71%,#d41491 100%);--pn-grad-bright:linear-gradient(112deg,#85d9ff 0%,#aa9bff 47%,#ff86d9 100%);position:relative;isolation:isolate;width:100vw!important;max-width:100vw!important;margin:0 0 0 calc(50% - 50vw)!important;padding:0!important;overflow-x:clip!important;background:var(--pn-bg)!important;color:var(--pn-white)!important;font-family:'Manrope',sans-serif!important;-webkit-font-smoothing:antialiased;box-sizing:border-box}
+.pp-info-v1 *,.pp-info-v1 *::before,.pp-info-v1 *::after{box-sizing:border-box}
+.pp-info-v1 .container{width:calc(100% - 48px)!important;max-width:1260px!important;margin:0 auto!important;padding:0!important}
+.pp-info-v1 :is(h1,h2,h3,h4){font-family:'Space Grotesk',sans-serif!important;letter-spacing:-.045em!important;font-weight:700!important;line-height:1.13!important;color:#f8f8ff!important;margin:0!important;text-wrap:balance}
+.pp-info-v1 p{margin:0!important;color:inherit!important;line-height:1.78!important}
+.pp-info-v1 a{text-decoration:none!important;color:inherit}
+.pp-info-v1 ul{list-style:none!important;margin:0!important;padding:0!important}
+.pp-info-v1 button,.pp-info-v1 a{ -webkit-tap-highlight-color:transparent }
+.pp-info-v1 :is(a,button):focus-visible{outline:3px solid #8bdfff!important;outline-offset:4px!important}
+.pp-info-v1 .accent{color:#e6aeff!important;background:var(--pn-grad-bright);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pp-info-v1 .section{padding:96px 0;position:relative}
+.pp-info-v1 .section--ivory{background:radial-gradient(ellipse at 96% 8%,rgba(114,55,231,.12),transparent 45%),#090d22}
+.pp-info-v1 .section--soft{background:radial-gradient(ellipse at 4% 85%,rgba(37,84,216,.16),transparent 42%),linear-gradient(145deg,#10132e,#0a1025)}
+.pp-info-v1 .section__header{text-align:center;max-width:870px;margin:0 auto 38px!important}
+.pp-info-v1 .section__header::before{content:'✦ POPPO LIVE ASIA';display:block;font:800 11px/1.5 'Manrope',sans-serif;letter-spacing:.19em;color:#a4c8ff;margin-bottom:13px}
+.pp-info-v1 .section__title{font-size:clamp(32px,4vw,54px)!important;margin-bottom:15px!important}
+.pp-info-v1 .section__subtitle{font-size:15px!important;color:#d8def6!important}
+.pp-info-v1 .btn{display:inline-flex!important;justify-content:center!important;align-items:center!important;min-height:56px!important;padding:14px 25px!important;border:1px solid rgba(180,152,255,.85)!important;border-radius:999px!important;font:700 15px/1.25 'Space Grotesk',sans-serif!important;color:#fff!important;text-align:center!important;white-space:normal;transition:transform .22s,box-shadow .22s,background .22s;cursor:pointer}
+.pp-info-v1 .btn--accent,.pp-info-v1 .btn--primary{background:var(--pn-grad)!important;box-shadow:0 8px 26px #7350ed52,0 0 15px #d414912a}
+.pp-info-v1 .btn--ghost-light,.pp-info-v1 .btn--secondary{background:linear-gradient(115deg,rgba(57,64,146,.5),rgba(40,22,74,.63))!important}
+.pp-info-v1 .btn:hover{transform:translateY(-3px);box-shadow:0 12px 32px #6940ef83,0 0 24px #d414915c}
+.pp-info-v1 .btn-group{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.pp-info-v1 .btn-group--center{justify-content:center}
+.pp-info-v1 .section__cta{display:flex;justify-content:center;margin-top:29px}
+.pp-info-v1 .section__cta .btn-group{justify-content:center}
+/* Hero: padding protects against universal floating sticky header */
+.pp-info-v1 .page-hero{position:relative;overflow:hidden;min-height:640px;padding:130px 0 95px;background:radial-gradient(ellipse at 82% 42%,rgba(159,60,235,.38),transparent 46%),radial-gradient(ellipse at 8% 12%,rgba(42,96,233,.33),transparent 50%),linear-gradient(117deg,#0b1a43 0%,#100d2d 52%,#270d39 100%)}
+.pp-info-v1 .page-hero__ambient{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 89% 20%,transparent 0 235px,rgba(234,104,242,.14) 237px 238px,transparent 240px),radial-gradient(circle at 66% 83%,transparent 0 340px,rgba(97,101,249,.12) 341px 342px,transparent 343px)}
+.pp-info-v1 .page-hero__inner{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:44px;align-items:center;position:relative;z-index:1}
+.pp-info-v1 .page-hero__copy{min-width:0;max-width:680px}
+.pp-info-v1 .page-hero__kicker{display:inline-flex;align-items:center;gap:9px;border-radius:100px;padding:12px 20px;border:1px solid #9b86e17d;background:#6a56ce31;color:#b9dcff;font-size:12px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin-bottom:29px}
+.pp-info-v1 .page-hero__title{font-size:clamp(43px,5.15vw,76px)!important;margin-bottom:25px!important}
+.pp-info-v1 .page-hero__lead{font-size:16px!important;color:#e4e5fa!important;max-width:640px}
+.pp-info-v1 .page-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+/* Distinct visually rich hero objects for About and Contact (CSS/SVG, no image HTTP dependency) */
+.pp-info-v1 .hero-art{position:relative;min-width:0;min-height:485px;display:grid;place-items:center}
+.pp-info-v1 .hero-art::before{content:'';position:absolute;inset:5%;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(102,80,244,.4),transparent 70%);filter:blur(9px)}
+.pp-info-v1 .hero-art__orbit{position:absolute;border:1px solid #a176ff48;width:98%;height:50%;border-radius:50%;transform:rotate(-26deg);box-shadow:0 0 36px #9354fe12}
+.pp-info-v1 .hero-art__orbit--two{transform:rotate(24deg);border-color:#55a9ff5b}
+.pp-info-v1 .glass-panel{position:relative;z-index:1;background:linear-gradient(135deg,rgba(38,39,91,.94),rgba(19,19,60,.95));border:1px solid #a887f788;border-radius:32px;box-shadow:0 24px 62px #05061a70,0 0 25px #8746ee35,inset 0 1px #ffffff1c;backdrop-filter:blur(17px)}
+.pp-info-v1 .ecosystem-board{width:min(400px,88%);padding:22px;transform:rotate(-4deg)}
+.pp-info-v1 .board-top{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #b6a5f83f;padding-bottom:16px;font:700 16px 'Space Grotesk',sans-serif;color:white}
+.pp-info-v1 .board-top__pill{border-radius:100px;background:var(--pn-grad);padding:7px 11px;font:800 9px 'Manrope',sans-serif;letter-spacing:.12em;color:#fff}
+.pp-info-v1 .world-art{display:block;width:100%;height:auto;max-height:267px;margin:10px auto;filter:drop-shadow(0 0 13px #698bff34)}
+.pp-info-v1 .board-bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.pp-info-v1 .board-bottom__card{padding:15px 12px;border:1px solid #9189ff4d;background:#a389ff16;border-radius:17px;text-align:center}
+.pp-info-v1 .board-bottom__card span{display:block;font-size:12px;font-weight:800;color:#a6cfff}
+.pp-info-v1 .board-bottom__card strong{display:block;font:700 19px 'Space Grotesk',sans-serif;color:#fff;margin-top:3px}
+.pp-info-v1 .floating-chip{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:14px 16px;background:linear-gradient(135deg,#353078f2,#221746f2);border:1px solid #aa79fc;border-radius:18px;box-shadow:0 10px 27px #0006,0 0 20px #a354fe4a;min-width:156px}
+.pp-info-v1 .floating-chip__icon{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border-radius:13px;background:var(--pn-grad);font-size:22px;color:white}
+.pp-info-v1 .floating-chip strong{display:block;color:#fff;font:700 13px 'Space Grotesk',sans-serif}
+.pp-info-v1 .floating-chip small{display:block;font-size:11px;color:#d1d2f7;line-height:1.5;margin-top:3px}
+.pp-info-v1 .floating-chip--left{top:11%;left:0}
+.pp-info-v1 .floating-chip--right{bottom:12%;right:0}
+.pp-info-v1 .support-board{width:min(408px,89%);padding:24px;transform:rotate(3deg)}
+.pp-info-v1 .support-board__heading{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.pp-info-v1 .support-board__mark{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:var(--pn-grad);box-shadow:0 0 24px #ad51fe6a;color:#fff}
+.pp-info-v1 .support-board__heading strong{font:700 18px 'Space Grotesk',sans-serif;color:white}
+.pp-info-v1 .support-board__heading small{display:block;color:#b7c8f7;font-size:11px;margin-top:4px}
+.pp-info-v1 .support-board__message{display:flex;gap:12px;align-items:start;padding:17px 15px;border-radius:18px;background:linear-gradient(110deg,#39469d66,#6d309a5a);border:1px solid #ab9bff5a;margin-bottom:13px}
+.pp-info-v1 .support-board__message span{width:33px;height:33px;display:grid;place-items:center;border-radius:11px;background:#8e56fa;color:#fff;flex:0 0 33px}
+.pp-info-v1 .support-board__message strong{display:block;color:white;font:700 15px 'Space Grotesk',sans-serif}
+.pp-info-v1 .support-board__message small{display:block;color:#d5d9fa;font-size:12px;line-height:1.55;margin-top:6px}
+.pp-info-v1 .support-board__status{border:1px solid #89d1ff65;border-radius:17px;padding:15px 17px;background:#33548d29;font-size:12px;color:#d6eeff;display:flex;align-items:center;gap:11px}
+.pp-info-v1 .support-board__status i{width:8px;height:8px;background:#87eeed;border-radius:50%;box-shadow:0 0 13px #87eeed}
+/* About: content, metrics, cards */
+.pp-info-v1 .prose-block{background:linear-gradient(138deg,#24224c,#121735);border:1px solid #907afa71;border-radius:29px;padding:38px 43px;box-shadow:0 16px 36px #0606174f}
+.pp-info-v1 .prose-block p{font-size:15px!important;color:#e1e3fa!important}
+.pp-info-v1 .prose-block p+p{margin-top:20px!important}
+.pp-info-v1 .stats-strip{padding:87px 0;background:radial-gradient(ellipse at 12% 10%,#1f48b744,transparent 47%),radial-gradient(ellipse at 100% 100%,#c324a22e,transparent 48%),#111631}
+.pp-info-v1 .stats-strip__grid{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:34px;align-items:center}
+.pp-info-v1 .stats-strip__title{font-size:clamp(31px,3.4vw,47px)!important}
+.pp-info-v1 .stats-strip__text{color:#d8daf5!important;margin-top:17px!important;font-size:15px!important}
+.pp-info-v1 .stats-strip__metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.pp-info-v1 .metric{min-width:0;padding:27px 18px;border:1px solid #9488f578;border-radius:25px;background:linear-gradient(140deg,#2b2858,#151a3a);box-shadow:0 10px 25px #0003}
+.pp-info-v1 .metric__value{font:700 clamp(28px,3.1vw,44px)/1.1 'Space Grotesk',sans-serif!important;color:#ade2ff!important;display:flex;align-items:center;gap:3px}
+.pp-info-v1 .metric:nth-child(2) .metric__value{color:#ddbcff!important}
+.pp-info-v1 .metric:nth-child(3) .metric__value{color:#ff9add!important}
+.pp-info-v1 .metric__star{fill:#ffd275;width:20px;height:20px}
+.pp-info-v1 .metric__label{font-weight:800!important;font-size:13px!important;color:white!important;line-height:1.5!important;margin-top:13px!important}
+.pp-info-v1 .metric__desc{font-size:12px!important;color:#cbd0ed!important;margin-top:11px!important}
+.pp-info-v1 .card-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+.pp-info-v1 .info-card{padding:33px 33px 35px;border-radius:30px;background:linear-gradient(145deg,#292450,#141936);border:1px solid #967cf67a;box-shadow:0 14px 30px #05061a42}
+.pp-info-v1 .info-card:nth-child(2){background:linear-gradient(145deg,#182b62,#171735)}
+.pp-info-v1 .info-card__title{font-size:clamp(24px,2.5vw,32px)!important;margin-bottom:23px!important;background:var(--pn-grad-bright);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.pp-info-v1 .feature-list{display:grid;gap:21px}
+.pp-info-v1 .feature-list__item{position:relative;padding:15px 0 15px 47px;border-bottom:1px solid #9794ff27}
+.pp-info-v1 .feature-list__item:last-child{border-bottom:0}
+.pp-info-v1 .feature-list__item::before{content:'✦';position:absolute;left:0;top:17px;display:grid;place-items:center;width:31px;height:31px;border-radius:10px;color:#fff;background:var(--pn-grad)}
+.pp-info-v1 .feature-list__label{font:700 17px 'Space Grotesk',sans-serif;color:#fff;display:block;margin-bottom:8px}
+.pp-info-v1 .feature-list__text{font-size:14px!important;color:#d8ddf6!important}
+.pp-info-v1 .bullet-notes{display:grid;gap:17px}
+.pp-info-v1 .bullet-notes li{position:relative;padding-left:42px;min-height:29px;color:#e4e5fb;font-size:15px;line-height:1.75}
+.pp-info-v1 .bullet-notes li::before{content:'✓';position:absolute;left:0;top:2px;display:grid;place-items:center;width:26px;height:26px;color:#fff;font-weight:900;font-size:15px;border-radius:50%;background:var(--pn-grad);box-shadow:0 0 16px #7951fd55}
+/* Contact */
+.pp-info-v1 .contact-channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+.pp-info-v1 .contact-card{position:relative;display:flex;flex-direction:column;align-items:stretch;min-width:0;min-height:330px;padding:32px 32px 34px;border-radius:30px;border:1px solid #9681fd90;background:linear-gradient(145deg,#2a2658,#151836);box-shadow:0 16px 38px #02071344;overflow:hidden}
+.pp-info-v1 .contact-card:nth-child(2){background:linear-gradient(145deg,#173064,#141b3b)}
+.pp-info-v1 .contact-card::before{content:'';position:absolute;width:200px;height:200px;right:-115px;top:-110px;border-radius:50%;background:#ce56e52c;filter:blur(8px)}
+.pp-info-v1 .contact-card__icon{width:56px;height:56px;display:grid;place-items:center;border-radius:18px;background:var(--pn-grad);box-shadow:0 9px 26px #6944ef55;margin-bottom:20px;color:white}
+.pp-info-v1 .contact-card__icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.pp-info-v1 .contact-card__label{font:700 26px/1.2 'Space Grotesk',sans-serif!important;color:#fff!important}
+.pp-info-v1 .contact-card__value{font:700 clamp(17px,2.1vw,24px)/1.35 'Space Grotesk',sans-serif!important;color:#a6d8ff!important;margin-top:10px!important;overflow-wrap:anywhere}
+.pp-info-v1 .contact-card__desc{font-size:14px!important;color:#d9dbf8!important;margin:18px 0 24px!important;flex:1}
+.pp-info-v1 .contact-card .btn{align-self:flex-start}
+.pp-info-v1 .capability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.pp-info-v1 .capability-grid__item{position:relative;display:flex;align-items:center;min-height:105px;padding:21px 25px 21px 73px;border-radius:24px;border:1px solid #9785ed72;background:linear-gradient(130deg,#25254e,#131a3b);font:700 17px/1.5 'Space Grotesk',sans-serif!important;color:#fff!important}
+.pp-info-v1 .capability-grid__item::before{content:'✓';position:absolute;left:24px;top:50%;transform:translateY(-50%);display:grid;place-items:center;border-radius:50%;width:31px;height:31px;background:var(--pn-grad);color:#fff;font:800 18px 'Manrope',sans-serif;box-shadow:0 0 18px #8c4bff66}
+/* CTA */
+.pp-info-v1 .cta-band{position:relative;padding:89px 0;background:radial-gradient(ellipse at 82% 12%,#d4149137,transparent 45%),linear-gradient(120deg,#0d1534,#1c103e)}
+.pp-info-v1 .cta-band__inner--stack{text-align:center;max-width:1020px!important}
+.pp-info-v1 .cta-band__title{font-size:clamp(32px,4vw,54px)!important}
+.pp-info-v1 .cta-band__text{max-width:800px;margin:20px auto 28px!important;color:#d9daf6!important;font-size:15px!important}
+.pp-info-v1 .reveal{opacity:1;transform:none}
+@media(max-width:1100px){.pp-info-v1 .page-hero__inner{grid-template-columns:1fr;gap:20px}.pp-info-v1 .page-hero__copy{max-width:820px}.pp-info-v1 .hero-art{max-width:710px;width:100%;margin:auto}.pp-info-v1 .page-hero{padding-top:120px}.pp-info-v1 .stats-strip__grid{grid-template-columns:1fr}.pp-info-v1 .stats-strip__lead{text-align:center;max-width:780px;margin:auto}.pp-info-v1 .stats-strip__metrics{max-width:900px;margin:auto}}
+@media(max-width:780px){.pp-info-v1 .container{width:calc(100% - 34px)!important}.pp-info-v1 .section{padding:79px 0}.pp-info-v1 .page-hero{padding:113px 0 69px;min-height:auto}.pp-info-v1 .page-hero__title{font-size:clamp(40px,7.7vw,63px)!important}.pp-info-v1 .stats-strip{padding:74px 0}.pp-info-v1 .stats-strip__metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.pp-info-v1 .metric{padding:20px 13px}.pp-info-v1 .card-duo,.pp-info-v1 .contact-channels{grid-template-columns:1fr}.pp-info-v1 .contact-card{min-height:300px}}
+@media(max-width:560px){.pp-info-v1 .container{width:calc(100% - 26px)!important}.pp-info-v1 .section{padding:66px 0}.pp-info-v1 .page-hero{padding:102px 0 60px}.pp-info-v1 .page-hero__title{font-size:clamp(37px,10vw,52px)!important}.pp-info-v1 .page-hero__lead{font-size:14px!important}.pp-info-v1 .page-hero__kicker{font-size:10px;padding:11px 14px}.pp-info-v1 .hero-art{min-height:375px}.pp-info-v1 .ecosystem-board{width:78%;padding:14px}.pp-info-v1 .support-board{width:77%;padding:14px}.pp-info-v1 .floating-chip{min-width:125px;max-width:162px;gap:7px;padding:9px 10px}.pp-info-v1 .floating-chip__icon{width:30px;height:30px;flex-basis:30px;font-size:16px}.pp-info-v1 .floating-chip strong{font-size:10px}.pp-info-v1 .floating-chip small{font-size:9px}.pp-info-v1 .floating-chip--left{top:7%}.pp-info-v1 .floating-chip--right{bottom:5%}.pp-info-v1 .board-top{font-size:12px}.pp-info-v1 .board-bottom__card{padding:10px 7px}.pp-info-v1 .board-bottom__card span{font-size:10px}.pp-info-v1 .board-bottom__card strong{font-size:15px}.pp-info-v1 .support-board__heading strong{font-size:15px}.pp-info-v1 .support-board__message{padding:11px}.pp-info-v1 .support-board__message strong{font-size:13px}.pp-info-v1 .support-board__message small{font-size:10px}.pp-info-v1 .section__title{font-size:clamp(30px,9vw,40px)!important}.pp-info-v1 .prose-block,.pp-info-v1 .info-card{padding:25px 23px}.pp-info-v1 .stats-strip__metrics{grid-template-columns:1fr;gap:12px}.pp-info-v1 .metric{padding:25px}.pp-info-v1 .metric__value{font-size:35px!important}.pp-info-v1 .metric__label{font-size:14px!important}.pp-info-v1 .contact-card{padding:27px 24px}.pp-info-v1 .contact-card .btn{width:100%}.pp-info-v1 .capability-grid{grid-template-columns:1fr}.pp-info-v1 .capability-grid__item{min-height:90px;padding-left:65px;font-size:15px!important}.pp-info-v1 .btn-group .btn{width:100%}.pp-info-v1 .btn-group{width:100%}.pp-info-v1 .cta-band{padding:67px 0}}
+@media(prefers-reduced-motion:reduce){.pp-info-v1 *{transition:none!important;animation:none!important}}
+
+</style>
+<div class="pp-info-v1 pp-info-contact" data-poppo-contact>
+<!-- Hero -->
+<section class="page-hero" aria-label="Contact Poppo Live Asia"><div class="page-hero__ambient" aria-hidden="true"></div><div class="container page-hero__inner"><div class="page-hero__copy reveal"><span class="page-hero__kicker">✦ Contact &amp; Support</span><h1 class="page-hero__title">Get in <span class="accent">Touch</span></h1><p class="page-hero__lead">Contact us to solve your Poppo Live account problem, registration questions, or other inquiries. Whether you're a host in Asia or an agent in Africa we're here!</p></div>
+<div class="hero-art reveal" aria-label="Illustration of Poppo Live Asia customer support channels" role="img"><div class="hero-art__orbit"></div><div class="hero-art__orbit hero-art__orbit--two"></div>
+ <div class="support-board glass-panel"><div class="support-board__heading"><span class="support-board__mark"><svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0116 0v6a2 2 0 01-2 2h-2v-6h4M4 14h4v6H6a2 2 0 01-2-2zm8 6h2"/></svg></span><span><strong>Poppo Support</strong><small>Contact &amp; Registration Help</small></span></div>
+  <div class="support-board__message"><span>✦</span><div><strong>Account &amp; Login</strong><small>Get help with access and account issues</small></div></div>
+  <div class="support-board__message"><span>◆</span><div><strong>Host &amp; Agency</strong><small>Guidance for your streaming journey</small></div></div>
+  <div class="support-board__status"><i></i> Choose WhatsApp or Telegram below</div>
+ </div>
+ <div class="floating-chip floating-chip--left"><span class="floating-chip__icon">☏</span><div><strong>WhatsApp</strong><small>Direct support</small></div></div>
+ <div class="floating-chip floating-chip--right"><span class="floating-chip__icon">➤</span><div><strong>Telegram</strong><small>Platform inquiries</small></div></div>
+</div></div></section>
+<!-- Contact Channels -->
+<section class="section section--ivory" aria-label="Contact and support channels"><div class="container"><header class="section__header reveal"><h2 class="section__title">Contact &amp; <span class="accent">Support</span></h2><p class="section__subtitle">Reach our team directly through WhatsApp or Telegram for fast assistance with Poppo Live account issues, host registration, agency setup, and general inquiries.</p></header>
+<div class="contact-channels"><article class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.5a8.4 8.4 0 01-12.5 7.3L3 20l1.3-4.3A8.4 8.4 0 1119.9 9"/><path d="M8.8 8.8c.3-.4.7-.4 1.1 0l.8 1.4c.2.3.1.6-.1.9l-.5.6c.7 1.3 1.7 2.2 3 2.7l.5-.5c.3-.3.6-.4 1-.2l1.3.7c.4.2.5.6.3 1-.6.8-1.7 1.2-2.8.9-3-.9-5.4-3.2-6.3-6.2-.3-1.1 0-2.2.7-2.8"/></svg></span><p class="contact-card__label">WhatsApp</p><p class="contact-card__value">+601172243921</p><p class="contact-card__desc">Message us on WhatsApp for account support, registration help, and partnership questions.</p><a href="https://wa.me/601172243921" class="btn btn--primary" rel="noopener noreferrer" target="_blank">Chat on WhatsApp</a></article>
+<article class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 3L3 10.2l6.8 2.7L18 7l-6.3 7.3.1 6.3L15.5 17 21 3z"/><path d="M9.8 12.9l2 7.7"/></svg></span><p class="contact-card__label">Telegram</p><p class="contact-card__value">@poppolivesuport</p><p class="contact-card__desc">Connect with our support team on Telegram for technical issues and platform inquiries.</p><a href="https://t.me/PoppoLiveService" class="btn btn--secondary" rel="noopener noreferrer" target="_blank">Message on Telegram</a></article></div></div></section>
+<!-- Help Topics -->
+<section class="section section--soft" aria-label="What we can help with"><div class="container"><header class="section__header reveal"><h2 class="section__title">How We <span class="accent">Can Help</span></h2><p class="section__subtitle">Our support team assists hosts, agents, and partners across Asia, Africa, and other global markets.</p></header><ul class="capability-grid capability-grid--duo reveal"><li class="capability-grid__item">Poppo Live account &amp; login issues</li><li class="capability-grid__item">Host &amp; agent registration guidance</li><li class="capability-grid__item">Agency invitation &amp; verification help</li><li class="capability-grid__item">Commission, payout &amp; withdrawal questions</li></ul>
+<div class="section__cta reveal"><div class="btn-group btn-group--center"><a href="/host/" class="btn btn--secondary">Host Cooperation</a><a href="/agency/" class="btn btn--secondary">Agency Cooperation</a></div></div></div></section>
+</div>
+<script>
+(function(){function init(){var root=document.querySelector('[data-poppo-contact]');if(!root||root.dataset.ppReady)return;root.dataset.ppReady='1'}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
+</script>

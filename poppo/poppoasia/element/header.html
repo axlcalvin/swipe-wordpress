@@ -1,0 +1,242 @@
+<!-- POPPO LIVE ASIA — HEADER V1.8 UNIVERSAL ACTIVE + NO WHITE STRIP | Elementor Theme Builder | paste entire file in ONE HTML widget -->
+<style>
+/* POPPO ASIA HEADER V1.2 — Dark Neon Spectrum · standalone Elementor HTML Widget */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+.poppo-neon-header{--ph-bg:#080B16;--ph-panel:#10152B;--ph-card:#192039;--ph-purple:#7840FF;--ph-pink:#FF25BC;--ph-cyan:#00C8FF;--ph-lime:#B8F500;--ph-white:#F8FAFF;--ph-muted:#C5C8E3;--ph-border:#343A57;font-family:Manrope,Arial,sans-serif!important;position:fixed!important;inset:0 0 auto!important;top:var(--ph-admin-top,0px)!important;width:100%!important;max-width:none!important;z-index:2147481000!important;isolation:isolate;box-sizing:border-box!important;pointer-events:none;color:var(--ph-white)}
+.poppo-neon-header,.poppo-neon-header *,.poppo-neon-header *::before,.poppo-neon-header *::after{box-sizing:border-box!important}
+.poppo-neon-header a{text-decoration:none!important}
+.poppo-neon-header button{font:inherit;cursor:pointer}
+.poppo-neon-header .ph-wrap{pointer-events:auto;position:relative;width:min(1400px,calc(100% - 36px));margin:14px auto 0;padding:12px 18px;display:flex;align-items:center;gap:23px;min-height:75px;border-radius:24px;border:1px solid rgba(130,95,255,.42);background:linear-gradient(115deg,rgba(19,21,48,.97),rgba(21,18,51,.95) 53%,rgba(18,32,50,.96));box-shadow:0 14px 43px rgba(2,3,17,.4),inset 0 1px rgba(255,255,255,.09);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);transition:background .2s,border-color .2s,box-shadow .2s,margin .2s}
+.poppo-neon-header .ph-wrap:before{content:'';position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(90deg,rgba(255,37,188,.07),transparent 35%,rgba(0,200,255,.06));z-index:-1}
+.poppo-neon-header.is-scrolled .ph-wrap{background:linear-gradient(115deg,rgba(10,13,31,.97),rgba(15,16,40,.97));border-color:rgba(155,113,255,.61);box-shadow:0 15px 43px rgba(0,0,0,.52),0 0 24px rgba(120,64,255,.1)}
+.poppo-neon-header .ph-logo{display:inline-flex;align-items:center;justify-content:flex-start;flex:0 0 auto;gap:10px;min-width:0;max-width:230px}
+.poppo-neon-header .ph-logo img{display:block;object-fit:contain;width:145px;height:46px;max-width:100%;filter:drop-shadow(0 2px 10px rgba(120,64,255,.17))}
+.poppo-neon-header .ph-nav{margin-left:auto;min-width:0}
+.poppo-neon-header .ph-menu{display:flex;justify-content:flex-end;align-items:center;gap:clamp(2px,.45vw,9px);list-style:none!important;margin:0!important;padding:0!important}
+.poppo-neon-header .ph-menu li{list-style:none!important;margin:0!important;padding:0!important}
+.poppo-neon-header .ph-link{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:11px clamp(10px,1vw,16px);font:800 12.5px/1.3 Manrope,Arial,sans-serif!important;white-space:nowrap;color:var(--ph-muted)!important;border:1px solid transparent!important;border-radius:999px;background:transparent!important;transition:color .2s,background .2s,border-color .2s,box-shadow .2s,transform .2s}
+/* V1.2 — Screenshot-inspired blue → violet → neon-pink gradient.
+   Hover is temporary; aria-current=page is applied by URL-aware JS only. */
+.poppo-neon-header .ph-link:hover,
+.poppo-neon-header .ph-link:focus-visible,
+.poppo-neon-header .ph-link[aria-current="page"]{
+  color:#fff!important;
+  border:1px solid transparent!important;
+  background:linear-gradient(105deg,#3154E9 0%,#6740EF 43%,#A52BCF 69%,#D41491 100%) padding-box,
+             linear-gradient(105deg,#6488FF 0%,#A579FF 48%,#FF62CB 100%) border-box!important;
+  box-shadow:0 0 0 1px rgba(255,255,255,.10) inset,
+             0 0 16px rgba(50,94,255,.32),
+             0 0 27px rgba(117,64,255,.24),
+             0 0 27px rgba(235,28,169,.19),
+             0 7px 20px rgba(6,7,23,.26)!important;
+  text-decoration:none!important;
+  transform:translateY(-1px);
+}
+.poppo-neon-header .ph-link[aria-current="page"]{
+  background:linear-gradient(105deg,#3154E9 0%,#6740EF 43%,#A52BCF 69%,#D41491 100%) padding-box,
+             linear-gradient(105deg,#6488FF 0%,#A579FF 48%,#FF62CB 100%) border-box!important;
+  box-shadow:0 0 0 1px rgba(255,255,255,.12) inset,
+             0 0 20px rgba(50,94,255,.35),
+             0 0 32px rgba(117,64,255,.31),
+             0 0 31px rgba(235,28,169,.22)!important;
+  transform:none;
+}
+.poppo-neon-header .ph-link[aria-current="page"]:hover,
+.poppo-neon-header .ph-link[aria-current="page"]:focus-visible{
+  filter:brightness(1.12);
+  transform:translateY(-1px);
+}
+/* Contact Us is an ordinary navigation item, with no special cyan CTA styling. */
+.poppo-neon-header .ph-toggle{display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:47px;height:45px;padding:0;flex:0 0 47px;margin-left:auto;background:linear-gradient(135deg,#281B55,#16233C);border:1px solid #795BC3;border-radius:14px;color:#fff}
+.poppo-neon-header .ph-toggle span{width:20px;height:2px;background:var(--ph-white);border-radius:3px;transition:transform .22s,opacity .22s}
+.poppo-neon-header .ph-toggle[aria-expanded='true'] span:first-child{transform:translateY(7px) rotate(45deg)}
+.poppo-neon-header .ph-toggle[aria-expanded='true'] span:nth-child(2){opacity:0}
+.poppo-neon-header .ph-toggle[aria-expanded='true'] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+.poppo-neon-header .ph-shade{display:none;position:fixed;inset:var(--ph-admin-top,0px) 0 0;background:rgba(4,5,16,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:auto;z-index:1}
+.poppo-neon-header .ph-shade.is-open{display:block}
+.poppo-neon-header .ph-drawer{position:fixed;right:0;top:var(--ph-admin-top,0px);bottom:0;width:min(395px,92vw);height:calc(100dvh - var(--ph-admin-top,0px));background:radial-gradient(circle at 100% 0%,rgba(120,64,255,.22),transparent 40%),linear-gradient(145deg,#10152B,#080B16);border-left:1px solid rgba(120,64,255,.58);box-shadow:-24px 0 66px #000b;transform:translateX(105%);visibility:hidden;transition:transform .3s ease,visibility .3s;pointer-events:auto;z-index:2;padding:22px 18px;overflow:auto;overscroll-behavior:contain}
+.poppo-neon-header .ph-drawer.is-open{transform:translateX(0);visibility:visible}
+.poppo-neon-header .ph-drawer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:1px solid rgba(164,146,241,.21);margin-bottom:17px}
+.poppo-neon-header .ph-close{height:42px;width:42px;display:grid;place-items:center;flex:0 0 42px;border:1px solid rgba(255,37,188,.55);border-radius:13px;background:rgba(255,37,188,.12);color:#fff;font-size:26px;line-height:1}
+.poppo-neon-header .ph-drawer-links{list-style:none!important;margin:0!important;padding:0!important;display:grid;gap:9px}
+.poppo-neon-header .ph-drawer-links li{margin:0!important;padding:0!important;list-style:none!important}
+.poppo-neon-header .ph-drawer-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 17px;border-radius:16px;border:1px solid rgba(132,109,216,.3);background:rgba(255,255,255,.035);font-size:14px;font-weight:750;color:#E8E9FF!important;transition:background .18s,border-color .18s}
+.poppo-neon-header .ph-drawer-link:hover,
+.poppo-neon-header .ph-drawer-link:focus-visible,
+.poppo-neon-header .ph-drawer-link[aria-current="page"]{
+  border:1px solid transparent!important;
+  background:linear-gradient(105deg,#3154E9 0%,#6740EF 43%,#A52BCF 69%,#D41491 100%) padding-box,
+             linear-gradient(105deg,#6488FF,#A579FF 48%,#FF62CB) border-box!important;
+  box-shadow:0 0 16px rgba(50,94,255,.26),0 0 27px rgba(117,64,255,.20),0 0 24px rgba(235,28,169,.15)!important;
+  color:#fff!important;text-decoration:none!important;
+}
+.poppo-neon-header .ph-drawer-link[aria-current="page"]{box-shadow:0 0 19px rgba(50,94,255,.30),0 0 30px rgba(117,64,255,.25),0 0 27px rgba(235,28,169,.19)!important}
+.poppo-neon-header .ph-drawer-link svg{width:16px;height:16px;color:var(--ph-cyan)}
+.poppo-neon-header :focus-visible{outline:2px solid var(--ph-cyan)!important;outline-offset:3px!important}
+
+@media(max-width:1150px){.poppo-neon-header .ph-wrap{gap:10px}.poppo-neon-header .ph-link{padding-inline:9px;font-size:11.5px}}
+@media(max-width:980px){.poppo-neon-header .ph-nav{display:none}.poppo-neon-header .ph-toggle{display:flex}.poppo-neon-header .ph-wrap{min-height:71px}}
+@media(max-width:640px){.poppo-neon-header .ph-wrap{width:calc(100% - 24px);min-height:66px;margin-top:10px;padding:8px 12px;border-radius:18px}.poppo-neon-header .ph-logo img{width:122px;height:43px}}
+@media(prefers-reduced-motion:reduce){.poppo-neon-header *{animation:none!important;transition:none!important}}
+
+/* V1.6 - safe Elementor Theme Builder integration.
+   Keep original widget in place and prevent an empty white header template. */
+.elementor-location-header:has([data-poppo-header]){
+  min-height:0!important;height:0!important; padding:0!important; margin:0!important;
+  background:transparent!important; overflow:visible!important;
+}
+.elementor-location-header:has([data-poppo-header]) :is(.elementor-section,.elementor-container,.elementor-column,.elementor-widget-wrap,.elementor-widget-html,.elementor-widget-container,.e-con,.e-con-inner){
+  min-height:0!important; height:auto!important; margin-top:0!important;
+  margin-bottom:0!important; padding-top:0!important;padding-bottom:0!important;
+  background-color:transparent!important; overflow:visible!important;
+}
+/* Fixed positioning must not be relative to a transformed Elementor ancestor. */
+.elementor-location-header:has([data-poppo-header]) :is(.elementor-section,.elementor-container,.elementor-column,.elementor-widget-wrap,.elementor-widget-html,.elementor-widget-container,.e-con,.e-con-inner){
+ transform:none!important; filter:none!important; perspective:none!important;
+}
+.poppo-neon-header .ph-drawer-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;min-width:0!important}
+.poppo-neon-header .ph-drawer-head .ph-logo{display:flex!important;align-items:center!important;min-width:0!important;flex:1 1 auto!important}
+.poppo-neon-header .ph-drawer-head .ph-logo img{display:block!important;max-width:100%!important;width:clamp(105px,25vw,145px)!important;height:auto!important;max-height:44px!important;object-fit:contain!important}
+.poppo-neon-header .ph-drawer-head .ph-close{appearance:none!important;-webkit-appearance:none!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important;flex:0 0 46px!important;width:46px!important;height:46px!important;min-width:46px!important;max-width:46px!important;min-height:46px!important;max-height:46px!important;padding:0!important;margin:0!important;font-size:0!important;line-height:0!important;color:#FFF!important;border:1px solid rgba(255,79,214,.7)!important;background:rgba(172,42,175,.17)!important;border-radius:14px!important}
+.poppo-neon-header .ph-close-cross{position:relative!important;display:block!important;width:20px!important;height:20px!important;flex:none!important;pointer-events:none!important}
+.poppo-neon-header .ph-close-cross::before,.poppo-neon-header .ph-close-cross::after{content:''!important;position:absolute!important;left:9px!important;top:-2px!important;height:24px!important;width:2px!important;background:#fff!important;border-radius:3px!important;transform-origin:center!important}
+.poppo-neon-header .ph-close-cross::before{transform:rotate(45deg)!important}
+.poppo-neon-header .ph-close-cross::after{transform:rotate(-45deg)!important}
+.poppo-neon-header .ph-close:hover{background:linear-gradient(105deg,#3154E9,#6740EF,#D41491)!important;box-shadow:0 0 18px rgba(126,80,255,.3)!important}
+@media(max-width:480px){.poppo-neon-header .ph-drawer{width:min(395px,100vw)!important;padding:18px 16px!important}.poppo-neon-header .ph-close{flex-basis:44px!important;width:44px!important;height:44px!important;min-width:44px!important;max-width:44px!important;min-height:44px!important;max-height:44px!important}}
+
+
+/* V1.8 UNIVERSAL — works for all six routes and future page designs.
+   No body append, no placeholder, no arbitrary global Elementor element moves. */
+html:has([data-poppo-header]),
+body:has([data-poppo-header]){
+  background:#080B16!important;
+}
+/* The Theme Builder header is a zero-height overlay, not a white band.
+   Keep it within Elementor rather than relocating the DOM. */
+body .elementor-location-header:has([data-poppo-header]),
+body header.elementor-location-header:has([data-poppo-header]){
+  position:relative!important;
+  height:0!important;min-height:0!important;
+  margin:0!important;padding:0!important;
+  border:0!important;background:transparent!important;
+  overflow:visible!important;
+}
+body .elementor-location-header:has([data-poppo-header]) > :is(.elementor-element,.e-con,.elementor-section){
+  margin:0!important;padding:0!important;
+  min-height:0!important;height:0!important;
+  background:transparent!important;border:0!important;
+  overflow:visible!important;
+}
+/* Editor-independent dark backdrop directly under the fixed navigation. */
+body:has([data-poppo-header]) .elementor-location-header:has([data-poppo-header]) + :is(main,.site-main,.elementor-location-single,.elementor-location-archive){
+  background-color:#080B16;
+}
+/* The two approved Poppo page families explicitly reserve hero text space
+   below the fixed floating header without creating layout whitespace. */
+body:has([data-poppo-header]) .pp-host-v2 > .hero:first-child{
+  padding-top:clamp(146px,11vw,170px)!important;
+}
+body:has([data-poppo-header]) .pp-home-v1 > .hero:first-child{
+  padding-top:clamp(146px,11vw,170px)!important;
+}
+@media(max-width:980px){
+  body:has([data-poppo-header]) .pp-host-v2 > .hero:first-child,
+  body:has([data-poppo-header]) .pp-home-v1 > .hero:first-child{
+    padding-top:125px!important;
+  }
+}
+/* WordPress theme CSS may add separators or pseudo-elements to the template. */
+body .elementor-location-header:has([data-poppo-header])::before,
+body .elementor-location-header:has([data-poppo-header])::after{
+  display:none!important;
+}
+
+</style>
+<div class="poppo-neon-header" id="poppo-neon-header" data-poppo-header>
+ <div class="ph-wrap" role="banner">
+  <a class="ph-logo" href="/" aria-label="Poppo Live Asia — Home"><img src="https://poppo.asia/wp-content/uploads/2023/11/logo-1.png" alt="Poppo Live Asia" width="145" height="46" loading="eager" decoding="async"></a>
+  <nav class="ph-nav" aria-label="Main navigation"><ul class="ph-menu">
+   <li><a class="ph-link" href="/">Home</a></li>
+   <li><a class="ph-link" href="/host/">Host Cooperation</a></li>
+   <li><a class="ph-link" href="/agency/">Agency Cooperation</a></li>
+   <li><a class="ph-link" href="/about-us/">About Us</a></li>
+   <li><a class="ph-link" href="/category/blog/">Blog</a></li>
+   <li><a class="ph-link" href="/contact/">Contact Us</a></li>
+  </ul></nav>
+  <button class="ph-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="poppo-neon-drawer"><span></span><span></span><span></span></button>
+ </div>
+ <div class="ph-shade" aria-hidden="true"></div>
+ <aside class="ph-drawer" id="poppo-neon-drawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+  <div class="ph-drawer-head"><a class="ph-logo" href="/" aria-label="Poppo Live Asia — Home"><img src="https://poppo.asia/wp-content/uploads/2023/11/logo-1.png" alt="Poppo Live Asia" width="122" height="43" loading="lazy"></a><button class="ph-close" aria-label="Close navigation" type="button"><span class="ph-close-cross" aria-hidden="true"></span></button></div>
+  <nav aria-label="Mobile main navigation"><ul class="ph-drawer-links">
+   <li><a class="ph-drawer-link" href="/">Home<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+   <li><a class="ph-drawer-link" href="/host/">Host Cooperation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+   <li><a class="ph-drawer-link" href="/agency/">Agency Cooperation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+   <li><a class="ph-drawer-link" href="/about-us/">About Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+   <li><a class="ph-drawer-link" href="/category/blog/">Blog<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+   <li><a class="ph-drawer-link" href="/contact/">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+  </ul></nav>
+ </aside>
+</div>
+<script>
+(function(){
+  function init(){
+    var root=document.querySelector('[data-poppo-header]');
+    if(!root||root.dataset.poppoReady==='1')return;
+    root.dataset.poppoReady='1';
+    var admin=document.getElementById('wpadminbar');
+    function offset(){root.style.setProperty('--ph-admin-top',admin&&getComputedStyle(admin).position==='fixed'?admin.getBoundingClientRect().height+'px':'0px');}
+    // Do not insert spacer or move the header outside Elementor.
+    // Fixed navigation stays within its original HTML widget.
+    var toggle=root.querySelector('.ph-toggle'),closeBtn=root.querySelector('.ph-close'),shade=root.querySelector('.ph-shade'),drawer=root.querySelector('.ph-drawer');
+    if(!toggle||!drawer||!shade)return;
+    var originalBodyOverflow='',previousFocus=null;
+    function open(){previousFocus=document.activeElement;originalBodyOverflow=document.body.style.overflow;root.classList.add('is-open');shade.classList.add('is-open');drawer.classList.add('is-open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close navigation');drawer.setAttribute('aria-hidden','false');drawer.removeAttribute('inert');document.body.style.overflow='hidden';closeBtn.focus();}
+    function close(){if(!root.classList.contains('is-open'))return;root.classList.remove('is-open');shade.classList.remove('is-open');drawer.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');drawer.setAttribute('aria-hidden','true');drawer.setAttribute('inert','');document.body.style.overflow=originalBodyOverflow;if(previousFocus&&previousFocus.focus)previousFocus.focus();}
+    toggle.addEventListener('click',function(){root.classList.contains('is-open')?close():open()});
+    closeBtn.addEventListener('click',close);shade.addEventListener('click',close);
+    drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();if(e.key==='Tab'&&root.classList.contains('is-open')){var items=Array.from(drawer.querySelectorAll('a,button')).filter(function(x){return x.offsetParent!==null});if(!items.length)return;var first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+    /* Universal active navigation: routes, common WordPress aliases, and
+       concrete page content used by Elementor Preview. Exactly one active. */
+    function normalize(path){
+      return ('/'+String(path||'/').replace(/^\/+|\/+$/g,'')).replace(/\/{2,}/g,'/').toLowerCase();
+    }
+    function detectPage(){
+      var rawPath=normalize(window.location.pathname);
+      var segments=rawPath.split('/').filter(Boolean);
+      var last=segments[segments.length-1]||'';
+      // Preview-specific fallback: the preview URL may be /?elementor-preview=ID.
+      if(document.querySelector('.pp-host-v2'))return 'host';
+      if(document.querySelector('.pp-home-v1'))return 'home';
+      if(document.querySelector('.pp-agency-v1,.pp-agency-v2,.poppo-agency-page,[data-poppo-page="agency"]'))return 'agency';
+      if(document.querySelector('.pp-about-v1,.pp-about-v2,.poppo-about-page,[data-poppo-page="about"]'))return 'about';
+      if(document.querySelector('.pp-contact-v1,.pp-contact-v2,.poppo-contact-page,[data-poppo-page="contact"]'))return 'contact';
+      if(rawPath==='/')return 'home';
+      if(['host','host-cooperation','become-a-host','hosts'].includes(last))return 'host';
+      if(['agency','agency-cooperation','become-an-agent','become-an-agency','agent'].includes(last))return 'agency';
+      if(['about','about-us','about-poppo'].includes(last))return 'about';
+      if(['contact','contact-us','contact-support'].includes(last))return 'contact';
+      if(rawPath==='/blog'||rawPath.indexOf('/category/blog')===0||rawPath.indexOf('/blog/')===0)return 'blog';
+      // WordPress blog single post often includes /category/blog/ in its path.
+      if(segments.indexOf('blog')!==-1)return 'blog';
+      return '';
+    }
+    var page=detectPage();
+    var pageForHref={'/':'home','/host':'host','/agency':'agency',
+      '/about-us':'about','/category/blog':'blog','/contact':'contact'};
+    root.querySelectorAll('.ph-link,.ph-drawer-link').forEach(function(a){
+      var target='';
+      try{target=pageForHref[normalize(new URL(a.href,window.location.href).pathname)]||'';}catch(e){}
+      if(target&&target===page)a.setAttribute('aria-current','page');
+      else a.removeAttribute('aria-current');
+    });
+    var ticking=false;function update(){root.classList.toggle('is-scrolled',window.scrollY>12);ticking=false;}
+    window.addEventListener('scroll',function(){if(!ticking){ticking=true;window.requestAnimationFrame(update)}},{passive:true});
+    window.addEventListener('resize',function(){offset();if(window.innerWidth>980)close()},{passive:true});
+    offset();update();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>

@@ -1,0 +1,293 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+.rl-legal-page{--rl-ink:#102e26;--rl-muted:#537064;--rl-border:#d1eadd;--rl-lime:#dfff79;--rl-mint:#68eab6;--rl-white:#fff;color:var(--rl-ink);font:400 15px/1.8 'Manrope',Arial,sans-serif;background:linear-gradient(180deg,#ffffff 0%,#f5fff9 38%,#ffffff 72%,#f7fff9 100%);isolation:isolate;overflow:clip}
+.rl-legal-page *{box-sizing:border-box}
+.rl-legal-page .rl-container{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+.rl-legal-page a{color:#078a61;text-underline-offset:3px}
+.rl-legal-page a:hover{color:#075c45}
+.rl-legal-page h1,.rl-legal-page h2,.rl-legal-page h3{font-family:'Space Grotesk',Arial,sans-serif;line-height:1.18;letter-spacing:-.035em;color:#102e26}
+.rl-legal-page .rl-hero{position:relative;padding:82px 0 78px;overflow:hidden;background:radial-gradient(circle at 88% 13%,#9affd75e,transparent 35%),radial-gradient(circle at 6% 70%,#dfff7966,transparent 32%),linear-gradient(125deg,#fff,#f4fff8 54%,#edfff7);border-bottom:1px solid #d8f2e5}
+.rl-legal-page .rl-hero:before{content:'';position:absolute;right:-120px;top:-175px;width:470px;height:470px;border-radius:50%;border:1px solid #80eac66b;box-shadow:0 0 0 38px #a6ffd020,0 0 0 85px #c3ffe913;pointer-events:none}
+.rl-legal-page .rl-hero__inner{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:50px;align-items:center}
+.rl-legal-page .rl-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#087857;border:1px solid #caebd7;background:#ffffffc7;border-radius:999px;padding:8px 15px}
+.rl-legal-page .rl-eyebrow__dot{width:8px;height:8px;background:linear-gradient(110deg,#dfff79,#53e5a2);border-radius:50%;box-shadow:0 0 0 5px #72ecb62c}
+.rl-legal-page .rl-hero h1{font-size:clamp(36px,5vw,65px);margin:24px 0 18px;font-weight:700;max-width:850px}
+.rl-legal-page .rl-hero p{max-width:780px;font-size:16px;line-height:1.9;color:#4b6a5d;margin:0}
+.rl-legal-page .rl-hero__visual{position:relative;aspect-ratio:1/1;display:grid;place-items:center}
+.rl-legal-page .rl-hero__visual:before{content:'';position:absolute;inset:12%;border-radius:32%;background:linear-gradient(135deg,#dfff79,#61eac5);transform:rotate(19deg);box-shadow:0 25px 60px #39ba832f}
+.rl-legal-page .rl-hero__visual:after{content:'';position:absolute;inset:22%;border-radius:28%;border:1px solid #ffffff9f;transform:rotate(-12deg)}
+.rl-legal-page .rl-hero__icon{position:relative;z-index:1;width:115px;height:115px;color:#0b4533;filter:drop-shadow(0 10px 12px #ffffff55)}
+.rl-legal-page .rl-main{padding:68px 0 94px}
+.rl-legal-page .rl-layout{display:grid;grid-template-columns:255px minmax(0,1fr);gap:27px;align-items:start}
+.rl-legal-page .rl-toc{position:sticky;top:32px;border:1px solid #cdebd9;background:linear-gradient(145deg,#fff,#effff5);border-radius:24px;padding:23px 19px;box-shadow:0 17px 38px #245c4212;max-height:calc(100vh - 64px);overflow:auto}
+.rl-legal-page .rl-toc__label{font:700 15px 'Space Grotesk',sans-serif;margin:0 0 17px;color:#14382b}
+.rl-legal-page .rl-toc__list{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+.rl-legal-page .rl-toc__list li{margin:0;padding:0}
+.rl-legal-page .rl-toc__link{display:block;padding:9px 11px;border-radius:12px;text-decoration:none!important;font-size:12px;font-weight:700;line-height:1.5;color:#456659!important;transition:background .2s,color .2s,transform .2s}
+.rl-legal-page .rl-toc__link:hover,.rl-legal-page .rl-toc__link[aria-current='location']{background:linear-gradient(110deg,#e8ffb0,#bcf9d7);color:#0c5038!important;transform:translateX(2px)}
+.rl-legal-page .rl-toc__help{font-size:11px;color:#6c8c7b;padding:14px 11px 0;margin:14px 0 0;border-top:1px solid #d9ece0}
+.rl-legal-page .rl-articles{display:grid;gap:18px;min-width:0}
+.rl-legal-page .legal-content__section{background:#fff;border:1px solid #d0eadd;border-radius:24px;padding:31px 35px;box-shadow:0 12px 35px #164d3410;scroll-margin-top:28px;transition:border-color .2s,box-shadow .2s;overflow-wrap:anywhere}
+.rl-legal-page .legal-content__section:hover{border-color:#95e4b8;box-shadow:0 19px 42px #164d3417}
+.rl-legal-page .legal-content__heading{display:flex;align-items:center;gap:11px;font-size:clamp(19px,2vw,24px);font-weight:700;margin:0 0 19px;padding-bottom:17px;border-bottom:1px solid #e3f1e8}
+.rl-legal-page .legal-content__heading:before{content:'';width:8px;height:27px;flex:0 0 8px;border-radius:7px;background:linear-gradient(180deg,#bbfb52,#62e9b9)}
+.rl-legal-page .legal-content__text{font-size:14px;line-height:1.95;color:#4b6c5d;margin:0 0 15px}
+.rl-legal-page .legal-content__section>.legal-content__text:last-child{margin-bottom:0}
+.rl-legal-page .legal-content__list{list-style:none;display:grid;gap:11px;margin:12px 0 20px;padding:0}
+.rl-legal-page .legal-content__list:last-child{margin-bottom:0}
+.rl-legal-page .legal-content__list li{position:relative;padding:13px 16px 13px 43px;border:1px solid #e1f2e9;background:linear-gradient(135deg,#fbfffc,#f3fff8);border-radius:13px;color:#426456;font-size:13.5px;line-height:1.85}
+.rl-legal-page .legal-content__list li:before{content:'✓';position:absolute;left:15px;top:15px;width:20px;height:20px;display:grid;place-items:center;border-radius:7px;font-size:12px;font-weight:800;color:#0c5b3e;background:linear-gradient(130deg,#dfff79,#8af1b3)}
+.rl-legal-page .legal-content__list li strong{color:#163d2e}
+.rl-legal-page .rl-bottom-note{margin-top:25px;padding:22px 26px;border:1px solid #cbeeda;border-radius:20px;background:linear-gradient(120deg,#f5fff1,#eafff6);color:#416253;font-size:13px}
+.rl-legal-page .rl-bottom-note p{margin:0}
+@media(max-width:1040px){.rl-legal-page .rl-layout{grid-template-columns:1fr}.rl-legal-page .rl-toc{position:relative;top:auto;max-height:none;padding:19px}.rl-legal-page .rl-toc__list{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.rl-legal-page .rl-hero__inner{grid-template-columns:1fr 190px;gap:20px}}
+@media(max-width:700px){.rl-legal-page .rl-container{width:calc(100% - 28px)}.rl-legal-page .rl-hero{padding:54px 0 46px}.rl-legal-page .rl-hero__inner{grid-template-columns:1fr}.rl-legal-page .rl-hero__visual{display:none}.rl-legal-page .rl-hero h1{font-size:clamp(34px,9vw,47px);margin:18px 0 15px}.rl-legal-page .rl-hero p{font-size:14px}.rl-legal-page .rl-main{padding:40px 0 62px}.rl-legal-page .rl-toc__list{grid-template-columns:1fr}.rl-legal-page .legal-content__section{padding:23px 19px;border-radius:19px}.rl-legal-page .legal-content__heading{font-size:19px}.rl-legal-page .legal-content__list li{font-size:12.5px;padding:12px 12px 12px 39px}.rl-legal-page .legal-content__list li:before{left:12px;top:14px}.rl-legal-page .legal-content__text{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.rl-legal-page *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* V3 — Exact About Us width reference: min(calc(100% - 48px), 1180px). */
+.rl-legal-page .rl-container,
+.rl-legal-page .rl-hero > .rl-container,
+.rl-legal-page .rl-main > .rl-container.rl-layout {
+  width: min(calc(100% - 48px), 1180px) !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box !important;
+}
+.rl-legal-page .rl-main > .rl-container.rl-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+.rl-legal-page .rl-layout > .rl-toc,
+.rl-legal-page .rl-layout > .rl-articles,
+.rl-legal-page .rl-articles > .legal-content__section {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.rl-legal-page .rl-layout > .rl-toc { position: relative !important; top: auto !important; max-height: none !important; overflow: visible !important; }
+.rl-legal-page .rl-toc__list { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px 11px !important; }
+@media (max-width: 900px) { .rl-legal-page .rl-toc__list { grid-template-columns: repeat(2,minmax(0,1fr)) !important; } }
+@media (max-width: 760px) {
+  .rl-legal-page .rl-container,
+  .rl-legal-page .rl-hero > .rl-container,
+  .rl-legal-page .rl-main > .rl-container.rl-layout {
+    width: calc(100% - 28px) !important;
+  }
+  .rl-legal-page .rl-toc__list { grid-template-columns: 1fr !important; }
+}
+
+
+/* V4 FIX: make OUTER page full-viewport like About Us section backgrounds,
+   independently of Elementor's boxed content width. The INNER content stays 1180px. */
+.rl-legal-page {
+  width: 100vw !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+.rl-legal-page .rl-hero,
+.rl-legal-page .rl-main {
+  width: 100% !important;
+  max-width: none !important;
+  margin-inline: 0 !important;
+}
+.rl-legal-page .rl-container,
+.rl-legal-page .rl-hero > .rl-container,
+.rl-legal-page .rl-main > .rl-container.rl-layout {
+  width: min(calc(100% - 48px), 1180px) !important;
+  max-width: 1180px !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+@media(max-width:760px){
+  .rl-legal-page .rl-container,
+  .rl-legal-page .rl-hero > .rl-container,
+  .rl-legal-page .rl-main > .rl-container.rl-layout {
+    width: calc(100% - 28px) !important;
+  }
+}
+
+</style>
+<div class="rl-legal-page rl-legal-page--privacy-policy">
+  <section class="rl-hero" aria-label="Privacy Policy introduction"><div class="rl-container rl-hero__inner"><div><span class="rl-eyebrow"><span class="rl-eyebrow__dot"></span>YOUR DATA · YOUR PRIVACY</span><h1>Recho Live - Privacy Policy</h1><p>Recho Live is committed to protecting your privacy. This Privacy Policy
+                    explains how we collect, use, store, share, and protect your personal information when you access or
+                    use Recho Live, including our website, mobile application, and related services. It also explains
+                    your privacy rights and how we manage your information in accordance with our Terms of Use.</p></div><div class="rl-hero__visual"><svg class="rl-hero__icon" viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M60 11 98 26v33c0 26-14 42-38 53C36 101 22 85 22 59V26L60 11Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M40 59 55 73 82 45" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></section>
+  <section class="rl-main" aria-label="Privacy Policy content"><div class="rl-container rl-layout"><aside class="rl-toc" aria-label="On this page"><h2 class="rl-toc__label">On this page</h2><ol class="rl-toc__list"><li><a class="rl-toc__link" href="#privacy-policy-section-01">1. INTRODUCTION</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-02">2. INFORMATION COLLECTION</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-03">3. DATA USAGE</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-04">4. DATA DISCLOSURE</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-05">5. TRACKING TECHNOLOGIES</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-06">6. YOUR DATA RIGHTS</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-07">7. DATA SECURITY</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-08">8. CHILDREN&#x27;S PRIVACY</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-09">9. DATA PROCESSING LOCATIONS</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-10">10. POLICY UPDATES</a></li><li><a class="rl-toc__link" href="#privacy-policy-section-11">11. CONTACT US</a></li></ol><p class="rl-toc__help">Select a section to jump to its contents.</p></aside><main class="rl-articles"><article class="legal-content__section" id="privacy-policy-section-01">
+<h2 class="legal-content__heading">1. INTRODUCTION</h2>
+<p class="legal-content__text">This Privacy Policy governs Vexa Limited and Recho, including Recho's
+                        web platform and subsequent versions (hereinafter collectively referred to as "Recho", "us",
+                        "we", or "our"). It forms an integral part of our Terms of Use. We encourage you to review this
+                        document to understand our data management practices. By accessing or using the Service, you
+                        consent to this Policy. Should you disagree with its provisions, discontinue Service use
+                        immediately.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-02">
+<h2 class="legal-content__heading">2. INFORMATION COLLECTION</h2>
+<p class="legal-content__text">Data gathered varies based on your engagement with our Service,
+                        features utilized, and privacy selections. We obtain information through multiple channels:</p>
+<ul class="legal-content__list">
+<li><strong>Directly Provided Data:</strong> Includes identifiers (username, email, birthday),
+                            physical address, gender/gender identity volunteered during Recho interactions, or other
+                            unsolicited details revealing protected classifications.</li>
+<li><strong>Google Sign-In:</strong> When authenticating via Google, Recho imports your display
+                            name and profile picture as default credentials. These may be modified later within Recho.
+                            All such data remains strictly confidential.</li>
+<li><strong>Biometric Verification:</strong> Certain functionalities require facial
+                            authentication to protect your account. Facial data serves solely for this purpose and isn't
+                            repurposed.</li>
+<li><strong>User-Generated Content:</strong> Content you produce (photos, profiles, messages,
+                            comments) may be collected. Note that photos taken by others using Recho's capture feature
+                            may be stored and utilized by Recho or third parties (adjustable via settings). Service use
+                            implies acceptance; otherwise, refrain from accessing the Service.</li>
+<li><strong>Device &amp; Technical Identifiers:</strong> Usage triggers automatic logging of IP
+                            addresses, device IDs (e.g., MAC), hardware specifications, operating systems, browser
+                            details, and software configurations (see Section 5: "Tracking Technologies").</li>
+<li><strong>Shared Information Responsibility:</strong> Voluntarily disclosed data may become
+                            public and uncontrollable. Recho bears no liability for its subsequent misuse. If a
+                            conversation partner reports abuse, relevant chat data (audio, screenshots, text) from their
+                            device may be transmitted to our servers for investigation and potential sanctions.</li>
+<li><strong>Transaction Data:</strong> Purchases via Recho's shop require payment details (card
+                            number, expiry, CVV, billing address). This data is securely routed to third-party
+                            processors—Recho neither stores nor handles it. We retain non-sensitive purchase records
+                            (merchant name, transaction timestamp/amount).</li>
+<li><strong>Control &amp; Consequences:</strong> You may decline data requests or restrict
+                            automated collection via browser/OS settings. However, withholding essential information may
+                            impair Service functionality.</li>
+</ul>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-03">
+<h2 class="legal-content__heading">3. DATA USAGE</h2>
+<p class="legal-content__text">We adhere to data minimization principles, limiting processing to
+                        these purposes:</p>
+<ul class="legal-content__list">
+<li><strong>Service Delivery &amp; Optimization:</strong> Account maintenance, troubleshooting,
+                            personalization, and feature enhancement.</li>
+<li><strong>Product Innovation:</strong> Research, analytics, and development of new offerings.
+                        </li>
+<li><strong>Business Operations:</strong> Payment processing, fraud detection, legal compliance,
+                            policy enforcement, and corporate transactions (e.g., mergers).</li>
+<li><strong>User Experience:</strong> Personalization based on preferences and behavior
+                            patterns.</li>
+<li><strong>Support &amp; Communications:</strong> Resolving inquiries, sending administrative
+                            notices/updates.</li>
+<li><strong>Marketing &amp; Advertising:</strong> Promoting services, offers, or events;
+                            displaying targeted ads.</li>
+<li><strong>Security &amp; Integrity:</strong> Preventing fraud, illegal acts, policy breaches,
+                            and system threats.</li>
+</ul>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-04">
+<h2 class="legal-content__heading">4. DATA DISCLOSURE</h2>
+<p class="legal-content__text">We share data with consent or as necessary for business operations:
+                    </p>
+<ul class="legal-content__list">
+<li><strong>Affiliates:</strong> Vexa Limited group entities may receive user content and
+                            analytics to enhance Recho and their services, respecting your privacy settings.</li>
+<li><strong>Service Providers:</strong> Trusted third parties assist in Service delivery under
+                            strict confidentiality agreements.</li>
+<li><strong>Aggregated/Anonymized Data:</strong> Non-identifiable statistics (e.g., user counts)
+                            may be shared with advertisers or investors for content development.</li>
+<li><strong>Public Content:</strong> Information voluntarily published becomes accessible to all
+                            users and may be redistributed.</li>
+<li><strong>Profile Visibility:</strong> Your profile data is shared with Recho connections.
+                        </li>
+<li><strong>External Links:</strong> Third-party sites/services accessed via Recho operate under
+                            their own privacy policies.</li>
+<li><strong>Analytics/Ad Partners:</strong> Third-party technologies may collect data as
+                            detailed in Section 5.</li>
+</ul>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-05">
+<h2 class="legal-content__heading">5. TRACKING TECHNOLOGIES</h2>
+<p class="legal-content__text">Cookies and similar tools automatically gather device/usage data.
+                        Consult browser/OS settings to manage collection preferences.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-06">
+<h2 class="legal-content__heading">6. YOUR DATA RIGHTS</h2>
+<p class="legal-content__text">Depending on jurisdiction, you may:</p>
+<ul class="legal-content__list">
+<li><strong>Access/Know:</strong> Review account data or request details about our data
+                            practices via <a href="mailto:serve@vexa.hk">serve@vexa.hk</a>.</li>
+<li><strong>Correct:</strong> Update account information directly or request corrections by
+                            contacting us.</li>
+<li><strong>Delete:</strong> Request data deletion under applicable laws (exceptions may apply)
+                            via <a href="mailto:serve@vexa.hk">serve@vexa.hk</a>.</li>
+<li><strong>Email Preferences:</strong> Opt out of promotional emails using unsubscribe links or
+                            by emailing us. Mandatory service communications are unaffected.</li>
+</ul>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-07">
+<h2 class="legal-content__heading">7. DATA SECURITY</h2>
+<p class="legal-content__text">Vexa Limited and Recho prioritize privacy protection. We implement
+                        robust safeguards for your personal information. Users must employ strong, unique passwords.
+                        Account deletion triggers Service termination and data anonymization/deletion per legal
+                        requirements.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-08">
+<h2 class="legal-content__heading">8. CHILDREN'S PRIVACY</h2>
+<p class="legal-content__text">Recho targets a general audience. We prohibit users under 18 and do
+                        not knowingly collect their data. Suspected underage data submissions will be purged
+                        immediately. Report concerns via Section 11.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-09">
+<h2 class="legal-content__heading">9. DATA PROCESSING LOCATIONS</h2>
+<p class="legal-content__text">Your data may be processed/stored globally (e.g., Singapore) by Vexa
+                        Limited, affiliates, or partners, adhering to this Policy and local laws.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-10">
+<h2 class="legal-content__heading">10. POLICY UPDATES</h2>
+<p class="legal-content__text">We may revise this Policy periodically. The "Last Updated" date
+                        reflects changes. Material amendments will be communicated via Service notifications or revised
+                        Policy postings. Continued use after updates constitutes acceptance. Review the Policy regularly
+                        on Recho's website. Discontinue use if terms become unacceptable.</p>
+</article>
+<article class="legal-content__section" id="privacy-policy-section-11">
+<h2 class="legal-content__heading">11. CONTACT US</h2>
+<p class="legal-content__text">Questions regarding this Policy or Recho should be directed to: <a href="mailto:service@recho.live">service@recho.live</a></p>
+</article></main></div></section>
+</div>
+<script>
+(function(){
+  function init(){
+    document.querySelectorAll('.rl-legal-page').forEach(function(root){
+      if(root.dataset.rlInitialized==='true')return;
+      root.dataset.rlInitialized='true';
+      var links=Array.from(root.querySelectorAll('.rl-toc__link'));
+      var sections=Array.from(root.querySelectorAll('.legal-content__section[id]'));
+      links.forEach(function(link){link.addEventListener('click',function(ev){
+        var id=link.getAttribute('href').slice(1);
+        var target=sections.find(function(x){return x.id===id});
+        if(!target)return;
+        ev.preventDefault();
+        target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+        history.replaceState(null,'','#'+id);
+      });});
+      if('IntersectionObserver' in window){
+        var obs=new IntersectionObserver(function(entries){
+          entries.filter(function(e){return e.isIntersecting}).forEach(function(entry){
+            links.forEach(function(link){if(link.getAttribute('href')==='#'+entry.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+          });
+        },{rootMargin:'-10% 0px -72% 0px',threshold:0});
+        sections.forEach(function(s){obs.observe(s)});
+      }
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>

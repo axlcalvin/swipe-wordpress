@@ -1,0 +1,180 @@
+<!-- RECHO LEGAL V3 — Terms and Conditions — HTML/CSS/JS All-in-One Elementor Widget. Header/Footer separate. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+.rx-legal-v2{--rx-bg:#071213;--rx-surface:#0e2322;--rx-lime:#BAFB52;--rx-mint:#53D7B0;--rx-ink:#F5FFF7;--rx-muted:#B6D0C5;--rx-border:rgba(186,251,82,.23);font-family:Manrope,system-ui,sans-serif!important;color:var(--rx-ink)!important;background:radial-gradient(ellipse at 85% 5%,rgba(39,169,133,.18),transparent 30%),radial-gradient(ellipse at 10% 50%,rgba(119,192,57,.07),transparent 28%),linear-gradient(180deg,#061112,#091b1a 62%,#061213);line-height:1.75;width:100%;max-width:none!important;position:relative;isolation:isolate;overflow:clip;padding:0!important;margin:0!important}
+.rx-legal-v2 *{box-sizing:border-box}.rx-legal-v2 :is(h1,h2,h3,h4,p,ul,ol){margin-top:0}.rx-legal-v2 :is(h1,h2,h3,h4){font-family:'Space Grotesk',Manrope,system-ui,sans-serif!important;color:#F5FFF7!important;letter-spacing:-.025em}.rx-legal-v2 p,.rx-legal-v2 li{color:#C5DAD1!important}.rx-legal-v2 a{color:#BAFB52!important;text-decoration:none!important;overflow-wrap:anywhere}.rx-legal-v2 a:hover{text-decoration:underline!important;text-underline-offset:4px}.rx-legal-v2 :focus-visible{outline:2px solid #BAFB52!important;outline-offset:4px}.rx-legal-v2 button{font-family:inherit}
+.rx-legal-v2 .rx-legal-progress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#BAFB52,#55E1C0);z-index:999999;box-shadow:0 0 12px #BAFB5280;pointer-events:none}
+.rx-legal-v2 .rx-legal-hero{position:relative;padding:138px 0 84px;border-bottom:1px solid var(--rx-border);overflow:hidden}.rx-legal-v2 .rx-legal-hero:before{content:'';pointer-events:none;position:absolute;inset:0;opacity:.35;background-image:linear-gradient(rgba(152,255,176,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(152,255,176,.08) 1px,transparent 1px);background-size:50px 50px;mask-image:linear-gradient(180deg,#000,transparent 95%)}
+.rx-legal-v2 .rx-legal-container{width:min(1180px,calc(100% - 64px));margin-inline:auto;position:relative;z-index:1}.rx-legal-v2 .rx-legal-eyebrow{display:inline-flex;gap:10px;align-items:center;padding:9px 15px;border:1px solid rgba(186,251,82,.36);background:rgba(186,251,82,.08);border-radius:999px;text-transform:uppercase;color:var(--rx-lime)!important;letter-spacing:.15em;font:800 12px/1.4 Manrope,sans-serif;margin-bottom:24px}.rx-legal-v2 .rx-legal-eyebrow:before{content:'';width:7px;height:7px;background:var(--rx-lime);border-radius:50%;box-shadow:0 0 10px var(--rx-lime)}
+.rx-legal-v2 .rx-legal-heading{font-size:clamp(38px,5.2vw,68px)!important;line-height:1.1!important;max-width:940px;margin:0 0 25px!important}.rx-legal-v2 .rx-legal-heading em{font-style:normal;background:linear-gradient(110deg,#BAFB52,#58D9B6);background-clip:text;-webkit-background-clip:text;color:transparent}.rx-legal-v2 .rx-legal-intro{max-width:850px}.rx-legal-v2 .rx-legal-intro p{font-size:clamp(15px,1.5vw,18px);line-height:1.85;margin-bottom:13px!important}.rx-legal-v2 .rx-legal-hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.rx-legal-v2 .rx-legal-chip{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid rgba(186,251,82,.32);border-radius:999px;background:#102b25;color:#e8ffe3!important;font-size:13px;font-weight:800;transition:transform .2s,background .2s}.rx-legal-v2 .rx-legal-chip:hover{transform:translateY(-2px);background:#173a2c;text-decoration:none!important}
+.rx-legal-v2 .rx-legal-layout{display:grid;grid-template-columns:minmax(215px,275px) minmax(0,1fr);gap:30px;align-items:start;padding-block:66px 100px}.rx-legal-v2 .rx-legal-sidebar{position:sticky;top:105px;border-radius:24px;background:linear-gradient(145deg,#12302a,#0d2221);border:1px solid var(--rx-border);padding:20px;box-shadow:0 20px 45px #0004;max-height:calc(100vh - 125px);overflow-y:auto}.rx-legal-v2 .rx-legal-sidebar-title{color:#BAFB52!important;letter-spacing:.14em;font-size:12px!important;font-weight:800;margin-bottom:15px!important}.rx-legal-v2 .rx-legal-toc{display:grid;gap:5px}.rx-legal-v2 .rx-legal-toc a{display:block;padding:10px 12px;border-radius:12px;color:#CADFD1!important;font-size:12px;line-height:1.5;font-weight:700;border:1px solid transparent;transition:background .2s,border-color .2s,color .2s}.rx-legal-v2 .rx-legal-toc a:hover,.rx-legal-v2 .rx-legal-toc a.is-active{background:rgba(186,251,82,.1);border-color:rgba(186,251,82,.21);color:#d9ff99!important;text-decoration:none!important}
+.rx-legal-v2 .rx-legal-articles{min-width:0;display:grid;gap:18px}.rx-legal-v2 .rx-legal-article{min-width:0;scroll-margin-top:120px;position:relative;border:1px solid rgba(186,251,82,.18);background:linear-gradient(145deg,rgba(19,44,39,.96),rgba(10,25,28,.98));border-radius:25px;padding:30px 34px;box-shadow:0 15px 42px rgba(0,0,0,.22);transition:border-color .25s,transform .25s}.rx-legal-v2 .rx-legal-article:hover{border-color:rgba(186,251,82,.4)}.rx-legal-v2 .rx-legal-section-heading{font-size:clamp(19px,2vw,26px)!important;line-height:1.3!important;display:flex;align-items:flex-start;gap:14px;margin:0 0 20px!important}.rx-legal-v2 .rx-legal-section-num{display:inline-grid;place-items:center;width:36px;height:36px;min-width:36px;border-radius:11px;background:linear-gradient(135deg,#CAFF73,#66DEAE);color:#062019;font:800 13px Manrope;box-shadow:0 8px 20px #BAFB521f}.rx-legal-v2 .rx-legal-body :is(p,li){font-size:14.5px;line-height:1.9}.rx-legal-v2 .rx-legal-body p{margin:0 0 17px!important}.rx-legal-v2 .rx-legal-body p:last-child{margin-bottom:0!important}.rx-legal-v2 .rx-legal-body h4{font-size:17px!important;margin:23px 0 9px!important;color:#CBF5E0!important}.rx-legal-v2 .rx-legal-body ul,.rx-legal-v2 .rx-legal-body ol{padding-left:22px;margin:0 0 18px!important}.rx-legal-v2 .rx-legal-body li{padding-left:3px;margin-bottom:8px}.rx-legal-v2 .rx-legal-body li::marker{color:#BAFB52}.rx-legal-v2 .rx-legal-body strong{color:#fff;font-weight:800}.rx-legal-v2 .rx-legal-body a{font-weight:800;border-bottom:1px solid rgba(186,251,82,.45)}
+.rx-legal-v2 .rx-legal-footer-link{display:flex;justify-content:space-between;gap:16px;align-items:center;background:linear-gradient(105deg,#163c2d,#0c2526);border:1px solid rgba(186,251,82,.38);padding:24px 28px;border-radius:24px;flex-wrap:wrap}.rx-legal-v2 .rx-legal-footer-link p{margin:0!important;font-size:14px}.rx-legal-v2 .rx-legal-footer-link a{padding:12px 20px;border-radius:999px;background:linear-gradient(110deg,#C8FF69,#63DEB2);color:#092217!important;font-size:13px;font-weight:900;text-align:center}.rx-legal-v2 .rx-legal-footer-link a:hover{transform:translateY(-2px);text-decoration:none!important;box-shadow:0 0 24px #BAFB5244}
+.rx-legal-v2 .rx-legal-top{position:fixed;bottom:23px;right:23px;z-index:100;width:46px;height:46px;border:1px solid #BAFB5299;background:#12342b;color:#E6FFC9;border-radius:14px;cursor:pointer;box-shadow:0 12px 25px #0007;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s,transform .2s}.rx-legal-v2 .rx-legal-top.is-visible{opacity:1;visibility:visible}.rx-legal-v2 .rx-legal-top:hover{transform:translateY(-3px);background:#23513b}
+@media(max-width:900px){.rx-legal-v2 .rx-legal-layout{grid-template-columns:1fr;gap:22px}.rx-legal-v2 .rx-legal-sidebar{position:relative;top:auto;max-height:none}.rx-legal-v2 .rx-legal-toc{grid-template-columns:repeat(2,minmax(0,1fr))}.rx-legal-v2 .rx-legal-hero{padding-top:120px}}
+@media(max-width:600px){.rx-legal-v2 .rx-legal-container{width:calc(100% - 30px)}.rx-legal-v2 .rx-legal-hero{padding:100px 0 52px}.rx-legal-v2 .rx-legal-layout{padding:35px 0 65px;gap:18px}.rx-legal-v2 .rx-legal-article{padding:22px 18px;border-radius:20px}.rx-legal-v2 .rx-legal-toc{grid-template-columns:1fr}.rx-legal-v2 .rx-legal-sidebar{padding:15px}.rx-legal-v2 .rx-legal-heading{font-size:36px!important}.rx-legal-v2 .rx-legal-section-heading{gap:10px;font-size:20px!important}.rx-legal-v2 .rx-legal-section-num{width:32px;height:32px;min-width:32px}.rx-legal-v2 .rx-legal-body :is(p,li){font-size:14px}.rx-legal-v2 .rx-legal-footer-link{padding:20px}.rx-legal-v2 .rx-legal-footer-link a{width:100%}}
+@media(prefers-reduced-motion:reduce){.rx-legal-v2 *, .rx-legal-v2 *:before{scroll-behavior:auto!important;transition:none!important}}
+
+/* V3 — FULL-BLEED FIX: breakout of Astra/Elementor boxed containers. */
+html:has(.rx-legal-v2),body:has(.rx-legal-v2){background:#061112!important;overflow-x:clip!important}
+body:has(.rx-legal-v2) :is(#page,.site,.site-content,.content-area,.site-main,.entry-content,.ast-container,.elementor-location-single){background-color:transparent!important}
+body:has(.rx-legal-v2) .elementor-widget-html:has(.rx-legal-v2),
+body:has(.rx-legal-v2) .elementor-widget-container:has(> .rx-legal-v2){overflow:visible!important;max-width:none!important}
+.rx-legal-v2{
+  width:100vw!important;
+  width:100dvw!important;
+  max-width:none!important;
+  position:relative!important;
+  left:50%!important;
+  right:auto!important;
+  margin-left:-50vw!important;
+  margin-left:-50dvw!important;
+  margin-right:0!important;
+  padding:0!important;
+  border-inline:0!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+/* Content stays comfortably padded while the page background reaches viewport edges. */
+.rx-legal-v2 .rx-legal-container{width:min(1180px,calc(100% - 64px))!important;max-width:1180px!important;margin-inline:auto!important}
+@media(max-width:767px){
+  .rx-legal-v2 .rx-legal-container{width:calc(100% - 32px)!important;max-width:none!important}
+}
+@media(max-width:420px){.rx-legal-v2 .rx-legal-container{width:calc(100% - 28px)!important}}
+
+
+/* V4: restore visible list bullets despite Astra/Elementor theme resets. */
+.rx-legal-v2 .rx-legal-body ul.privacy-list,
+.rx-legal-v2 .rx-legal-body ul.terms-list{
+  display:block!important;list-style:none!important;
+  padding:0!important;margin:12px 0 22px!important;
+}
+.rx-legal-v2 .rx-legal-body ul.privacy-list > li,
+.rx-legal-v2 .rx-legal-body ul.terms-list > li{
+  display:block!important;position:relative!important;
+  list-style:none!important;margin:0 0 12px!important;
+  padding:3px 0 3px 31px!important;
+  color:#c5dad1!important;line-height:1.82!important;
+}
+.rx-legal-v2 .rx-legal-body ul.privacy-list > li::before,
+.rx-legal-v2 .rx-legal-body ul.terms-list > li::before{
+  content:""!important;display:block!important;position:absolute!important;
+  top:14px!important;left:3px!important;width:9px!important;height:9px!important;
+  border-radius:50%!important;background:#bafb52!important;
+  box-shadow:0 0 0 4px rgba(186,251,82,.11),0 0 11px rgba(186,251,82,.4)!important;
+}
+.rx-legal-v2 .rx-legal-body ol{list-style:decimal!important;padding-left:30px!important}
+.rx-legal-v2 .rx-legal-body ol > li{display:list-item!important;list-style:decimal!important;padding-left:5px!important}
+.rx-legal-v2 .rx-legal-body ol > li::marker{color:#bafb52!important;font-weight:800}
+@media(max-width:600px){
+  .rx-legal-v2 .rx-legal-body ul.privacy-list > li,
+  .rx-legal-v2 .rx-legal-body ul.terms-list > li{padding-left:25px!important;margin-bottom:10px!important}
+  .rx-legal-v2 .rx-legal-body ul.privacy-list > li::before,
+  .rx-legal-v2 .rx-legal-body ul.terms-list > li::before{width:8px!important;height:8px!important;top:13px!important;left:2px!important}
+}
+
+</style>
+<div class="rx-legal-v2" id="recho-legal-terms-and-conditions"><div class="rx-legal-progress" aria-hidden="true"></div>
+<section class="rx-legal-hero"><div class="rx-legal-container"><div class="rx-legal-eyebrow">RECHO AGENT · LEGAL INFORMATION</div><h1 class="rx-legal-heading">Recho Live <em>Terms and Conditions</em></h1><div class="rx-legal-intro"><p class="terms-hero__desc">Recho Live Terms and Conditions govern the use of the Recho Live platform and
+            apply to all Hosts, Agents, and platform users.</p>
+<p class="terms-hero__desc">They establish eligibility requirements, user responsibilities, platform policies,
+            rewards, prohibited activities, compliance obligations, and other legal provisions related to participation
+            in Recho Live services.</p></div><div class="rx-legal-hero-links"><a class="rx-legal-chip" href="#legal-sections">Explore Terms and Conditions</a><a class="rx-legal-chip" href="https://rechoagent.com/privacy-policy/">Read Privacy Policy</a></div></div></section>
+<div class="rx-legal-container rx-legal-layout" id="legal-sections"><aside class="rx-legal-sidebar" aria-label="Table of contents"><h2 class="rx-legal-sidebar-title">ON THIS PAGE · 14 SECTIONS</h2><nav class="rx-legal-toc" aria-label="Terms and Conditions chapters"><a href="#legal-section-1">1. Introduction</a><a href="#legal-section-2">2. Definitions</a><a href="#legal-section-3">3. Eligibility</a><a href="#legal-section-4">4. Agency Partner Responsibilities</a><a href="#legal-section-5">5. Host Responsibilities</a><a href="#legal-section-6">6. Prohibited Activities</a><a href="#legal-section-7">7. Rewards and Payments</a><a href="#legal-section-8">8. Compliance with Laws</a><a href="#legal-section-9">9. Account Suspension or Termination</a><a href="#legal-section-10">10. Limitation of Liability</a><a href="#legal-section-11">11. Legal Compliance Statement</a><a href="#legal-section-12">12. Dispute Resolution</a><a href="#legal-section-13">13. Changes to Terms</a><a href="#legal-section-14">14. Contact Information</a></nav></aside><main class="rx-legal-articles" aria-label="Terms and Conditions full content"><article class="rx-legal-article" id="legal-section-1" aria-labelledby="heading-legal-section-1"><h2 class="rx-legal-section-heading" id="heading-legal-section-1"><span class="rx-legal-section-num" aria-hidden="true">01</span><span>1. Introduction</span></h2><div class="rx-legal-body">
+<p>Welcome to Recho Live App ("Platform", "we", "our", or "us"). These Terms and Conditions govern your
+              participation as an Agency Partner or Host on our platform. By signing up or using Recho App, you agree to
+              these Terms, our Privacy Policy, and all applicable laws and regulations. If you do not agree, you must
+              discontinue using our platform immediately.</p>
+</div></article><article class="rx-legal-article" id="legal-section-2" aria-labelledby="heading-legal-section-2"><h2 class="rx-legal-section-heading" id="heading-legal-section-2"><span class="rx-legal-section-num" aria-hidden="true">02</span><span>2. Definitions</span></h2><div class="rx-legal-body">
+<ul class="terms-list" role="list">
+<li><strong>Platform:</strong> Refers to Recho.</li>
+<li><strong>Agency Partner (Agent):</strong> A registered partner who recruits new agents or hosts and
+                manages their team to earn rewards and income.</li>
+<li><strong>Host:</strong> An individual recruited by an Agency Partner to stream or provide content on
+                Recho Live App.</li>
+<li><strong>User:</strong> Any person accessing or using Recho Live.</li>
+<li><strong>Reward:</strong> Earnings or incentives given to Agency Partners or Hosts based on their
+                performance and activity on the platform.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-3" aria-labelledby="heading-legal-section-3"><h2 class="rx-legal-section-heading" id="heading-legal-section-3"><span class="rx-legal-section-num" aria-hidden="true">03</span><span>3. Eligibility</span></h2><div class="rx-legal-body">
+<ul class="terms-list" role="list">
+<li>You must be at least 18 years old.</li>
+<li>You must comply with all local and international laws regarding online business, tax obligations, and
+                digital services.</li>
+<li>You must provide accurate information during registration and verification.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-4" aria-labelledby="heading-legal-section-4"><h2 class="rx-legal-section-heading" id="heading-legal-section-4"><span class="rx-legal-section-num" aria-hidden="true">04</span><span>4. Agency Partner Responsibilities</span></h2><div class="rx-legal-body">
+<ul class="terms-list" role="list">
+<li>Recruit new agents and hosts in a fair and legal manner.</li>
+<li>Provide correct training and guidance to hosts regarding platform usage and policies.</li>
+<li>Ensure that no illegal or prohibited content is shared by recruited hosts.</li>
+<li>Maintain the confidentiality of your login credentials and account information.</li>
+<li>Ensure that all recruitment and promotions are free from fraud, misrepresentation, or spam.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-5" aria-labelledby="heading-legal-section-5"><h2 class="rx-legal-section-heading" id="heading-legal-section-5"><span class="rx-legal-section-num" aria-hidden="true">05</span><span>5. Host Responsibilities</span></h2><div class="rx-legal-body">
+<ul class="terms-list" role="list">
+<li>Follow all platform rules and community guidelines.</li>
+<li>Do not engage in any inappropriate or prohibited activities (e.g., nudity, sexual content, harassment,
+                spam).</li>
+<li>Provide genuine content and maintain professionalism while streaming.</li>
+<li>Respect other users and avoid abusive or harmful behavior.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-6" aria-labelledby="heading-legal-section-6"><h2 class="rx-legal-section-heading" id="heading-legal-section-6"><span class="rx-legal-section-num" aria-hidden="true">06</span><span>6. Prohibited Activities</span></h2><div class="rx-legal-body">
+<p>You agree NOT to:</p>
+<ul class="terms-list" role="list">
+<li>Promote underage recruitment (under 18 years).</li>
+<li>Engage in fraudulent recruitment of agents or hosts.</li>
+<li>Promote or participate in illegal content or sexual exploitation.</li>
+<li>Use fake profiles, bots, or synthetic chatbots without disclosure.</li>
+<li>Advertise or recruit using misleading or false claims.</li>
+<li>Exchange companionship or dating for money or any explicit transactional service.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-7" aria-labelledby="heading-legal-section-7"><h2 class="rx-legal-section-heading" id="heading-legal-section-7"><span class="rx-legal-section-num" aria-hidden="true">07</span><span>7. Rewards and Payments</span></h2><div class="rx-legal-body">
+<ul class="terms-list" role="list">
+<li>Rewards are calculated based on platform performance and predefined criteria.</li>
+<li>All rewards and payments will be issued according to the platform's payout schedule.</li>
+<li>The platform reserves the right to withhold or adjust payments in case of policy violations, fraud, or
+                technical errors.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-8" aria-labelledby="heading-legal-section-8"><h2 class="rx-legal-section-heading" id="heading-legal-section-8"><span class="rx-legal-section-num" aria-hidden="true">08</span><span>8. Compliance with Laws</span></h2><div class="rx-legal-body">
+<p>As an Agency Partner, you must:</p>
+<ul class="terms-list" role="list">
+<li>Comply with applicable local and international laws, including privacy laws, anti-spam laws, and
+                intellectual property laws.</li>
+<li>Ensure equal opportunity during recruitment without discrimination.</li>
+<li>Follow tax laws and declare income as required by your local tax authorities.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-9" aria-labelledby="heading-legal-section-9"><h2 class="rx-legal-section-heading" id="heading-legal-section-9"><span class="rx-legal-section-num" aria-hidden="true">09</span><span>9. Account Suspension or Termination</span></h2><div class="rx-legal-body">
+<p>We reserve the right to suspend or terminate your account if:</p>
+<ul class="terms-list" role="list">
+<li>You violate these Terms or Google Ads policies.</li>
+<li>You engage in fraudulent, abusive, or illegal behavior.</li>
+<li>You misrepresent the platform or misuse its services.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-10" aria-labelledby="heading-legal-section-10"><h2 class="rx-legal-section-heading" id="heading-legal-section-10"><span class="rx-legal-section-num" aria-hidden="true">10</span><span>10. Limitation of Liability</span></h2><div class="rx-legal-body">
+<p>Recho Live is not responsible for:</p>
+<ul class="terms-list" role="list">
+<li>Any loss of earnings caused by violation of these Terms.</li>
+<li>Any technical errors, delays, or service interruptions.</li>
+<li>Any disputes between agency partners and hosts outside the platform.</li>
+</ul>
+</div></article><article class="rx-legal-article" id="legal-section-11" aria-labelledby="heading-legal-section-11"><h2 class="rx-legal-section-heading" id="heading-legal-section-11"><span class="rx-legal-section-num" aria-hidden="true">11</span><span>11. Legal Compliance Statement</span></h2><div class="rx-legal-body">
+<p>Recho Live App strictly complies with:</p>
+<ul class="terms-list" role="list">
+<li>Privacy and data protection laws (including GDPR, if applicable).</li>
+<li>Anti-spam and advertising regulations.</li>
+<li>Google Ads policies for Dating and Companionship services.</li>
+<li>Equal opportunity and anti-discrimination laws.</li>
+</ul>
+<p>All users and partners must agree to comply with our rules and acknowledge that violations may lead to
+              suspension or legal action.</p>
+</div></article><article class="rx-legal-article" id="legal-section-12" aria-labelledby="heading-legal-section-12"><h2 class="rx-legal-section-heading" id="heading-legal-section-12"><span class="rx-legal-section-num" aria-hidden="true">12</span><span>12. Dispute Resolution</span></h2><div class="rx-legal-body">
+<p>Any dispute arising from these Terms will be resolved through arbitration in accordance with applicable
+              law. You agree not to initiate any class action or collective proceedings against the platform.</p>
+</div></article><article class="rx-legal-article" id="legal-section-13" aria-labelledby="heading-legal-section-13"><h2 class="rx-legal-section-heading" id="heading-legal-section-13"><span class="rx-legal-section-num" aria-hidden="true">13</span><span>13. Changes to Terms</span></h2><div class="rx-legal-body">
+<p>We reserve the right to modify or update these Terms at any time. Continued use of the platform after any
+              changes indicates acceptance of the updated Terms.</p>
+</div></article><article class="rx-legal-article" id="legal-section-14" aria-labelledby="heading-legal-section-14"><h2 class="rx-legal-section-heading" id="heading-legal-section-14"><span class="rx-legal-section-num" aria-hidden="true">14</span><span>14. Contact Information</span></h2><div class="rx-legal-body">
+<p>For any queries or legal notices, please contact: Email: <a class="terms-link" href="mailto:info@recho.live">info@recho.live</a></p>
+</div></article><div class="rx-legal-footer-link"><p>Explore the related Recho Live legal document.</p><a href="https://rechoagent.com/privacy-policy/">View Privacy Policy →</a></div></main></div><button class="rx-legal-top" type="button" aria-label="Back to top">↑</button></div>
+<script>(function(){function init(){document.querySelectorAll('.rx-legal-v2').forEach(function(root){if(root.dataset.initialized)return;root.dataset.initialized='1';const links=Array.from(root.querySelectorAll('.rx-legal-toc a'));const cards=Array.from(root.querySelectorAll('.rx-legal-article'));const prog=root.querySelector('.rx-legal-progress');const top=root.querySelector('.rx-legal-top');function refresh(){let y=window.scrollY||document.documentElement.scrollTop;let room=document.documentElement.scrollHeight-window.innerHeight;if(prog)prog.style.width=(room?Math.min(100,y/room*100):0)+'%';if(top)top.classList.toggle('is-visible',y>550);let current=cards[0];for(const card of cards){if(card.getBoundingClientRect().top<window.innerHeight*.37)current=card}links.forEach(a=>{let active=current&&a.getAttribute('href')==='#'+current.id;a.classList.toggle('is-active',!!active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}window.addEventListener('scroll',refresh,{passive:true});window.addEventListener('resize',refresh);if(top)top.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'}));refresh()})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script>

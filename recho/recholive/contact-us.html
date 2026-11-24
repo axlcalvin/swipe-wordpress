@@ -1,0 +1,271 @@
+<!-- RECHO LIVE CONTACT V1 | Elementor BODY ONLY -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+.rx-info-page{--ink:#0a3029;--sub:#56776b;--line:#d0eddf;--mint:#70eac0;--lime:#dfff79;--soft:#f5fff9;--shadow:0 21px 55px rgba(15,80,48,.075);font-family:Manrope,Arial,sans-serif;font-size:15px;line-height:1.77;color:var(--ink);background:linear-gradient(180deg,#ffffff 0%,#f5fff9 33%,#fff 61%,#f4fff8 100%);overflow:hidden;isolation:isolate}
+.rx-info-page *,.rx-info-page *:before,.rx-info-page *:after{box-sizing:border-box}
+.rx-info-page a{color:inherit;text-decoration:none}
+.rx-info-page button,.rx-info-page input,.rx-info-page select,.rx-info-page textarea{font:inherit}
+.rx-info-page .container{width:min(calc(100% - 48px),1180px);margin:0 auto;max-width:1180px}
+.rx-info-page section{position:relative;padding:88px 0}
+.rx-info-page section:nth-of-type(even):not(.hero){background:linear-gradient(115deg,#f4fff8,#fafffc 50%,#f0fff7)}
+.rx-info-page :is(h1,h2,h3){font-family:'Space Grotesk',Manrope,sans-serif;color:var(--ink);letter-spacing:-.042em;line-height:1.14}
+.rx-info-page h1{font-size:clamp(39px,5vw,70px);font-weight:700;margin:0 0 25px}
+.rx-info-page h2{font-size:clamp(29px,3.4vw,45px);margin:0 0 17px;font-weight:700}
+.rx-info-page h3{font-size:20px;margin:0 0 10px}
+.rx-info-page p{color:var(--sub);margin:0 0 15px}
+.rx-info-page .hero{padding:70px 0 80px;background:radial-gradient(ellipse at 4% 12%,#e9ffc7 0%,transparent 30%),radial-gradient(ellipse at 91% 28%,#ccfdf0 0%,transparent 33%),linear-gradient(128deg,#fff,#f4fff9 62%,#fff);border-bottom:1px solid #daeee3}
+.rx-info-page .hero .container{position:relative;min-height:380px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px}
+.rx-info-page .hero__content{position:relative;z-index:2;max-width:750px}
+.rx-info-page .hero__content:before{content:'RECHO LIVE  /  OFFICIAL PLATFORM';display:inline-flex;max-width:100%;border-radius:100px;border:1px solid #b7e8ce;background:linear-gradient(110deg,#f4ffdc,#eafff8);padding:9px 17px;margin-bottom:23px;color:#167959;font-size:11px;letter-spacing:.14em;font-weight:800}
+.rx-info-page .hero__description{font-size:17px;line-height:1.96;max-width:660px;margin:0}
+.rx-info-page .rx-hero-scene{width:100%;min-height:365px;position:relative;display:flex;align-items:center;justify-content:center}
+.rx-info-page .rx-hero-orb{position:absolute;width:82%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 34% 27%,#f5ffa9 0%,#89f5cc 41%,#50d4b7 74%,#d0fff2 100%);filter:drop-shadow(0 20px 50px #82d9bb66)}
+.rx-info-page .rx-hero-orb:before{content:'';position:absolute;inset:-15px;border:1px dashed #57cba666;border-radius:50%;transform:rotate(-20deg)}
+.rx-info-page .rx-scene-panel{position:relative;z-index:2;width:78%;padding:25px;background:#fffffff2;border:1px solid #c6e9d7;backdrop-filter:blur(14px);border-radius:28px;box-shadow:0 24px 60px #0c60402c;transform:rotate(-6deg)}
+.rx-info-page .rx-scene-top{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px}
+.rx-info-page .rx-scene-logo{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;font-size:24px;font-weight:800;background:linear-gradient(125deg,#dfff79,#66e9af)}
+.rx-info-page .rx-scene-art{position:relative;display:flex;gap:8px;align-items:end;height:135px;border-radius:19px;padding:16px;margin:18px 0;background:linear-gradient(130deg,#113f35,#21775f);overflow:hidden}
+.rx-info-page .rx-scene-art i{display:block;flex:1;border-radius:12px 12px 5px 5px;background:linear-gradient(180deg,#deff7c,#5ce5c1);height:50%}
+.rx-info-page .rx-scene-art i:nth-child(2){height:83%}.rx-info-page .rx-scene-art i:nth-child(3){height:64%}.rx-info-page .rx-scene-art i:nth-child(4){height:100%}
+.rx-info-page .rx-scene-bottom{display:flex;gap:9px;flex-wrap:wrap}
+.rx-info-page .rx-scene-bottom span{font-size:11px;font-weight:700;background:#e9fff2;color:#176c4b;border:1px solid #c4ead3;border-radius:30px;padding:6px 10px}
+.rx-info-page .rx-scene-float{position:absolute;z-index:3;left:-6%;bottom:10%;padding:12px 18px;background:#fff;border:1px solid #cbecd8;border-radius:17px;box-shadow:0 15px 35px #1d6a3c21;font-size:12px;font-weight:800;color:#176a4d;transform:rotate(5deg)}
+.rx-info-page :is(.about-intro__header,.trust__header,.about-services__header,.about-provides__header,.contact-info__header,.contact-form__header,.faq__header){margin-bottom:30px}
+.rx-info-page :is(.about-intro__header,.trust__header,.about-services__header,.about-provides__header,.contact-info__header,.contact-form__header,.faq__header):before{content:'EXPLORE RECHO LIVE';display:inline-block;border:1px solid #cbedd9;border-radius:100px;padding:7px 14px;margin-bottom:17px;font:800 11px Manrope,sans-serif;letter-spacing:.12em;color:#16795c;background:#effff4}
+.rx-info-page .about-intro__header:before{content:'01  /  OUR STORY'}
+.rx-info-page .trust__header:before{content:'02  /  COMMUNITY TRUST'}
+.rx-info-page .about-services__header:before{content:'03  /  WHAT WE DO'}
+.rx-info-page .about-provides__header:before{content:'04  /  OUR COMMITMENT'}
+.rx-info-page .contact-info__header:before{content:'01  /  CONNECT WITH US'}
+.rx-info-page .contact-form__header:before{content:'02  /  SEND A MESSAGE'}
+.rx-info-page .faq__header:before{content:'03  /  HELP CENTER'}
+.rx-info-page :is(.trust__subtitle,.about-services__subtitle,.about-provides__subtitle,.contact-info__subtitle,.contact-form__subtitle){max-width:850px;font-size:15px;line-height:1.85}
+.rx-info-page .about-intro__content{background:linear-gradient(125deg,#fff,#effff6);border:1px solid var(--line);border-radius:30px;padding:39px 44px;box-shadow:var(--shadow);display:grid;gap:10px}
+.rx-info-page .about-intro__content p{font-size:16px;line-height:2;margin:0}
+.rx-info-page :is(.trust__grid,.about-services__grid,.about-provides__grid,.contact-info__grid){display:grid;gap:20px}
+.rx-info-page .trust__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rx-info-page .about-services__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rx-info-page .about-provides__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rx-info-page .contact-info__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rx-info-page :is(.trust__card,.about-services__card,.about-provides__card,.contact-info__card){background:linear-gradient(150deg,#fff,#f6fff9);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:29px;min-width:0;transition:border-color .2s,box-shadow .2s,transform .2s}
+.rx-info-page :is(.trust__card,.about-services__card,.about-provides__card,.contact-info__card):hover{transform:translateY(-4px);border-color:#65dea8;box-shadow:0 26px 54px #17945b1d}
+.rx-info-page :is(.about-services__card,.about-provides__card,.contact-info__card){display:flex;flex-direction:column;align-items:flex-start}
+.rx-info-page :is(.about-services__icon,.about-provides__icon,.contact-info__icon){width:54px;height:54px;flex:0 0 54px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,#dfff79,#80eec2);color:#115941;box-shadow:0 10px 24px #41bc8130;margin-bottom:20px}
+.rx-info-page :is(.about-services__icon,.about-provides__icon,.contact-info__icon) svg{width:25px;height:25px}
+.rx-info-page :is(.about-services__body,.about-provides__body,.contact-info__body){min-width:0}
+.rx-info-page :is(.about-services__card-desc,.about-provides__card-desc,.contact-info__card-desc){font-size:14px;line-height:1.83;margin:0}
+.rx-info-page .trust__stat{font-family:'Space Grotesk';font-size:clamp(38px,4.2vw,58px);font-weight:700;letter-spacing:-.055em;color:#0c8458;line-height:1.2;margin-bottom:9px}
+.rx-info-page .trust__stat span{font-size:.5em;vertical-align:middle}
+.rx-info-page .trust__label{font-size:18px;font-weight:800;margin-bottom:11px}
+.rx-info-page .trust__desc{font-size:13px;line-height:1.8;margin:0}
+.rx-info-page .trust__note{font-size:12px;margin:17px 0 0}
+.rx-info-page .cta-banner{padding:76px 0 95px;background:linear-gradient(160deg,#f9fffb,#eefdf5)}
+.rx-info-page .cta-banner__card{padding:54px;border-radius:34px;background:radial-gradient(circle at 87% 10%,#2c9c7466,transparent 36%),linear-gradient(120deg,#0b3029,#175843);color:#fff;box-shadow:0 25px 70px #18574439;border:1px solid #306b53}
+.rx-info-page .cta-banner__card h2{color:#fff;max-width:760px}
+.rx-info-page .cta-banner__subtitle{color:#d4eee0;font-size:16px;max-width:800px;line-height:1.9}
+.rx-info-page .cta-banner__actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.rx-info-page .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:50px;border-radius:999px;padding:13px 25px;font-weight:800;transition:transform .2s,box-shadow .2s;cursor:pointer;border:1px solid transparent}
+.rx-info-page .btn:hover{transform:translateY(-2px);box-shadow:0 13px 27px #42e5a72e}
+.rx-info-page .btn--primary{background:linear-gradient(105deg,#dfff79,#75eebd);color:#0b3529;border-color:#b9e9a2}
+.rx-info-page .btn--light-outline{background:#ffffff12;color:#fff;border-color:#96d9b8}
+.rx-info-page .btn--light-outline:hover{background:#ffffff26}
+.rx-info-page .contact-info .contact-info__grid{width:min(calc(100% - 48px),1180px);max-width:1180px;margin:0 auto}
+.rx-info-page .contact-info__header{width:min(calc(100% - 48px),1180px);max-width:1180px;margin:0 auto 28px}
+.rx-info-page .contact-info__card{position:relative;overflow:hidden}
+.rx-info-page .contact-info__card:after{content:'↗';position:absolute;right:27px;top:27px;color:#20a06a;font-size:20px}
+.rx-info-page .contact-info__detail{display:inline-flex;max-width:100%;overflow-wrap:anywhere;margin-top:15px;border-radius:14px;padding:7px 12px;background:linear-gradient(100deg,#efffdc,#e5fff4);border:1px solid #d4ecc7;font-weight:800;color:#136144;font-size:13px}
+.rx-info-page .contact-form__wrapper{max-width:100%;padding:44px 48px;border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,#fff,#f7fffa);box-shadow:var(--shadow)}
+.rx-info-page .contact-form__form{display:grid;gap:20px}
+.rx-info-page .contact-form__row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.rx-info-page .contact-form__field{min-width:0;display:flex;flex-direction:column;gap:9px}
+.rx-info-page .contact-form__label{font-size:13px;font-weight:800;color:#244d3a}
+.rx-info-page :is(.contact-form__input,.contact-form__select,.contact-form__textarea){display:block;width:100%;min-width:0;background:#fff;color:#173e31;border:1px solid #cfe9d9;border-radius:15px;padding:15px 17px;outline:none;transition:border-color .2s,box-shadow .2s;box-shadow:0 7px 21px #195b3610}
+.rx-info-page :is(.contact-form__input,.contact-form__select,.contact-form__textarea):focus{border-color:#33c98a;box-shadow:0 0 0 4px #83e9b82d}
+.rx-info-page .contact-form__textarea{min-height:160px;resize:vertical}
+.rx-info-page .contact-form__actions{margin-top:8px}
+.rx-info-page .contact-form__actions .btn{border:0;min-width:190px}
+.rx-info-page .contact-form__status{padding:14px 18px;border-radius:14px;border:1px solid #cbe7dc;background:#effff5;color:#1d6948;font-weight:700}
+.rx-info-page .contact-form__status[hidden]{display:none}
+.rx-info-page .contact-form__status.is-error{border-color:#f4c5c5;color:#a52929;background:#fff4f4}
+.rx-info-page .faq__accordion{max-width:100%;width:100%;margin:0;display:grid;gap:13px}
+.rx-info-page .faq__item{width:100%;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 14px 38px #1b714113;overflow:hidden}
+.rx-info-page .faq__question{display:flex;justify-content:space-between;align-items:center;gap:20px;width:100%;padding:23px 27px;border:0;background:transparent;text-align:left;color:#10362b;font-size:16px;font-weight:800;cursor:pointer;transition:background .2s}
+.rx-info-page .faq__question:hover,.rx-info-page .faq__item.is-open .faq__question{background:linear-gradient(100deg,#f1ffdf,#edfff7)}
+.rx-info-page .faq__chevron{color:#078858;flex-shrink:0;transition:transform .25s}
+.rx-info-page .faq__item.is-open .faq__chevron{transform:rotate(180deg)}
+.rx-info-page .faq__answer{overflow:hidden;max-height:0;transition:max-height .3s ease}
+.rx-info-page .faq__answer-text{padding:0 27px 24px;margin:0;line-height:1.9}
+@media(max-width:1050px){.rx-info-page .hero .container{grid-template-columns:1fr  .75fr}.rx-info-page :is(.about-provides__grid,.about-services__grid,.contact-info__grid){grid-template-columns:repeat(2,minmax(0,1fr))}.rx-info-page section{padding:70px 0}}
+@media(max-width:760px){.rx-info-page .container,.rx-info-page .contact-info__header,.rx-info-page .contact-info .contact-info__grid{width:calc(100% - 28px)}.rx-info-page section{padding:52px 0}.rx-info-page .hero{padding:45px 0 55px}.rx-info-page .hero .container{grid-template-columns:1fr;gap:10px}.rx-info-page .hero__content{max-width:100%}.rx-info-page .hero__description{font-size:14px}.rx-info-page .rx-hero-scene{min-height:290px;max-width:420px;margin:10px auto 0;width:100%}.rx-info-page .rx-hero-orb{width:69%}.rx-info-page .rx-scene-panel{width:72%;padding:18px}.rx-info-page .about-intro__content,.rx-info-page .contact-form__wrapper{padding:24px 21px}.rx-info-page :is(.trust__grid,.about-services__grid,.about-provides__grid,.contact-info__grid,.contact-form__row){grid-template-columns:1fr}.rx-info-page :is(.trust__card,.about-services__card,.about-provides__card,.contact-info__card){padding:24px}.rx-info-page .cta-banner__card{padding:31px 24px}.rx-info-page .cta-banner__actions{flex-direction:column}.rx-info-page .cta-banner__actions .btn{width:100%}.rx-info-page .faq__question{padding:19px;font-size:14px}.rx-info-page .faq__answer-text{padding:0 19px 19px}}
+@media(prefers-reduced-motion:reduce){.rx-info-page *, .rx-info-page *:before,.rx-info-page *:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+<div class="rx-info-page rx-info-page--contact">
+<!-- HERO SECTION -->
+<section aria-label="Hero" class="hero hero--contact">
+<div class="container">
+<div class="hero__content hero__content--center">
+<h1 class="hero__title">Get in Touch With Recho Live Agency</h1>
+<p class="hero__description">Have questions about becoming a host, building your own agency, or
+                    partnering with Recho Live Agency? Our team is here to provide the guidance and support you need to
+                    get started.</p>
+</div>
+<div aria-hidden="true" class="rx-hero-scene"><div class="rx-hero-orb"></div><div class="rx-scene-panel"><div class="rx-scene-top"><span class="rx-scene-logo">R</span><span>Recho Live</span></div><div class="rx-scene-art"><i></i><i></i><i></i><i></i></div><div class="rx-scene-bottom"><span>LIVE COMMUNITY</span><span>GLOBAL NETWORK</span><span>HOST &amp; AGENCY</span></div></div><div class="rx-scene-float">● Real Connections &amp; Growth</div></div></div>
+</section>
+<!-- CONTACT INFORMATION SECTION -->
+<section aria-label="Contact Information" class="contact-info">
+<div class="contact-info__header">
+<h2 class="contact-info__title">Contact Information</h2>
+<p class="contact-info__subtitle">Reach out through your preferred channel, and we'll connect you with
+                    the right team as quickly as possible.</p>
+</div>
+<div class="contact-info__grid">
+<a class="contact-info__card" href="https://wa.me/60163108373" rel="noopener noreferrer" target="_blank">
+<div aria-hidden="true" class="contact-info__icon">
+<svg class="lucide lucide-message-circle-icon lucide-message-circle" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+</svg>
+</div>
+<div class="contact-info__body">
+<h3 class="contact-info__card-title">WhatsApp</h3>
+<p class="contact-info__card-desc">Quick support for registration, onboarding, and general
+                            questions.</p>
+<span class="contact-info__detail">+60 16-310 8373</span>
+</div>
+</a>
+<a class="contact-info__card" href="https://t.me/Rechoservice" rel="noopener noreferrer" target="_blank">
+<div aria-hidden="true" class="contact-info__icon">
+<svg class="lucide lucide-send-icon lucide-send" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+<path d="m21.854 2.147-10.94 10.939"></path>
+</svg>
+</div>
+<div class="contact-info__body">
+<h3 class="contact-info__card-title">Telegram</h3>
+<p class="contact-info__card-desc">Connect with our support team and stay updated with community
+                            announcements.</p>
+<span class="contact-info__detail">@Rechoservice</span>
+</div>
+</a>
+<a class="contact-info__card" href="https://wa.me/62882000279998" rel="noopener noreferrer" target="_blank">
+<div aria-hidden="true" class="contact-info__icon">
+<svg class="lucide lucide-message-circle-icon lucide-message-circle" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+</svg>
+</div>
+<div class="contact-info__body">
+<h3 class="contact-info__card-title">WhatsApp</h3>
+<p class="contact-info__card-desc">Quick support for registration, onboarding, and general
+                            questions.</p>
+<span class="contact-info__detail">+62 882-0002-79998</span>
+</div>
+</a>
+</div>
+</section>
+<!-- CONTACT FORM SECTION -->
+<section aria-label="Send Us a Message" class="contact-form">
+<div class="container">
+<div class="contact-form__wrapper">
+<div class="contact-form__header">
+<h2 class="contact-form__title">Send Us a Message</h2>
+<p class="contact-form__subtitle">Complete the form below, and our team will get back to you as soon
+                        as possible.</p>
+</div>
+<form action="https://formsubmit.co/ajax/recholiveofficial@gmail.com" class="contact-form__form" data-contact-form="" id="rx-live-contact-form" method="POST" novalidate="">
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="New message from Recho Live contact form"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input data-replyto-field="" name="_replyto" type="hidden" value=""/>
+<input data-whatsapp-link-field="" name="whatsapp-link" type="hidden" value=""/>
+<div class="contact-form__row">
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-full-name">Full Name</label>
+<input class="contact-form__input" id="rx-live-full-name" name="full-name" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-email">Email Address</label>
+<input class="contact-form__input" id="rx-live-email" name="email" placeholder="Enter your email address" required="" type="email"/>
+</div>
+</div>
+<div class="contact-form__row">
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-whatsapp">WhatsApp Number</label>
+<input class="contact-form__input" id="rx-live-whatsapp" name="whatsapp" placeholder="Enter your WhatsApp number" required="" type="tel"/>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-subject">Subject</label>
+<input class="contact-form__input" id="rx-live-subject" name="subject" placeholder="Enter message subject" required="" type="text"/>
+</div>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-category">Support Category</label>
+<select class="contact-form__select" id="rx-live-category" name="category" required="">
+<option disabled="" selected="" value="">Select a category</option>
+<option value="host-registration">Host Registration</option>
+<option value="agency-registration">Agency Registration</option>
+<option value="general-support">General Support</option>
+<option value="partnership">Partnership</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="contact-form__field">
+<label class="contact-form__label" for="rx-live-message">Message</label>
+<textarea class="contact-form__textarea" id="rx-live-message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+</div>
+<div class="contact-form__actions">
+<button class="btn btn--primary" type="submit">Send Message</button>
+</div>
+<div aria-live="polite" class="contact-form__status" hidden="" role="status"></div>
+</form>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION -->
+<section aria-label="Frequently Asked Questions" class="faq">
+<div class="container">
+<div class="faq__header">
+<h2 class="faq__title">FAQ</h2>
+</div>
+<div class="faq__accordion">
+<div class="faq__item">
+<button aria-controls="faq-contact-1" aria-expanded="false" class="faq__question" type="button">
+<span class="faq__question-text">How long does it take to receive a response?</span>
+<svg aria-hidden="true" class="faq__chevron" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<div class="faq__answer" id="faq-contact-1">
+<p class="faq__answer-text">Most inquiries receive a response within one business day.</p>
+</div>
+</div>
+<div class="faq__item">
+<button aria-controls="faq-contact-2" aria-expanded="false" class="faq__question" type="button">
+<span class="faq__question-text">Which contact should I use?</span>
+<svg aria-hidden="true" class="faq__chevron" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<div class="faq__answer" id="faq-contact-2">
+<p class="faq__answer-text">For quick assistance or business inquiries, WhatsApp is recommended.
+                        </p>
+</div>
+</div>
+<div class="faq__item">
+<button aria-controls="faq-contact-3" aria-expanded="false" class="faq__question" type="button">
+<span class="faq__question-text">Can I apply as a host or agency partner through
+                            WhatsApp?</span>
+<svg aria-hidden="true" class="faq__chevron" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<div class="faq__answer" id="faq-contact-3">
+<p class="faq__answer-text">Yes. Our team can guide you through the registration process and
+                            answer any questions before you get started.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>(function(){function init(){const root=document.querySelector('.rx-info-page--contact');if(!root)return;const items=root.querySelectorAll('.faq__item');items.forEach(function(item){const q=item.querySelector('.faq__question'),a=item.querySelector('.faq__answer');if(!q||!a)return;q.addEventListener('click',function(){let active=q.getAttribute('aria-expanded')==='true';items.forEach(function(other){other.classList.remove('is-open');other.querySelector('.faq__question')?.setAttribute('aria-expanded','false');const answer=other.querySelector('.faq__answer');if(answer)answer.style.maxHeight='0px'});if(!active){item.classList.add('is-open');q.setAttribute('aria-expanded','true');a.style.maxHeight=a.scrollHeight+'px'}})});let form=root.querySelector('[data-contact-form]');if(!form)return;const status=form.querySelector('.contact-form__status'),button=form.querySelector('button[type=submit]'),reply=form.querySelector('[data-replyto-field]'),wa=form.querySelector('[data-whatsapp-link-field]');form.addEventListener('submit',async function(e){e.preventDefault();if(!form.reportValidity())return;if(button.disabled)return;const email=form.querySelector('[name=email]')?.value||'',phone=form.querySelector('[name=whatsapp]')?.value||'';if(reply)reply.value=email;if(wa){const digits=phone.replace(/[^0-9]/g,'');wa.value=digits?'https://wa.me/'+digits:''}button.disabled=true;const original=button.textContent;button.textContent='Sending...';status.hidden=true;try{const response=await fetch(form.action,{method:'POST',headers:{Accept:'application/json'},body:new FormData(form)});if(!response.ok)throw new Error('HTTP '+response.status);status.textContent='Thank you. Your message has been sent successfully.';status.className='contact-form__status is-success';status.hidden=false;form.reset()}catch(error){status.textContent='Sorry, something went wrong. Please try again or contact us directly via WhatsApp.';status.className='contact-form__status is-error';status.hidden=false}finally{button.textContent=original;button.disabled=false}})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script>

@@ -1,0 +1,584 @@
+<!-- POPPO LIVE ASIA — FOOTER V1.2 · Header V1.2 visual match | Elementor Theme Builder | paste entire file in ONE HTML widget -->
+<style>
+    /* POPPO ASIA FOOTER V1 — true full-bleed / scoped to this Theme Builder component */
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+    #poppo-neon-footer {
+        --pf-bg: #080B16;
+        --pf-panel: #10152B;
+        --pf-card: #192039;
+        --pf-purple: #7840FF;
+        --pf-pink: #FF25BC;
+        --pf-cyan: #00C8FF;
+        --pf-lime: #B8F500;
+        --pf-orange: #FFAC12;
+        --pf-white: #F8FAFF;
+        --pf-muted: #C5C8E3;
+        position: relative !important;
+        left: 50% !important;
+        width: 100vw !important;
+        max-width: none !important;
+        margin: 0 0 0 -50vw !important;
+        padding: 0 !important;
+        overflow: clip;
+        background: #080B16 !important;
+        color: var(--pf-white) !important;
+        font: 400 14px/1.7 Manrope, Arial, sans-serif !important;
+        box-sizing: border-box !important;
+        isolation: isolate;
+        border: 0 !important;
+        box-shadow: none !important
+    }
+
+    #poppo-neon-footer *,
+    #poppo-neon-footer *::before,
+    #poppo-neon-footer *::after {
+        box-sizing: border-box !important
+    }
+
+    #poppo-neon-footer a {
+        text-decoration: none !important
+    }
+
+    #poppo-neon-footer::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at 7% 18%, rgba(120, 64, 255, .15), transparent 42%), radial-gradient(ellipse at 91% 77%, rgba(0, 200, 255, .075), transparent 38%);
+        pointer-events: none;
+        z-index: -1
+    }
+
+    #poppo-neon-footer .pf-neon-line {
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, #7840FF 22%, #FF25BC 50%, #00C8FF 76%, transparent);
+        opacity: .82
+    }
+
+    #poppo-neon-footer .pf-inner {
+        width: min(1240px, calc(100% - 50px));
+        margin: 0 auto !important;
+        padding: 64px 0 0 !important
+    }
+
+    #poppo-neon-footer .pf-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 27px 30px;
+        margin: 0 0 52px;
+        border: 1px solid rgba(123, 87, 255, .38);
+        border-radius: 25px;
+        background: linear-gradient(112deg, rgba(120, 64, 255, .16), rgba(255, 37, 188, .095) 50%, rgba(0, 200, 255, .06));
+        box-shadow: inset 0 1px rgba(255, 255, 255, .07)
+    }
+
+    #poppo-neon-footer .pf-cta h2 {
+        font: 700 clamp(20px, 2.1vw, 28px)/1.28 'Space Grotesk', sans-serif !important;
+        color: #fff !important;
+        margin: 0 0 7px !important;
+        letter-spacing: -.035em !important
+    }
+
+    #poppo-neon-footer .pf-cta p {
+        font: 500 13px/1.65 Manrope, sans-serif !important;
+        color: var(--pf-muted) !important;
+        margin: 0 !important
+    }
+
+    #poppo-neon-footer .pf-cta-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-shrink: 0
+    }
+
+    #poppo-neon-footer .pf-btn {
+        display: inline-flex;
+        min-height: 45px;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 18px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 200, 255, .54);
+        font: 800 12px/1.25 Manrope, sans-serif !important;
+        color: #9FEAFF !important;
+        background: rgba(0, 200, 255, .075);
+        transition: transform .2s, box-shadow .2s
+    }
+
+    #poppo-neon-footer .pf-btn--primary {
+        border-color: transparent;
+        color: #fff !important;
+        background: linear-gradient(110deg, #FF25BC, #7840FF);
+        box-shadow: 0 8px 20px rgba(120, 64, 255, .19)
+    }
+
+    #poppo-neon-footer .pf-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 23px rgba(255, 37, 188, .19)
+    }
+
+    #poppo-neon-footer .pf-grid {
+        display: grid;
+        grid-template-columns: minmax(260px, 1.3fr) minmax(175px, .85fr) minmax(240px, 1fr);
+        gap: clamp(24px, 5vw, 72px);
+        padding: 0 0 54px
+    }
+
+    #poppo-neon-footer .pf-brand img {
+        display: block;
+        width: 159px;
+        height: auto;
+        max-height: 70px;
+        object-fit: contain;
+        object-position: left center;
+        filter: drop-shadow(0 3px 16px rgba(120, 64, 255, .14))
+    }
+
+    #poppo-neon-footer .pf-brand p {
+        max-width: 335px;
+        margin: 19px 0 22px !important;
+        color: #CBD0E8 !important;
+        font-size: 14px !important;
+        line-height: 1.75 !important
+    }
+
+    #poppo-neon-footer .pf-brand .pf-brandtag {
+        font: 700 10px/1.6 Manrope, sans-serif;
+        color: var(--pf-lime) !important;
+        letter-spacing: .19em;
+        text-transform: uppercase
+    }
+
+    #poppo-neon-footer .pf-heading {
+        display: block !important;
+        margin: 3px 0 21px !important;
+        color: #FFF !important;
+        font: 700 16px/1.35 'Space Grotesk', sans-serif !important;
+        letter-spacing: -.02em !important
+    }
+
+    #poppo-neon-footer .pf-heading:after {
+        content: '';
+        display: block;
+        width: 44px;
+        height: 2px;
+        border-radius: 2px;
+        margin-top: 11px;
+        background: linear-gradient(90deg, #FF25BC, #7840FF, #00C8FF)
+    }
+
+    #poppo-neon-footer .pf-links,
+    #poppo-neon-footer .pf-contacts {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: grid;
+        gap: 12px;
+        list-style: none !important
+    }
+
+    #poppo-neon-footer .pf-links li,
+    #poppo-neon-footer .pf-contacts li {
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important
+    }
+
+    #poppo-neon-footer .pf-links a,
+    #poppo-neon-footer .pf-contacts a {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: #CBD0E8 !important;
+        font-size: 13px !important;
+        line-height: 1.65 !important;
+        font-weight: 600 !important;
+        overflow-wrap: anywhere;
+        transition: color .2s, transform .2s
+    }
+
+    #poppo-neon-footer .pf-links a:hover,
+    #poppo-neon-footer .pf-contacts a:hover {
+        color: #fff !important;
+        transform: translateX(3px)
+    }
+
+    #poppo-neon-footer .pf-contacts svg {
+        width: 19px;
+        height: 19px;
+        flex: 0 0 19px;
+        color: var(--pf-cyan)
+    }
+
+    #poppo-neon-footer .pf-contacts li:nth-child(1) svg {
+        color: var(--pf-lime)
+    }
+
+    #poppo-neon-footer .pf-contacts li:nth-child(3) svg {
+        color: var(--pf-pink)
+    }
+
+    #poppo-neon-footer .pf-contacts li:nth-child(4) svg {
+        color: #E5CEFF
+    }
+
+    #poppo-neon-footer .pf-bottom {
+        border-top: 1px solid rgba(152, 142, 209, .21);
+        padding: 21px 0 24px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px
+    }
+
+    #poppo-neon-footer .pf-bottom p {
+        color: #A9AEC8 !important;
+        font-size: 12px !important;
+        margin: 0 !important
+    }
+
+    #poppo-neon-footer .pf-bottom span {
+        font-size: 11px;
+        color: #9197B5 !important
+    }
+
+    #poppo-neon-footer :focus-visible {
+        outline: 2px solid #00C8FF !important;
+        outline-offset: 3px !important
+    }
+
+    /* Elementor footer template breakout: remove inherited spacing only inside footer location. */
+    body:has(#poppo-neon-footer) .elementor-location-footer,
+    body:has(#poppo-neon-footer) .elementor-location-footer>.elementor-element,
+    body:has(#poppo-neon-footer) .elementor-location-footer>.e-con,
+    body:has(#poppo-neon-footer) [data-elementor-type='footer'] {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important
+    }
+
+    body:has(#poppo-neon-footer) .elementor-location-footer .elementor-widget-html:has(#poppo-neon-footer),
+    body:has(#poppo-neon-footer) .elementor-location-footer .elementor-widget-html:has(#poppo-neon-footer)>.elementor-widget-container {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none !important
+    }
+
+    @media(max-width:980px) {
+        #poppo-neon-footer .pf-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 35px
+        }
+
+        #poppo-neon-footer .pf-brand {
+            grid-column: 1/-1
+        }
+
+        #poppo-neon-footer .pf-cta {
+            flex-direction: column;
+            align-items: flex-start
+        }
+    }
+
+    @media(max-width:600px) {
+        #poppo-neon-footer .pf-inner {
+            width: calc(100% - 30px);
+            padding-top: 43px !important
+        }
+
+        #poppo-neon-footer .pf-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+            padding-bottom: 32px
+        }
+
+        #poppo-neon-footer .pf-brand {
+            grid-column: auto
+        }
+
+        #poppo-neon-footer .pf-cta {
+            padding: 20px 19px;
+            margin-bottom: 38px;
+            border-radius: 19px
+        }
+
+        #poppo-neon-footer .pf-cta-actions {
+            width: 100%
+        }
+
+        #poppo-neon-footer .pf-btn {
+            flex: 1;
+            white-space: nowrap
+        }
+
+        #poppo-neon-footer .pf-bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 20px !important
+        }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+        #poppo-neon-footer * {
+            transition: none !important
+        }
+    }
+
+    /* Poppo Footer V1.2 — harmonized with approved Header V1.2 gradient.
+   All overrides are scoped, Elementor-safe, and preserve original footer content. */
+    #poppo-neon-footer {
+        --pf-blue: #3154E9;
+        --pf-violet: #6740EF;
+        --pf-magenta: #A52BCF;
+        --pf-rose: #D41491;
+        --pf-neon-gradient: linear-gradient(105deg, #3154E9 0%, #6740EF 43%, #A52BCF 69%, #D41491 100%);
+        --pf-neon-border: linear-gradient(105deg, #6488FF 0%, #A579FF 48%, #FF62CB 100%);
+        background: linear-gradient(170deg, #090D1E 0%, #10152B 42%, #080B16 100%) !important;
+    }
+
+    #poppo-neon-footer::before {
+        background: radial-gradient(ellipse at 4% 12%, rgba(49, 84, 233, .17), transparent 43%),
+            radial-gradient(ellipse at 94% 54%, rgba(212, 20, 145, .13), transparent 39%),
+            radial-gradient(ellipse at 56% 2%, rgba(103, 64, 239, .14), transparent 49%);
+    }
+
+    #poppo-neon-footer .pf-neon-line {
+        height: 3px;
+        opacity: 1;
+        background: linear-gradient(90deg, transparent 0%, #3154E9 16%, #6740EF 42%, #A52BCF 70%, #D41491 90%, transparent 100%);
+        box-shadow: 0 0 16px rgba(103, 64, 239, .35), 0 0 25px rgba(212, 20, 145, .19);
+    }
+
+    #poppo-neon-footer .pf-cta {
+        border: 1px solid transparent !important;
+        background: linear-gradient(115deg, rgba(20, 26, 58, .97), rgba(29, 20, 64, .97) 54%, rgba(33, 18, 56, .95)) padding-box,
+            var(--pf-neon-border) border-box !important;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .19), 0 0 21px rgba(103, 64, 239, .12), inset 0 1px 0 rgba(255, 255, 255, .10) !important;
+    }
+
+    #poppo-neon-footer .pf-heading::after {
+        background: var(--pf-neon-gradient) !important;
+        width: 52px;
+        height: 3px;
+        box-shadow: 0 0 12px rgba(103, 64, 239, .27);
+    }
+
+    #poppo-neon-footer .pf-brand .pf-brandtag {
+        color: #B7A5FF !important
+    }
+
+    #poppo-neon-footer .pf-brand img {
+        filter: drop-shadow(0 3px 16px rgba(103, 64, 239, .23))
+    }
+
+    /* Navigation links: pill-style neon hover plus active only for the current URL. */
+    #poppo-neon-footer .pf-links a,
+    #poppo-neon-footer .pf-contacts a {
+        position: relative;
+        display: inline-flex;
+        max-width: 100%;
+        min-height: 38px;
+        padding: 7px 13px;
+        margin-left: -13px;
+        border-radius: 12px;
+        border: 1px solid transparent !important;
+        background: transparent !important;
+        color: #CBD0E8 !important;
+        text-decoration: none !important;
+        transition: transform .23s ease, color .23s ease, box-shadow .23s ease, background .23s ease !important;
+    }
+
+    #poppo-neon-footer .pf-links a:hover,
+    #poppo-neon-footer .pf-links a:focus-visible,
+    #poppo-neon-footer .pf-links a[aria-current="page"],
+    #poppo-neon-footer .pf-contacts a:hover,
+    #poppo-neon-footer .pf-contacts a:focus-visible {
+        color: #FFFFFF !important;
+        background: var(--pf-neon-gradient) padding-box, var(--pf-neon-border) border-box !important;
+        border: 1px solid transparent !important;
+        box-shadow: 0 0 15px rgba(49, 84, 233, .24), 0 0 20px rgba(103, 64, 239, .24), 0 0 29px rgba(212, 20, 145, .14), inset 0 1px 0 rgba(255, 255, 255, .16) !important;
+        transform: translateX(3px) !important;
+    }
+
+    #poppo-neon-footer .pf-links a[aria-current="page"] {
+        font-weight: 800 !important
+    }
+
+    #poppo-neon-footer .pf-contacts a:hover svg,
+    #poppo-neon-footer .pf-contacts a:focus-visible svg {
+        color: #FFFFFF !important;
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, .55))
+    }
+
+    #poppo-neon-footer .pf-contacts svg {
+        transition: color .22s, filter .22s
+    }
+
+    /* Buttons: both inherit the same approved blue→violet→pink language. */
+    #poppo-neon-footer .pf-btn {
+        position: relative;
+        border: 1px solid transparent !important;
+        background: linear-gradient(110deg, rgba(20, 24, 54, .97), rgba(31, 20, 68, .96)) padding-box,
+            var(--pf-neon-border) border-box !important;
+        color: #F7F8FF !important;
+        box-shadow: 0 0 0 1px rgba(103, 64, 239, .08), inset 0 1px rgba(255, 255, 255, .07) !important;
+        transition: transform .23s, box-shadow .23s, filter .23s !important;
+    }
+
+    #poppo-neon-footer .pf-btn--primary {
+        background: var(--pf-neon-gradient) padding-box, var(--pf-neon-border) border-box !important;
+        box-shadow: 0 9px 26px rgba(103, 64, 239, .26), 0 0 17px rgba(212, 20, 145, .13) !important;
+    }
+
+    #poppo-neon-footer .pf-btn:hover,
+    #poppo-neon-footer .pf-btn:focus-visible {
+        background: linear-gradient(105deg, #4165FA 0%, #784BFF 43%, #B83BE0 69%, #EE249D 100%) padding-box,
+            var(--pf-neon-border) border-box !important;
+        color: white !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 0 18px rgba(49, 84, 233, .36), 0 0 30px rgba(103, 64, 239, .31), 0 0 37px rgba(212, 20, 145, .25), 0 10px 26px rgba(3, 4, 18, .35) !important;
+    }
+
+    #poppo-neon-footer .pf-bottom {
+        border-color: rgba(140, 112, 245, .29) !important
+    }
+
+    #poppo-neon-footer .pf-bottom span {
+        color: #A9AEC8 !important
+    }
+
+    #poppo-neon-footer :focus-visible {
+        outline: 2px solid #9FBCFF !important;
+        outline-offset: 3px !important
+    }
+
+    @media(max-width:600px) {
+
+        #poppo-neon-footer .pf-links a,
+        #poppo-neon-footer .pf-contacts a {
+            margin-left: 0;
+            padding: 9px 12px;
+            min-height: 42px
+        }
+
+        #poppo-neon-footer .pf-contacts a {
+            font-size: 12px !important
+        }
+
+        #poppo-neon-footer .pf-cta-actions {
+            gap: 10px
+        }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+        #poppo-neon-footer .pf-links a,
+        #poppo-neon-footer .pf-contacts a,
+        #poppo-neon-footer .pf-btn {
+            transition: none !important
+        }
+    }
+</style>
+<footer class="poppo-neon-footer" id="poppo-neon-footer" aria-label="Poppo Live Asia footer">
+    <div class="pf-neon-line" aria-hidden="true"></div>
+    <div class="pf-inner">
+        <div class="pf-cta">
+            <div>
+                <h2>Turn your live moments into new opportunities.</h2>
+                <p>Go live as a Host or grow a team as an Agent Partner with Poppo Live Asia.</p>
+            </div>
+            <div class="pf-cta-actions"><a class="pf-btn pf-btn--primary" href="https://invite-poppo.com/Dd35r5"
+                    target="_blank" rel="noopener noreferrer">Become a Host</a><a class="pf-btn"
+                    href="https://vp.poppolive.com/26YHmr" target="_blank" rel="noopener noreferrer">Become an Agent</a>
+            </div>
+        </div>
+        <div class="pf-grid">
+            <div class="pf-brand"><a href="/" aria-label="Poppo Live Asia home"><img
+                        src="https://poppo.asia/wp-content/uploads/2023/11/logo-1.png" alt="Poppo Live Asia logo"
+                        width="159" height="50" loading="lazy" decoding="async"></a>
+                <p>Create Your Stream &amp; Grow Your Team with Poppo Live Asia</p><span class="pf-brandtag">Live ·
+                    Connect · Grow</span>
+            </div>
+            <div class="pf-col">
+                <h2 class="pf-heading">Quick Links</h2>
+                <ul class="pf-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/agency/">Agency Cooperation</a></li>
+                    <li><a href="/host/">Host Cooperation</a></li>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/category/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="pf-col">
+                <h2 class="pf-heading">Contact &amp; Support</h2>
+                <ul class="pf-contacts">
+                    <li><a href="https://wa.me/601172243921" target="_blank" rel="noopener noreferrer"><svg
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20.3 11.6a8.3 8.3 0 0 1-12.2 7.3L3 20.2l1.3-4.9A8.3 8.3 0 1 1 20.3 11.6Z" />
+                                <path
+                                    d="M8.5 8.2c.3-.4.6-.4.9 0l1 1.7c.2.3.1.5-.2.9l-.5.5c.8 1.5 1.9 2.5 3.4 3.2l.6-.7c.2-.2.4-.3.7-.1l1.8.9c.4.2.4.5.2.9-.4 1-1.2 1.6-2.3 1.5-3.5-.2-6.3-3.1-6.7-6.1-.1-1.1.4-2 1.1-2.7Z" />
+                            </svg>+601172243921 (WhatsApp)</a></li>
+
+                    <li><a href="https://wa.me/+628212868782" target="_blank" rel="noopener noreferrer"><svg
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20.3 11.6a8.3 8.3 0 0 1-12.2 7.3L3 20.2l1.3-4.9A8.3 8.3 0 1 1 20.3 11.6Z" />
+                                <path
+                                    d="M8.5 8.2c.3-.4.6-.4.9 0l1 1.7c.2.3.1.5-.2.9l-.5.5c.8 1.5 1.9 2.5 3.4 3.2l.6-.7c.2-.2.4-.3.7-.1l1.8.9c.4.2.4.5.2.9-.4 1-1.2 1.6-2.3 1.5-3.5-.2-6.3-3.1-6.7-6.1-.1-1.1.4-2 1.1-2.7Z" />
+                            </svg>+628212868782 (WhatsApp)</a></li>
+                    <li><a href="https://t.me/PoppoLiveService" target="_blank" rel="noopener noreferrer"><svg
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="m21 3-3 17.1a1 1 0 0 1-1.5.6l-4.4-3.5-2.3 2.2-.5-5.3 10-8.4-11.5 7L3.4 11a.8.8 0 0 1 .1-1.5L20.1 3a.8.8 0 0 1 .9 0Z" />
+                            </svg>@poppolivesuport (Telegram)</a></li>
+                    <li><a href="https://www.instagram.com/poppoliveagent/" target="_blank"
+                            rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none" />
+                            </svg>@poppoliveagent (Instagram)</a></li>
+                    <li><a href="https://www.tiktok.com/@poppoliveagentt" target="_blank" rel="noopener noreferrer"><svg
+                                viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M16.1 2c.3 2.5 1.7 4 4.2 4.2v3.6a8.8 8.8 0 0 1-4.2-1.1v6.2a6.5 6.5 0 1 1-6.6-6.5c.4 0 .9 0 1.3.1v3.8a3.1 3.1 0 1 0 1.7 2.6V2h3.6Z" />
+                            </svg>@poppoliveagentt (Tiktok)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pf-bottom">
+            <p>&copy; 2023-2026 Poppo Live Asia. All rights reserved.</p><span>Made for creators, hosts &amp; agency
+                partners</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    /* Active Quick Link state mirrors Header: exact pathname only; no extra highlight on unrelated pages. */
+    (function () {
+        function markFooterActive() {
+            var root = document.getElementById('poppo-neon-footer'); if (!root) return;
+            var current = (window.location.pathname || '/').replace(/\/+$/, '') || '/';
+            root.querySelectorAll('.pf-links a').forEach(function (a) {
+                try {
+                    var url = new URL(a.getAttribute('href'), window.location.href);
+                    var pathname = (url.pathname || '/').replace(/\/+$/, '') || '/';
+                    if (url.origin === window.location.origin && pathname === current) a.setAttribute('aria-current', 'page');
+                    else a.removeAttribute('aria-current');
+                } catch (e) { a.removeAttribute('aria-current'); }
+            });
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', markFooterActive);
+        else markFooterActive();
+    })();
+</script>

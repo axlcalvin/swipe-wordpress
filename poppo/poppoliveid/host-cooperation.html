@@ -1,0 +1,2578 @@
+<!-- POPPOLIVE.ID HOST EARNINGS V1 | Agency Cooperation V3 layout system x light futuristic | Elementor all-in-one -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+    #plid-host-v1 {
+        --blue: #3154E9;
+        --purple: #6740EF;
+        --magenta: #A52BCF;
+        --pink: #D41491;
+        --ink: #17214C;
+        --muted: #596685;
+        --grad: linear-gradient(110deg, #3154E9 0%, #6740EF 42%, #A52BCF 72%, #D41491 100%);
+        font-family: 'Manrope', Arial, sans-serif !important;
+        position: relative;
+        isolation: isolate;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 0 0 calc(50% - 50vw) !important;
+        padding: 0 !important;
+        background: #FCFDFF;
+        color: var(--ink);
+        overflow: clip;
+        box-sizing: border-box
+    }
+
+    #plid-host-v1 *,
+    #plid-host-v1 *:before,
+    #plid-host-v1 *:after {
+        box-sizing: border-box
+    }
+
+    #plid-host-v1 .pa-container {
+        width: calc(100% - 64px) !important;
+        max-width: 1280px !important;
+        margin: 0 auto !important;
+        padding: 0 !important
+    }
+
+    #plid-host-v1 :is(h1, h2, h3) {
+        font-family: 'Space Grotesk', Arial, sans-serif !important;
+        font-weight: 700 !important;
+        color: #182454 !important;
+        letter-spacing: -.048em !important;
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        text-wrap: balance
+    }
+
+    #plid-host-v1 p {
+        font: 500 15px/1.85 'Manrope', sans-serif !important;
+        color: #596685 !important;
+        margin: 0 !important
+    }
+
+    #plid-host-v1 :is(ol, ul) {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important
+    }
+
+    #plid-host-v1 a {
+        color: var(--purple);
+        text-decoration: none !important;
+        font-weight: 700
+    }
+
+    #plid-host-v1 a:hover {
+        color: var(--pink)
+    }
+
+    #plid-host-v1 :is(a, button, summary):focus-visible {
+        outline: 3px solid #845EFF !important;
+        outline-offset: 4px
+    }
+
+    #plid-host-v1 .pa-section {
+        position: relative;
+        padding: 96px 0 !important;
+        background: #fff
+    }
+
+    #plid-host-v1 .pa-section--tint {
+        background: radial-gradient(ellipse at 98% 2%, rgba(203, 123, 251, .13), transparent 43%), radial-gradient(ellipse at 0% 65%, rgba(80, 158, 255, .10), transparent 43%), linear-gradient(150deg, #F6F9FF, #FBF7FF)
+    }
+
+    #plid-host-v1 .pa-head {
+        max-width: 880px !important;
+        text-align: center !important;
+        margin: 0 auto 42px !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0
+    }
+
+    #plid-host-v1 .pa-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(120, 86, 240, .24);
+        background: rgba(255, 255, 255, .8);
+        border-radius: 99px;
+        padding: 10px 17px;
+        font: 800 11px/1.2 'Manrope', sans-serif !important;
+        letter-spacing: .15em;
+        color: #6740EF !important;
+        margin-bottom: 22px !important;
+        text-transform: uppercase;
+        box-shadow: 0 5px 16px #6740EF10
+    }
+
+    #plid-host-v1 .pa-head h2 {
+        font-size: clamp(31px, 4vw, 56px) !important;
+        margin: 0 0 18px !important;
+        text-align: center !important;
+        width: 100% !important
+    }
+
+    #plid-host-v1 .pa-head p {
+        max-width: 790px !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        text-align: center !important;
+        margin: 0 auto !important
+    }
+
+    #plid-host-v1 .pa-button {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 54px;
+        border-radius: 99px !important;
+        padding: 15px 29px !important;
+        border: 1px solid #BDA5FF !important;
+        background: var(--grad) !important;
+        box-shadow: 0 13px 27px #6740EF35, 0 0 22px #D4149120;
+        color: #fff !important;
+        font: 800 14px/1.3 'Space Grotesk', sans-serif !important;
+        text-align: center;
+        transition: transform .23s, box-shadow .23s
+    }
+
+    #plid-host-v1 .pa-button:hover {
+        color: #fff !important;
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px #6740EF47
+    }
+
+    #plid-host-v1 .pa-button--secondary {
+        color: #6740EF !important;
+        background: #fff !important;
+        border: 1.5px solid #8A66ED !important;
+        box-shadow: none
+    }
+
+    #plid-host-v1 .pa-button--secondary:hover {
+        color: #6740EF !important
+    }
+
+    /* Hero */
+    #plid-host-v1 .pa-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 135px 0 90px !important;
+        background: radial-gradient(ellipse at 83% 38%, #D8BDFF65, transparent 48%), radial-gradient(ellipse at 8% 8%, #A9D6FF66, transparent 53%), linear-gradient(115deg, #F1F8FF, #F6F1FF 52%, #FFF0FB)
+    }
+
+    #plid-host-v1 .pa-hero__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.03fr) minmax(0, .97fr);
+        align-items: center;
+        gap: 58px
+    }
+
+    #plid-host-v1 .pa-hero__copy {
+        position: relative;
+        z-index: 2;
+        min-width: 0
+    }
+
+    #plid-host-v1 .pa-hero__copy h1 {
+        font-size: clamp(44px, 5.3vw, 76px) !important;
+        letter-spacing: -.06em !important;
+        margin-bottom: 25px !important
+    }
+
+    #plid-host-v1 .pa-hero__copy h1 em {
+        font-style: normal;
+        background: var(--grad);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #6740EF
+    }
+
+    #plid-host-v1 .pa-hero__copy p {
+        font-size: 16px !important;
+        max-width: 640px !important
+    }
+
+    #plid-host-v1 .pa-hero__actions {
+        margin-top: 30px
+    }
+
+    #plid-host-v1 .pa-hero__visual {
+        position: relative;
+        min-height: 525px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    #plid-host-v1 .pa-hero__orb {
+        position: absolute;
+        inset: 5%;
+        border-radius: 50%;
+        background: radial-gradient(circle, #A7A1FF77, transparent 69%);
+        filter: blur(12px)
+    }
+
+    #plid-host-v1 .pa-hero__panel {
+        position: relative;
+        z-index: 1;
+        width: min(330px, 74%);
+        aspect-ratio: .84;
+        transform: rotate(5deg);
+        border: 2px solid #AA95F2;
+        border-radius: 37px;
+        padding: 13px;
+        background: linear-gradient(140deg, #EEE8FF, #8675E9, #C663D9);
+        box-shadow: 0 27px 60px #3D2F9E33, 0 0 24px #A963EB44
+    }
+
+    #plid-host-v1 .pa-hero__panel:before {
+        content: '';
+        position: absolute;
+        inset: 12px;
+        border-radius: 27px;
+        background: linear-gradient(155deg, #FDFBFF, #D5DDFE 58%, #FCE7FA)
+    }
+
+    #plid-host-v1 .pa-hero__panel-top {
+        position: relative;
+        padding: 16px 12px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        font: 800 16px 'Space Grotesk', sans-serif;
+        color: #182454
+    }
+
+    #plid-host-v1 .pa-hero__panel-top b span {
+        color: #D41491
+    }
+
+    #plid-host-v1 .pa-hero__panel-top em {
+        font: 800 9px 'Manrope', sans-serif;
+        font-style: normal;
+        background: var(--grad);
+        color: white;
+        padding: 7px 11px;
+        border-radius: 99px
+    }
+
+    #plid-host-v1 .pa-hero__avatar {
+        position: relative;
+        border-radius: 24px;
+        margin: 10px 8px 16px;
+        height: 245px;
+        background: radial-gradient(circle at 55% 10%, #F9DDFB, #D8D7FF 54%, #9DAAF4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+        overflow: hidden
+    }
+
+    #plid-host-v1 .pa-hero__avatar>span {
+        font-size: 72px;
+        line-height: 1;
+        color: #6740EF;
+        filter: drop-shadow(0 8px 14px #6740EF55)
+    }
+
+    #plid-host-v1 .pa-hero__avatar div {
+        font: 600 19px/1.35 'Space Grotesk', sans-serif;
+        color: #182454
+    }
+
+    #plid-host-v1 .pa-hero__avatar strong {
+        font-size: 25px
+    }
+
+    #plid-host-v1 .pa-hero__avatar small {
+        font-size: 11px;
+        letter-spacing: .06em;
+        font-weight: 800;
+        color: #6A4DAB;
+        text-transform: uppercase
+    }
+
+    #plid-host-v1 .pa-hero__panel-bottom {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-size: 13px;
+        color: #503F9D
+    }
+
+    #plid-host-v1 .pa-hero__panel-bottom strong {
+        color: #242E71;
+        font: 800 18px 'Space Grotesk', sans-serif
+    }
+
+    #plid-host-v1 .pa-float {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 190px;
+        padding: 13px 15px;
+        border-radius: 17px;
+        background: #FFFFFFEB;
+        border: 1px solid #BEA6F4;
+        box-shadow: 0 15px 33px #5134B324;
+        backdrop-filter: blur(12px)
+    }
+
+    #plid-host-v1 .pa-float>span {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--grad);
+        color: #fff;
+        font-size: 23px
+    }
+
+    #plid-host-v1 .pa-float b {
+        display: block;
+        font-size: 13px;
+        color: #24326A
+    }
+
+    #plid-host-v1 .pa-float small {
+        display: block;
+        font-size: 11px;
+        color: #66718E;
+        margin-top: 3px
+    }
+
+    #plid-host-v1 .pa-float--top {
+        top: 12%;
+        left: 0
+    }
+
+    #plid-host-v1 .pa-float--bottom {
+        bottom: 9%;
+        right: 0
+    }
+
+    /* Media panels and uniform card treatment */
+    #plid-host-v1 :is(.pa-figure, .pa-content-panel, .pa-table-card, .pa-info-card, .pa-bonus-card, .pa-step, .pa-capabilities li, .pa-faq-item, .pa-rules-card) {
+        border: 1px solid #D8D2F9 !important;
+        border-radius: 25px !important;
+        background: linear-gradient(140deg, #fff, #FBF9FF) !important;
+        box-shadow: 0 14px 34px rgba(90, 76, 170, .09)
+    }
+
+    #plid-host-v1 .pa-figure {
+        margin: 30px auto 0 !important;
+        padding: 15px !important;
+        max-width: 100%;
+        overflow: hidden
+    }
+
+    #plid-host-v1 .pa-figure--narrow {
+        max-width: 980px
+    }
+
+    #plid-host-v1 .pa-image-btn {
+        position: relative;
+        display: block;
+        width: 100%;
+        border: 0 !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        cursor: zoom-in
+    }
+
+    #plid-host-v1 .pa-image-btn img {
+        display: block;
+        width: 100%;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain;
+        border-radius: 17px
+    }
+
+    #plid-host-v1 .pa-zoom {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        display: inline-flex;
+        padding: 10px 15px;
+        border-radius: 99px;
+        background: #181349C9;
+        backdrop-filter: blur(12px);
+        font: 800 12px 'Space Grotesk', sans-serif;
+        color: #fff;
+        pointer-events: none
+    }
+
+    #plid-host-v1 .pa-image-btn:hover .pa-zoom {
+        background: var(--grad)
+    }
+
+    #plid-host-v1 figcaption {
+        text-align: center;
+        margin: 14px 8px 4px !important;
+        font: 500 13px/1.65 'Manrope', sans-serif;
+        color: #687490
+    }
+
+    #plid-host-v1 .pa-capabilities {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px !important;
+        margin-top: 28px !important
+    }
+
+    #plid-host-v1 .pa-capabilities li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 23px 23px 23px 66px !important;
+        color: #293968 !important;
+        font: 800 16px/1.5 'Space Grotesk', sans-serif;
+        min-height: 95px
+    }
+
+    #plid-host-v1 .pa-capabilities li:before {
+        content: '✓';
+        position: absolute;
+        left: 23px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        place-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--grad);
+        font: 800 15px 'Manrope', sans-serif;
+        box-shadow: 0 6px 12px #6740EF33
+    }
+
+    /* steps EXACT two columns desktop like poppo asia */
+    #plid-host-v1 .pa-step-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px !important;
+        margin: 24px 0 28px !important
+    }
+
+    #plid-host-v1 .pa-step {
+        display: grid;
+        grid-template-columns: 54px minmax(0, 1fr);
+        align-items: start;
+        gap: 17px;
+        padding: 22px 24px !important;
+        min-height: 113px
+    }
+
+    #plid-host-v1 .pa-step__num {
+        display: grid;
+        place-items: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        color: #fff;
+        background: var(--grad);
+        box-shadow: 0 8px 21px #6740EF38;
+        font: 800 20px/1 'Space Grotesk', sans-serif
+    }
+
+    #plid-host-v1 .pa-step__copy h3 {
+        font-size: 19px !important;
+        color: #222D65 !important;
+        letter-spacing: -.03em !important;
+        margin: 0 0 8px !important
+    }
+
+    #plid-host-v1 .pa-step__copy p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+        color: #576582 !important
+    }
+
+    #plid-host-v1 .pa-cta-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 29px
+    }
+
+    #plid-host-v1 .pa-info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px !important
+    }
+
+    #plid-host-v1 .pa-info-card {
+        padding: 30px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 15px !important;
+        min-height: 220px
+    }
+
+    #plid-host-v1 .pa-info-card__mark {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, #E7E8FF, #F9E0F9);
+        color: #7651E5;
+        border-radius: 14px;
+        font-size: 24px
+    }
+
+    #plid-host-v1 .pa-info-card h3 {
+        font-size: clamp(21px, 2.1vw, 28px) !important;
+        line-height: 1.26 !important;
+        max-width: 100%
+    }
+
+    #plid-host-v1 .pa-info-card p {
+        font-size: 14px !important
+    }
+
+    #plid-host-v1 .pa-table-card {
+        padding: 34px !important
+    }
+
+    #plid-host-v1 .pa-table-scroll {
+        overflow-x: auto;
+        max-width: 100%;
+        border: 1px solid #DED8F9;
+        border-radius: 18px;
+        -webkit-overflow-scrolling: touch
+    }
+
+    #plid-host-v1 table {
+        width: 100% !important;
+        border-collapse: separate !important;
+        border-spacing: 0 !important;
+        min-width: 660px !important
+    }
+
+    #plid-host-v1 th,
+    #plid-host-v1 td {
+        padding: 18px 20px !important;
+        text-align: left !important;
+        font: 600 14px/1.55 'Manrope', sans-serif !important;
+        border: 0 !important;
+        border-bottom: 1px solid #E8E6F5 !important;
+        color: #2C3865 !important;
+        background: #fff !important
+    }
+
+    #plid-host-v1 th {
+        background: var(--grad) !important;
+        color: #fff !important;
+        font-weight: 800 !important
+    }
+
+    #plid-host-v1 tr:nth-child(even) td {
+        background: #F7F6FF !important
+    }
+
+    #plid-host-v1 tbody tr:last-child td {
+        border-bottom: 0 !important
+    }
+
+    #plid-host-v1 .pa-notes {
+        display: grid;
+        gap: 15px !important;
+        padding: 18px 0 0 !important
+    }
+
+    #plid-host-v1 .pa-notes li {
+        position: relative;
+        padding: 0 0 0 39px !important;
+        font: 600 15px/1.8 'Manrope', sans-serif;
+        color: #425075
+    }
+
+    #plid-host-v1 .pa-notes li:before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: grid;
+        place-items: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: var(--grad);
+        color: white;
+        font: 800 14px 'Manrope', sans-serif
+    }
+
+    #plid-host-v1 .pa-notes--danger li:before {
+        content: '×';
+        background: linear-gradient(115deg, #E64B86, #D41491)
+    }
+
+    #plid-host-v1 .pa-content-panel {
+        padding: 32px !important
+    }
+
+    #plid-host-v1 .pa-content-panel .pa-figure {
+        margin-top: 26px !important
+    }
+
+    #plid-host-v1 .pa-content-panel .pa-step-grid:first-child {
+        margin-top: 0 !important
+    }
+
+    #plid-host-v1 .pa-content-panel .pa-notes {
+        padding: 0 !important
+    }
+
+    #plid-host-v1 .pa-bonus-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px !important
+    }
+
+    #plid-host-v1 .pa-bonus-card {
+        padding: 28px !important;
+        min-width: 0
+    }
+
+    #plid-host-v1 .pa-bonus-card h3 {
+        font-size: clamp(24px, 2.5vw, 33px) !important;
+        margin-bottom: 13px !important
+    }
+
+    #plid-host-v1 .pa-bonus-card>p {
+        font-size: 14px !important;
+        min-height: 58px;
+        margin-bottom: 18px !important
+    }
+
+    #plid-host-v1 .pa-bonus-card table {
+        min-width: 420px !important
+    }
+
+    #plid-host-v1 .pa-footnote {
+        font-size: 14px !important;
+        text-align: center;
+        margin-top: 20px !important
+    }
+
+    #plid-host-v1 .pa-intro-note {
+        font-size: 14px !important;
+        margin: 0 0 22px !important;
+        padding: 17px 21px;
+        background: #F7F6FF;
+        border-radius: 16px;
+        border: 1px solid #E4DEFA
+    }
+
+    #plid-host-v1 .pa-rules-card {
+        padding: 32px !important
+    }
+
+    #plid-host-v1 .pa-rules-card h3 {
+        font-size: 25px !important;
+        margin-bottom: 12px !important
+    }
+
+    /* FAQ: mimic poppo.asia side header and single-column accordion */
+    #plid-host-v1 .pa-faq-section {
+        background: linear-gradient(145deg, #F4F8FF, #F8F4FF) !important
+    }
+
+    #plid-host-v1 .pa-faq-layout {
+        display: grid;
+        grid-template-columns: minmax(0, .77fr) minmax(0, 1.23fr);
+        gap: 44px;
+        align-items: start
+    }
+
+    #plid-host-v1 .pa-faq-head {
+        position: sticky;
+        top: 120px
+    }
+
+    #plid-host-v1 .pa-faq-head .pa-head {
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important
+    }
+
+    #plid-host-v1 .pa-faq-head .pa-head h2,
+    #plid-host-v1 .pa-faq-head .pa-head p {
+        text-align: left !important
+    }
+
+    #plid-host-v1 .pa-faq-list {
+        display: grid;
+        gap: 15px
+    }
+
+    #plid-host-v1 .pa-faq-item {
+        overflow: hidden !important
+    }
+
+    #plid-host-v1 .pa-faq-item summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        cursor: pointer;
+        list-style: none !important;
+        padding: 24px !important;
+        font: 700 19px/1.48 'Space Grotesk', sans-serif !important;
+        color: #202E67 !important
+    }
+
+    #plid-host-v1 .pa-faq-item summary::-webkit-details-marker {
+        display: none
+    }
+
+    #plid-host-v1 .pa-faq-item summary>span:first-child {
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow-wrap: anywhere
+    }
+
+    #plid-host-v1 .pa-faq-plus {
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--grad);
+        color: #fff;
+        font: 800 25px/1 'Manrope', sans-serif;
+        transition: transform .22s
+    }
+
+    #plid-host-v1 .pa-faq-item[open] .pa-faq-plus {
+        transform: rotate(45deg)
+    }
+
+    #plid-host-v1 .pa-faq-answer {
+        padding: 0 24px 24px !important
+    }
+
+    #plid-host-v1 .pa-faq-answer p {
+        font-size: 14px !important;
+        line-height: 1.8 !important
+    }
+
+    #plid-host-v1 .pa-bottom-cta {
+        padding: 94px 0 !important;
+        background: radial-gradient(ellipse at 5% 12%, #AED7FF88, transparent 44%), radial-gradient(ellipse at 95% 70%, #FFC4EC88, transparent 47%), linear-gradient(115deg, #EDF6FF, #F5F0FF 50%, #FFF0F9)
+    }
+
+    #plid-host-v1 .pa-bottom-cta__grid {
+        display: grid;
+        grid-template-columns: 1.1fr .9fr;
+        gap: 34px;
+        align-items: center
+    }
+
+    #plid-host-v1 .pa-bottom-cta h2 {
+        font-size: clamp(35px, 4.2vw, 55px) !important;
+        margin-bottom: 18px !important
+    }
+
+    #plid-host-v1 .pa-bottom-cta__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px
+    }
+
+    /* modal appended to body; independent from Elementor stacking contexts */
+    .pa3-modal[hidden] {
+        display: none !important
+    }
+
+    .pa3-modal {
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100vw;
+        height: 100dvh;
+        z-index: 2147483647 !important;
+        background: rgba(5, 7, 22, .94) !important;
+        backdrop-filter: blur(13px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 78px 18px 24px;
+        box-sizing: border-box
+    }
+
+    .pa3-modal img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 13px;
+        box-shadow: 0 18px 55px #0009
+    }
+
+    .pa3-modal__close {
+        position: fixed !important;
+        top: calc(15px + env(safe-area-inset-top, 0px)) !important;
+        right: calc(18px + env(safe-area-inset-right, 0px)) !important;
+        width: 46px !important;
+        height: 46px !important;
+        display: grid !important;
+        place-items: center !important;
+        z-index: 2147483647 !important;
+        border: 1px solid #CCB3FF !important;
+        border-radius: 14px !important;
+        background: linear-gradient(135deg, #3154E9, #6740EF, #D41491) !important;
+        color: #fff !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+        box-shadow: 0 7px 22px #0005
+    }
+
+    .pa3-modal__close svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        stroke-width: 2.3;
+        fill: none;
+        stroke-linecap: round
+    }
+
+    @media(max-width:1100px) {
+        #plid-host-v1 .pa-hero__grid {
+            grid-template-columns: 1fr;
+            gap: 30px
+        }
+
+        #plid-host-v1 .pa-hero__visual {
+            min-height: 520px;
+            max-width: 650px;
+            width: 100%;
+            margin: 0 auto
+        }
+
+        #plid-host-v1 .pa-info-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        #plid-host-v1 .pa-faq-layout {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-faq-head {
+            position: static
+        }
+
+        #plid-host-v1 .pa-faq-head .pa-head {
+            align-items: center !important;
+            margin: 0 auto 36px !important
+        }
+
+        #plid-host-v1 .pa-faq-head .pa-head h2,
+        #plid-host-v1 .pa-faq-head .pa-head p {
+            text-align: center !important
+        }
+
+        #plid-host-v1 .pa-bottom-cta__grid {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-bottom-cta__buttons {
+            justify-content: flex-start
+        }
+    }
+
+    @media(max-width:780px) {
+        #plid-host-v1 .pa-container {
+            width: calc(100% - 36px) !important
+        }
+
+        #plid-host-v1 .pa-section {
+            padding: 76px 0 !important
+        }
+
+        #plid-host-v1 .pa-step-grid {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-capabilities {
+            grid-template-columns: 1fr 1fr
+        }
+
+        #plid-host-v1 .pa-info-grid {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-bonus-grid {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-hero {
+            padding: 122px 0 66px !important
+        }
+    }
+
+    @media(max-width:560px) {
+        #plid-host-v1 .pa-container {
+            width: calc(100% - 28px) !important
+        }
+
+        #plid-host-v1 .pa-section {
+            padding: 64px 0 !important
+        }
+
+        #plid-host-v1 .pa-head h2 {
+            font-size: clamp(29px, 9vw, 39px) !important
+        }
+
+        #plid-host-v1 .pa-head p {
+            font-size: 14px !important
+        }
+
+        #plid-host-v1 .pa-hero {
+            padding: 105px 0 58px !important
+        }
+
+        #plid-host-v1 .pa-hero__copy h1 {
+            font-size: clamp(39px, 11vw, 54px) !important
+        }
+
+        #plid-host-v1 .pa-hero__copy p {
+            font-size: 14px !important
+        }
+
+        #plid-host-v1 .pa-hero__visual {
+            min-height: 420px
+        }
+
+        #plid-host-v1 .pa-hero__panel {
+            width: 67%;
+            min-width: 205px;
+            border-radius: 27px;
+            padding: 8px
+        }
+
+        #plid-host-v1 .pa-hero__panel:before {
+            inset: 8px;
+            border-radius: 21px
+        }
+
+        #plid-host-v1 .pa-hero__panel-top {
+            font-size: 11px;
+            padding: 10px 8px
+        }
+
+        #plid-host-v1 .pa-hero__avatar {
+            height: 195px;
+            margin: 8px
+        }
+
+        #plid-host-v1 .pa-hero__avatar>span {
+            font-size: 50px
+        }
+
+        #plid-host-v1 .pa-hero__avatar div {
+            font-size: 14px
+        }
+
+        #plid-host-v1 .pa-hero__avatar strong {
+            font-size: 18px
+        }
+
+        #plid-host-v1 .pa-float {
+            min-width: 130px;
+            max-width: 165px;
+            padding: 9px;
+            gap: 7px
+        }
+
+        #plid-host-v1 .pa-float>span {
+            width: 31px;
+            height: 31px;
+            font-size: 17px;
+            flex: 0 0 31px
+        }
+
+        #plid-host-v1 .pa-float b {
+            font-size: 10px
+        }
+
+        #plid-host-v1 .pa-float small {
+            font-size: 9px
+        }
+
+        #plid-host-v1 .pa-capabilities {
+            grid-template-columns: 1fr
+        }
+
+        #plid-host-v1 .pa-step {
+            padding: 18px !important;
+            grid-template-columns: 44px minmax(0, 1fr);
+            gap: 13px;
+            min-height: auto
+        }
+
+        #plid-host-v1 .pa-step__num {
+            width: 43px;
+            height: 43px;
+            font-size: 18px
+        }
+
+        #plid-host-v1 .pa-step__copy h3 {
+            font-size: 17px !important
+        }
+
+        #plid-host-v1 .pa-content-panel,
+        #plid-host-v1 .pa-table-card,
+        #plid-host-v1 .pa-bonus-card,
+        #plid-host-v1 .pa-rules-card {
+            padding: 19px !important
+        }
+
+        #plid-host-v1 .pa-figure {
+            padding: 9px !important;
+            border-radius: 18px !important
+        }
+
+        #plid-host-v1 .pa-zoom {
+            right: 8px;
+            bottom: 8px;
+            font-size: 10px;
+            padding: 8px 10px
+        }
+
+        #plid-host-v1 .pa-faq-item summary {
+            padding: 18px !important;
+            font-size: 16px !important
+        }
+
+        #plid-host-v1 .pa-faq-answer {
+            padding: 0 18px 20px !important
+        }
+
+        #plid-host-v1 .pa-bottom-cta {
+            padding: 68px 0 !important
+        }
+
+        #plid-host-v1 .pa-bottom-cta__buttons .pa-button {
+            width: 100%
+        }
+
+        .pa3-modal {
+            padding: 73px 10px 17px
+        }
+
+        .pa3-modal__close {
+            width: 44px !important;
+            height: 44px !important
+        }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+        #plid-host-v1 *,
+        #plid-host-v1 *:before {
+            transition: none !important;
+            animation: none !important
+        }
+    }
+
+    /* Host Earnings refinements over Agency V3 layout system */
+    #plid-host-v1 .pa-reward-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px
+    }
+
+    #plid-host-v1 .pa-host-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important
+    }
+
+    #plid-host-v1 .pa-host-revenue-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important
+    }
+
+    #plid-host-v1 .pa-host-reward-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 30px 0
+    }
+
+    #plid-host-v1 .pa-host-reward-grid>.pa-reward-card:last-child {
+        grid-column: 1/-1
+    }
+
+    #plid-host-v1 .pa-reward-card {
+        min-width: 0;
+        padding: 30px !important;
+        border-radius: 26px;
+        border: 1px solid #DAD4F9;
+        background: linear-gradient(135deg, #fff, #F9F7FF);
+        box-shadow: 0 15px 34px #6740EF15
+    }
+
+    #plid-host-v1 .pa-reward-card h3,
+    #plid-host-v1 .pa-subhead h3 {
+        font-size: clamp(22px, 2.2vw, 30px) !important;
+        margin-bottom: 12px !important
+    }
+
+    #plid-host-v1 .pa-reward-card>p {
+        font-size: 15px !important;
+        margin: 0 0 18px !important
+    }
+
+    #plid-host-v1 .pa-subhead {
+        text-align: center;
+        margin: 52px 0 24px !important
+    }
+
+    #plid-host-v1 .pa-host-levels .pa-content-panel {
+        margin-top: 24px
+    }
+
+    #plid-host-v1 .pa-host-profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        align-items: start
+    }
+
+    #plid-host-v1 .pa-host-profile-grid .pa-figure {
+        margin: 0 !important
+    }
+
+    #plid-host-v1 .pa-methods {
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+        margin-bottom: 18px !important;
+        color: #273766 !important
+    }
+
+    #plid-host-v1 .pa-host-rules .pa-content-panel {
+        max-width: 960px;
+        margin: 0 auto
+    }
+
+    #plid-host-v1 .pa-small-note {
+        margin: 17px 0 !important;
+        font-size: 14px !important;
+        color: #596685 !important
+    }
+
+    #plid-host-v1 .pa-host-how-you-make-money .pa-capabilities {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    #plid-host-v1 .pa-host-how-you-make-money .pa-figure {
+        margin-top: 36px !important
+    }
+
+    #plid-host-v1 .pa-table-card .pa-table-scroll,
+    #plid-host-v1 .pa-reward-card .pa-table-scroll {
+        overflow: auto;
+        max-width: 100%;
+        -webkit-overflow-scrolling: touch
+    }
+
+    #plid-host-v1 .pa-reward-card table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 460px
+    }
+
+    #plid-host-v1 .pa-reward-card th {
+        background: var(--grad);
+        color: #fff !important;
+        padding: 14px 16px !important;
+        text-align: left
+    }
+
+    #plid-host-v1 .pa-reward-card td {
+        padding: 14px 16px !important;
+        border-bottom: 1px solid #E7E2FB;
+        color: #263463 !important
+    }
+
+    #plid-host-v1 .pa-reward-card tr:nth-child(even) td {
+        background: #F5F6FF
+    }
+
+    #plid-host-v1 .pa-faq-item {
+        background: #fff
+    }
+
+    #plid-host-v1 .pa-faq-item summary {
+        display: flex !important;
+        gap: 20px !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        color: #182454 !important;
+        font-size: clamp(16px, 1.5vw, 20px) !important;
+        line-height: 1.45 !important;
+        cursor: pointer;
+        list-style: none
+    }
+
+    #plid-host-v1 .pa-faq-item summary::-webkit-details-marker {
+        display: none
+    }
+
+    #plid-host-v1 .pa-faq-plus {
+        flex: 0 0 30px;
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        background: var(--grad);
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 22px;
+        transition: transform .2s
+    }
+
+    #plid-host-v1 .pa-faq-item[open] .pa-faq-plus {
+        transform: rotate(45deg)
+    }
+
+    #plid-host-v1 .pa-faq-answer p {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+        color: #596685 !important
+    }
+
+    @media(max-width:850px) {
+
+        #plid-host-v1 .pa-reward-grid,
+        #plid-host-v1 .pa-host-benefits-grid,
+        #plid-host-v1 .pa-host-revenue-grid,
+        #plid-host-v1 .pa-host-reward-grid,
+        #plid-host-v1 .pa-host-profile-grid {
+            grid-template-columns: 1fr !important
+        }
+
+        #plid-host-v1 .pa-host-reward-grid>.pa-reward-card:last-child {
+            grid-column: auto
+        }
+    }
+
+    @media(max-width:650px) {
+        #plid-host-v1 .pa-host-how-you-make-money .pa-capabilities {
+            grid-template-columns: 1fr !important
+        }
+
+        #plid-host-v1 .pa-reward-card {
+            padding: 21px !important
+        }
+    }
+
+    /* Host Step Card Deck (Stacked Cards) */
+    #plid-host-v1 .host-step-deck {
+        position: relative;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin: 20px auto 0 !important;
+        max-width: 600px !important;
+        width: 100% !important;
+        overflow: visible !important;
+    }
+
+    #plid-host-v1 .deck-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-right: 22px;
+        padding-bottom: 34px;
+        box-sizing: border-box;
+    }
+
+    #plid-host-v1 .deck-stack {
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #plid-host-v1 .deck-sizer {
+        visibility: hidden;
+        pointer-events: none;
+        width: 100%;
+        display: block;
+        user-select: none;
+    }
+
+    #plid-host-v1 .deck-sizer img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #plid-host-v1 .deck-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid rgba(220, 222, 235, .95);
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: transform .42s cubic-bezier(0.25, 1, 0.5, 1), opacity .42s ease, box-shadow .42s ease, filter .42s ease;
+        user-select: none;
+        -webkit-user-select: none;
+        will-change: transform, opacity;
+    }
+
+    /* Stack Position 0: Front active card */
+    #plid-host-v1 .deck-card.pos-0 {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        z-index: 10;
+        opacity: 1;
+        pointer-events: auto;
+        box-shadow: 0 16px 38px rgba(0, 0, 0, .42);
+        filter: brightness(1);
+    }
+
+    /* Stack Position 1: 1st card behind */
+    #plid-host-v1 .deck-card.pos-1 {
+        transform: translate3d(6px, 9px, 0) rotate(1.2deg);
+        z-index: 9;
+        opacity: 1;
+        pointer-events: none;
+        background: #F6F4FC;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, .32);
+        filter: brightness(.96);
+    }
+
+    /* Stack Position 2: 2nd card behind */
+    #plid-host-v1 .deck-card.pos-2 {
+        transform: translate3d(12px, 18px, 0) rotate(2.4deg);
+        z-index: 8;
+        opacity: 1;
+        pointer-events: none;
+        background: #EDE8F8;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, .25);
+        filter: brightness(.92);
+    }
+
+    /* Stack Position 3: 3rd card behind */
+    #plid-host-v1 .deck-card.pos-3 {
+        transform: translate3d(18px, 27px, 0) rotate(3.6deg);
+        z-index: 7;
+        opacity: 1;
+        pointer-events: none;
+        background: #E1DBF2;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, .2);
+        filter: brightness(.88);
+    }
+
+    /* Card sliding out to the left when advancing */
+    #plid-host-v1 .deck-card.is-sliding-out {
+        transform: translate3d(-108%, 18px, 0) rotate(-8deg) !important;
+        opacity: 0 !important;
+        transition: transform .32s cubic-bezier(0.3, 0, 0.2, 1), opacity .32s ease !important;
+    }
+
+    #plid-host-v1 .deck-card__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #plid-host-v1 .deck-card__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+    }
+
+    /* Pill buttons on the card */
+    #plid-host-v1 .deck-btn {
+        position: absolute !important;
+        bottom: 16px !important;
+        z-index: 25 !important;
+        width: auto !important;
+        max-width: max-content !important;
+        padding: 7px 15px !important;
+        border-radius: 999px !important;
+        background: #181920 !important;
+        border: 1px solid rgba(255, 255, 255, .2) !important;
+        color: #fff !important;
+        font: 600 12px/1.2 'Space Grotesk', -apple-system, sans-serif !important;
+        letter-spacing: .15px;
+        cursor: pointer;
+        display: inline-flex !important;
+        align-items: center;
+        gap: 6px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, .35) !important;
+        transition: background .2s ease, transform .2s ease, border-color .2s ease, box-shadow .2s ease !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
+    }
+
+    #plid-host-v1 .deck-btn:hover {
+        background: #FE2C55 !important;
+        border-color: #FE2C55 !important;
+        color: #fff !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(254, 44, 85, .42) !important;
+    }
+
+    #plid-host-v1 .deck-btn:active {
+        transform: translateY(0);
+    }
+
+    #plid-host-v1 .deck-btn--next {
+        left: 16px !important;
+        right: auto !important;
+    }
+
+    #plid-host-v1 .deck-btn--zoom {
+        right: 16px !important;
+        left: auto !important;
+        cursor: zoom-in;
+    }
+
+    /* Navigation dots under the deck */
+    #plid-host-v1 .deck-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 14px;
+    }
+
+    #plid-host-v1 .deck-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(159, 160, 255, .35);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #plid-host-v1 .deck-dot:hover:not(.is-active) {
+        background: rgba(159, 160, 255, .75);
+    }
+
+    #plid-host-v1 .deck-dot.is-active {
+        width: 32px;
+        border-radius: 999px;
+        background: #FE2C55;
+        box-shadow: 0 0 12px rgba(254, 44, 85, .55);
+    }
+
+    #plid-host-v1 .deck-caption {
+        margin-top: 10px !important;
+        color: #D7D3EE !important;
+        font-size: 13.5px;
+        line-height: 1.72 !important;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        #plid-host-v1 .deck-wrapper {
+            padding-right: 18px;
+            padding-bottom: 28px;
+        }
+
+        #plid-host-v1 .deck-card.pos-1 {
+            transform: translate3d(5px, 8px, 0) rotate(1.2deg);
+        }
+
+        #plid-host-v1 .deck-card.pos-2 {
+            transform: translate3d(10px, 16px, 0) rotate(2.4deg);
+        }
+
+        #plid-host-v1 .deck-card.pos-3 {
+            transform: translate3d(15px, 24px, 0) rotate(3.6deg);
+        }
+
+        #plid-host-v1 .deck-btn {
+            bottom: 12px;
+            padding: 7px 12px;
+            font-size: 11.5px !important;
+        }
+
+        #plid-host-v1 .deck-btn--next {
+            left: 12px;
+        }
+
+        #plid-host-v1 .deck-btn--zoom {
+            right: 12px;
+        }
+    }
+</style>
+<div id="plid-host-v1">
+    <section class="pa-hero">
+        <div class="pa-container pa-hero__grid">
+            <div class="pa-hero__copy">
+                <span class="pa-eyebrow">✦ HOST EARNINGS</span>
+                <h1> Your Screen Time is Worth <em>Real</em> Money. </h1>
+                <p> Join Poppo Live and turn your daily streams, online party, and fan chats into real cash. Enjoy a
+                    guaranteed 70% share of all gifts you receive through our <a href="/about-us/">agency network</a>.
+                </p>
+                <div class="pa-hero__actions">
+                    <a class="pa-button" href="https://invite-poppo.com/wHeJGn">Start Streaming Today</a>
+                </div>
+            </div>
+            <div class="pa-hero__visual" aria-hidden="true">
+                <div class="pa-hero__orb"></div>
+                <div class="pa-hero__panel">
+                    <div class="pa-hero__panel-top">
+                        <b>POPPO <span>●</span> HOST </b>
+                        <em>LIVE</em>
+                    </div>
+                    <div class="pa-hero__avatar">
+                        <span>✦</span>
+                        <div>Share your <br />
+                            <strong>Creator Journey</strong>
+                        </div>
+                        <small>Stream · Connect · Earn</small>
+                    </div>
+                    <div class="pa-hero__panel-bottom">
+                        <span>Creator Economy</span>
+                        <strong>Poppo Live Host</strong>
+                    </div>
+                </div>
+                <div class="pa-float pa-float--top">
+                    <span>✦</span>
+                    <div>
+                        <b>Go Live</b>
+                        <small>Connect with fans worldwide</small>
+                    </div>
+                </div>
+                <div class="pa-float pa-float--bottom">
+                    <span>↗</span>
+                    <div>
+                        <b>Earn Rewards</b>
+                        <small>Grow your creator community</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-how-you-make-money">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>How You Make Money</h2>
+                <p> There are many ways to earn on Poppo Live. It is not just about going live; every interaction can
+                    bring you income. </p>
+            </header>
+            <ul class="pa-capabilities">
+                <li>Live Streaming to large audiences.</li>
+                <li>Hosting fun Party Rooms with friends.</li>
+                <li>1-on-1 competitive PK Battles.</li>
+                <li>Uploading short videos to attract more fans.</li>
+            </ul>
+            <figure class="pa-figure">
+                <button type="button" class="pa-image-btn" aria-label="Preview Poppo Host Role infographic">
+                    <img src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Role.png"
+                        alt="Poppo Live Host Role: Stream, Interact, Earn and viewer gift ecosystem" loading="lazy"
+                        decoding="async" />
+                    <span class="pa-zoom">⌕ &nbsp; Click to enlarge</span>
+                </button>
+                <figcaption>Poppo Host Role — Stream, Interact, Earn</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="pa-section pa-host-benefits pa-section--tint">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Why Creators Love Our Agency</h2>
+                <p> We give you the support and clear data you need to succeed. </p>
+            </header>
+            <div class="pa-info-grid pa-host-benefits-grid">
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>Keep 70% of Gifts</h3>
+                    <p> You get the biggest share of your earnings. No hidden cuts. </p>
+                </article>
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>24/7 Real Support</h3>
+                    <p> Chat with our agency managers anytime via our <a href="/contact-us/">Support Desk</a> if you
+                        need help with your stream or account. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-income-boost">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Different Ways to Boost Your Income</h2>
+                <p>Use these features to earn more every single day.</p>
+            </header>
+            <div class="pa-info-grid pa-host-revenue-grid">
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>Stream &amp; Party Bonuses</h3>
+                    <p> Get your 70% share, plus extra cash for completing weekly tasks. </p>
+                </article>
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>Invite Rewards</h3>
+                    <p> Earn extra money when you invite new creators to join the app. </p>
+                </article>
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>Win PK Battles</h3>
+                    <p> Battle other streamers. If you win, you get special bonus rewards. </p>
+                </article>
+                <article class="pa-info-card">
+                    <span class="pa-info-card__mark">✦</span>
+                    <h3>Climb the Leaderboard</h3>
+                    <p> Be a top gift receiver daily or weekly to win big cash prizes from the app. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-points pa-section--tint">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>How Points Turn Into Real Money</h2>
+                <p>See exactly how much your points are worth in USD.</p>
+            </header>
+            <div class="pa-table-card">
+                <div class="pa-table-scroll">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Points Earned</th>
+                                <th scope="col">USD Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="data-table__num">10,000</td>
+                                <td class="data-table__num">$1</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">100,000</td>
+                                <td class="data-table__num">$10</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">200,000</td>
+                                <td class="data-table__num">$20</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">500,000</td>
+                                <td class="data-table__num">$50</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">1,000,000</td>
+                                <td class="data-table__num">$100</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">5,000,000</td>
+                                <td class="data-table__num">$500</td>
+                            </tr>
+                            <tr>
+                                <td class="data-table__num">10,000,000</td>
+                                <td class="data-table__num">$1,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pa-notes">
+                    <li>Minimum withdrawal is $10 (100,000 Points).</li>
+                    <li>You must withdraw in multiples of 10.</li>
+                    <li> Money arrives in up to 7 business days, depending on your bank or e-wallet. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-levels">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Daily Tasks and Salary Levels</h2>
+                <p> The more consistent you are, the higher your hourly salary bonus. Your level is based on your
+                    earnings over the last 7 days. </p>
+            </header>
+            <div class="pa-table-card">
+                <div class="pa-table-scroll">
+                    <table class="data-table data-table--wide">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tier</th>
+                                <th scope="col">7-Day Total Earnings</th>
+                                <th scope="col">Hourly Bonus</th>
+                                <th scope="col">Max Hours/Day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>S</strong>
+                                </td>
+                                <td class="data-table__num">50,000,000</td>
+                                <td class="data-table__num">70,000 /H</td>
+                                <td class="data-table__num">4H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>A</strong>
+                                </td>
+                                <td class="data-table__num">22,000,000</td>
+                                <td class="data-table__num">50,000 /H</td>
+                                <td class="data-table__num">4H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>B</strong>
+                                </td>
+                                <td class="data-table__num">10,000,000</td>
+                                <td class="data-table__num">40,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>C</strong>
+                                </td>
+                                <td class="data-table__num">7,000,000</td>
+                                <td class="data-table__num">35,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>D</strong>
+                                </td>
+                                <td class="data-table__num">4,000,000</td>
+                                <td class="data-table__num">28,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>E</strong>
+                                </td>
+                                <td class="data-table__num">2,000,000</td>
+                                <td class="data-table__num">18,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>F</strong>
+                                </td>
+                                <td class="data-table__num">1,200,000</td>
+                                <td class="data-table__num">12,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>G</strong>
+                                </td>
+                                <td class="data-table__num">900,000</td>
+                                <td class="data-table__num">9,000 /H</td>
+                                <td class="data-table__num">3H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>H</strong>
+                                </td>
+                                <td class="data-table__num">300,000</td>
+                                <td class="data-table__num">5,000 /H</td>
+                                <td class="data-table__num">2H/Day</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>I</strong>
+                                </td>
+                                <td class="data-table__num">150,000</td>
+                                <td class="data-table__num">3,000 /H</td>
+                                <td class="data-table__num">2H/Day</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pa-notes">
+                    <li> Your tier is calculated based on your last 7 days of earnings. This keeps it fair. </li>
+                    <li>The system updates your level every 24 hours.</li>
+                </ul>
+            </div>
+            <div class="pa-subhead">
+                <h3>Protection for New Hosts</h3>
+            </div>
+            <div class="pa-reward-grid">
+                <article class="pa-reward-card">
+                    <h3>New Host Bonus</h3>
+                    <p> If you joined less than <strong>7 days</strong> ago, you get a protected starting bonus. </p>
+                    <div class="pa-table-scroll">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Target</th>
+                                    <th scope="col">Hourly Bonus</th>
+                                    <th scope="col">Max Limit</th>
+                                    <th scope="col">Valid For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>New Hosts</td>
+                                    <td class="data-table__num">10,000 /H</td>
+                                    <td class="data-table__num">2H/Day</td>
+                                    <td class="data-table__num">7 Days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="pa-reward-card">
+                    <h3>Regular Hosts</h3>
+                    <p> Hosts who are no longer new and earn less than $15 in 7 days. </p>
+                    <div class="pa-table-scroll">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Target</th>
+                                    <th scope="col">Hourly Bonus</th>
+                                    <th scope="col">Max Limit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Regular</td>
+                                    <td class="data-table__num">1,000 /H</td>
+                                    <td class="data-table__num">1H/Day</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </div>
+            <div class="pa-content-panel">
+                <ul class="pa-notes">
+                    <li>Bonuses are paid in Points.</li>
+                    <li>Earnings include Live, Party, and Watch income.</li>
+                    <li> Do not use fake accounts or change your IP to cheat the system, or you will lose your bonuses.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-setup pa-section--tint">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>How to Set Up Your Host Account</h2>
+                <p> Follow these 4 easy steps to link your account to our team and start earning. Want to build a team
+                    instead? See our <a href="/agency/">agency program</a>. </p>
+            </header>
+            <ol class="pa-step-grid">
+                <li class="pa-step">
+                    <span class="pa-step__num">01</span>
+                    <div class="pa-step__copy">
+                        <h3>Get the App</h3>
+                        <p>Download the app for Android or iOS.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">02</span>
+                    <div class="pa-step__copy">
+                        <h3>Create Profile</h3>
+                        <p> Enter your Name, Birthday, Region, Gender, and Referral Code. </p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">03</span>
+                    <div class="pa-step__copy">
+                        <h3>Find Agent Menu</h3>
+                        <p>Go to your Profile and tap 'My Agent'.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">04</span>
+                    <div class="pa-step__copy">
+                        <h3>Join Us</h3>
+                        <p> Enter our Agency ID (13200998) and click submit to join our team. </p>
+                    </div>
+                </li>
+            </ol>
+            <figure class="pa-figure host-step-deck" id="host-step-deck">
+                <div class="deck-wrapper">
+                    <div class="deck-stack">
+                        <!-- Sizer to naturally reserve exact image aspect ratio across all devices -->
+                        <div aria-hidden="true" class="deck-sizer">
+                            <img alt=""
+                                src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Registration-Step-1.png" />
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="deck-card pos-0 is-active" data-index="0"
+                            data-caption="Step 1 of 4: Get the App. Click photo for next or Zoom to enlarge.">
+                            <div class="deck-card__inner">
+                                <img alt="Poppo Host Registration Step 1" class="deck-card__img" loading="lazy"
+                                    src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Registration-Step-1.png" />
+                                <button aria-label="Next photo" class="deck-btn deck-btn--next" type="button">
+                                    Click photo for next &rarr;
+                                </button>
+                                <button aria-label="Zoom Step 1 image" class="deck-btn deck-btn--zoom" type="button">
+                                    Zoom &#8599;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="deck-card pos-1" data-index="1"
+                            data-caption="Step 2 of 4: Create Profile. Click photo for next or Zoom to enlarge.">
+                            <div class="deck-card__inner">
+                                <img alt="Poppo Host Registration Step 2" class="deck-card__img" loading="lazy"
+                                    src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Registration-Step-2.png" />
+                                <button aria-label="Next photo" class="deck-btn deck-btn--next" type="button">
+                                    Click photo for next &rarr;
+                                </button>
+                                <button aria-label="Zoom Step 2 image" class="deck-btn deck-btn--zoom" type="button">
+                                    Zoom &#8599;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="deck-card pos-2" data-index="2"
+                            data-caption="Step 3 of 4: Find Agent Menu. Click photo for next or Zoom to enlarge.">
+                            <div class="deck-card__inner">
+                                <img alt="Poppo Host Registration Step 3" class="deck-card__img" loading="lazy"
+                                    src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Registration-Step-3.png" />
+                                <button aria-label="Next photo" class="deck-btn deck-btn--next" type="button">
+                                    Click photo for next &rarr;
+                                </button>
+                                <button aria-label="Zoom Step 3 image" class="deck-btn deck-btn--zoom" type="button">
+                                    Zoom &#8599;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="deck-card pos-3" data-index="3"
+                            data-caption="Step 4 of 4: Join Us. Click photo for next or Zoom to enlarge.">
+                            <div class="deck-card__inner">
+                                <img alt="Poppo Host Registration Step 4" class="deck-card__img" loading="lazy"
+                                    src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Host-Registration-Step-4.png" />
+                                <button aria-label="Next photo" class="deck-btn deck-btn--next" type="button">
+                                    Click photo for next &rarr;
+                                </button>
+                                <button aria-label="Zoom Step 4 image" class="deck-btn deck-btn--zoom" type="button">
+                                    Zoom &#8599;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step dots / counter indicator -->
+                <div aria-label="Registration steps navigation" class="deck-nav" role="tablist">
+                    <button aria-label="Go to Step 1" aria-selected="true" class="deck-dot is-active" data-index="0"
+                        role="tab" type="button"></button>
+                    <button aria-label="Go to Step 2" aria-selected="false" class="deck-dot" data-index="1" role="tab"
+                        type="button"></button>
+                    <button aria-label="Go to Step 3" aria-selected="false" class="deck-dot" data-index="2" role="tab"
+                        type="button"></button>
+                    <button aria-label="Go to Step 4" aria-selected="false" class="deck-dot" data-index="3" role="tab"
+                        type="button"></button>
+                </div>
+                <figcaption aria-live="polite" class="deck-caption">Step 1 of 4: Get the App. Click photo for next or
+                    Zoom to enlarge.</figcaption>
+            </figure>
+            <div class="pa-cta-row">
+                <a class="pa-button" href="https://invite-poppo.com/wHeJGn">Download App &amp; Become a Host</a>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-rewards">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Extra Bonuses for Good Work</h2>
+                <p> On top of your 70% share, the app gives you extra cash for being active and popular. </p>
+            </header>
+            <div class="pa-host-reward-grid">
+                <article class="pa-reward-card">
+                    <h3>Get Paid by the Hour</h3>
+                    <p> Earn a base salary just for streaming every day. </p>
+                    <div class="pa-notes-wrap">
+                        <ul class="pa-notes">
+                            <li> Weekly hourly salaries can range from $100 to $300 USD. </li>
+                            <li> Find your rewards at: Home → Reward, or inside the Live Room. </li>
+                            <li> Check the Level Matrix above to see how to increase your hourly rate. </li>
+                            <li> You must claim your reward manually within 24 hours (UTC+8 time zone). </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="pa-reward-card">
+                    <h3>Win Prizes for Being Popular</h3>
+                    <p> Get extra cash when you rank high on the daily leaderboards. </p>
+                    <div class="pa-notes-wrap">
+                        <ul class="pa-notes">
+                            <li>Daily rankings are counted from Monday to Thursday.</li>
+                            <li> Rank is based on the gifts you get in Live &amp; Party rooms. </li>
+                            <li> You must stream for at least 1 hour that day to qualify. </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="pa-reward-card">
+                    <h3>How Users Buy Coins</h3>
+                    <p> Understanding how fans buy coins helps you understand your earnings. </p>
+                    <div class="pa-table-scroll">
+                        <table class="data-table data-table--compact">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Coins</th>
+                                    <th scope="col">USD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="data-table__num"> =7000 (varies by region) </td>
+                                    <td class="data-table__num">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="pa-small-note"> Agencies can also become authorized coin sellers for better rates. <a
+                            href="/contact-us/">Contact our support desk</a> to learn more. </p>
+                    <div class="pa-notes-wrap">
+                        <ul class="pa-notes">
+                            <li>Only verified Agencies can sell coins.</li>
+                            <li>Authorized sellers get better exchange rates.</li>
+                            <li> Contact our <a href="/contact-us/">Support Desk</a> if you want to be a seller. </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-verify pa-section--tint">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Face Verification (ID Check)</h2>
+                <p> You must verify your face to unlock streaming and withdrawals. This keeps the platform safe. </p>
+            </header>
+            <ol class="pa-step-grid">
+                <li class="pa-step">
+                    <span class="pa-step__num">01</span>
+                    <div class="pa-step__copy">
+                        <h3>Start</h3>
+                        <p> Open the app and tap the 'Live' button to start the check. </p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">02</span>
+                    <div class="pa-step__copy">
+                        <h3>Take Photo</h3>
+                        <p>Take a clear photo of your face.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">03</span>
+                    <div class="pa-step__copy">
+                        <h3>Liveness Check</h3>
+                        <p> Tap 'Start to Certificate' to prove you are a real person. </p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">04</span>
+                    <div class="pa-step__copy">
+                        <h3>Follow Prompts</h3>
+                        <p> Take off glasses or masks, and follow the screen instructions (blink, turn head). </p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">05</span>
+                    <div class="pa-step__copy">
+                        <h3>Finish</h3>
+                        <p> Submit for approval. If approved, you can stream. If it fails, just try again. </p>
+                    </div>
+                </li>
+            </ol>
+            <figure class="pa-figure">
+                <button type="button" class="pa-image-btn" aria-label="Preview Poppo Live Host face verification guide">
+                    <img src="https://poppolive.id/wp-content/uploads/2026/09/1.webp"
+                        alt="Poppo Live face verification walkthrough screens with liveness check prompts"
+                        loading="lazy" decoding="async" />
+                    <span class="pa-zoom">⌕ &nbsp; Click to enlarge</span>
+                </button>
+                <figcaption>Poppo Live Host face verification guide</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="pa-section pa-host-profile">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Optimize Your Profile</h2>
+                <p> A good profile brings more viewers. Follow the rules to keep your account healthy and avoid bans.
+                </p>
+            </header>
+            <div class="pa-host-profile-grid">
+                <figure class="pa-figure">
+                    <button type="button" class="pa-image-btn" aria-label="Preview Profile setup guide">
+                        <img src="https://poppolive.id/wp-content/uploads/2026/09/2-1.webp"
+                            alt="Poppo Live profile settings screen showing username and bio fields" loading="lazy"
+                            decoding="async" />
+                        <span class="pa-zoom">⌕ &nbsp; Click to enlarge</span>
+                    </button>
+                    <figcaption>Profile setup guide</figcaption>
+                </figure>
+                <figure class="pa-figure">
+                    <button type="button" class="pa-image-btn"
+                        aria-label="Preview Content and profile compliance guide">
+                        <img src="https://poppolive.id/wp-content/uploads/2026/09/3-1.webp"
+                            alt="Poppo Live profile compliance guidelines for appropriate streaming content"
+                            loading="lazy" decoding="async" />
+                        <span class="pa-zoom">⌕ &nbsp; Click to enlarge</span>
+                    </button>
+                    <figcaption>Content and profile compliance guide</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-host-payout pa-section--tint">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>How to Withdraw Your Money</h2>
+                <p> Easily cash out your points to your bank or e-wallet. Need help? Visit our <a
+                        href="/contact-us/">Support Desk</a>. </p>
+            </header>
+            <div class="pa-content-panel">
+                <p class="pa-methods">
+                    <strong>Supported methods:</strong> Epay, USDT, PayPal, Bank Transfer
+                </p>
+                <ul class="pa-notes">
+                    <li>Only verified hosts can withdraw.</li>
+                    <li>Minimum is $10 (100,000 Points).</li>
+                    <li>Withdraw in multiples of 10.</li>
+                    <li>Takes up to 7 business days to arrive.</li>
+                </ul>
+            </div>
+            <ol class="pa-step-grid">
+                <li class="pa-step">
+                    <span class="pa-step__num">01</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 01</h3>
+                        <p>Go to your Profile.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">02</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 02</h3>
+                        <p>Tap 'Points'.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">03</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 03</h3>
+                        <p>Tap 'Withdraw Now'.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">04</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 04</h3>
+                        <p>Add your payment method (First time only).</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">05</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 05</h3>
+                        <p>Choose Epay, USDT, etc.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">06</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 06</h3>
+                        <p>Create a secure Transaction PIN.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">07</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 07</h3>
+                        <p>Link your email for security.</p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">08</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 08</h3>
+                        <p> Go back to 'Points' and tap 'Withdraw Now' again. </p>
+                    </div>
+                </li>
+                <li class="pa-step">
+                    <span class="pa-step__num">09</span>
+                    <div class="pa-step__copy">
+                        <h3>Step 09</h3>
+                        <p> Enter the amount and confirm. Money arrives in about 72 hours. </p>
+                    </div>
+                </li>
+            </ol>
+            <figure class="pa-figure">
+                <button type="button" class="pa-image-btn" aria-label="Preview Poppo Live Host withdrawal walkthrough">
+                    <img src="https://poppolive.id/wp-content/uploads/2026/09/4-1.webp"
+                        alt="Poppo Live withdrawal walkthrough screens showing points balance and payment options"
+                        loading="lazy" decoding="async" />
+                    <span class="pa-zoom">⌕ &nbsp; Click to enlarge</span>
+                </button>
+                <figcaption>Poppo Live Host withdrawal walkthrough</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="pa-section pa-host-rules">
+        <div class="pa-container">
+            <header class="pa-head">
+                <span class="pa-eyebrow">✦ POPPO HOST JOURNEY</span>
+                <h2>Rules to Keep Your Account Safe</h2>
+                <p> Avoid these mistakes so you do not get banned or lose your earnings. </p>
+            </header>
+            <div class="pa-content-panel">
+                <ul class="pa-notes">
+                    <li>No adult or explicit content.</li>
+                    <li>Do not show underwear or dress inappropriately.</li>
+                    <li>Do not wear overly revealing clothes.</li>
+                    <li> No "Ghost Streaming" (leaving the camera on while you are away). </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pa-section pa-faq-section pa-section--tint">
+        <div class="pa-container pa-faq-layout">
+            <div class="pa-faq-head">
+                <header class="pa-head">
+                    <span class="pa-eyebrow">✦ FREQUENTLY ASKED QUESTIONS</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers for new hosts.</p>
+                </header>
+            </div>
+            <div class="pa-faq-list">
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>Do I need to pay to become a Host?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p> No. It is 100% free to download the app and start streaming. </p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>How do I make the most money?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p> By getting digital gifts from fans, winning PK battles, and completing daily streaming
+                            tasks. </p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>Do I need experience?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p> No. The app is easy to use, and our agency will teach you how to grow. </p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>What is the minimum withdrawal?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p>$10 USD or 100,000 Points.</p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>How much is 10,000 points?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p>10,000 Points equals $1 USD.</p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>Is my private data safe?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p> Yes. But never share your personal phone number or address with viewers during a live
+                            stream. </p>
+                    </div>
+                </details>
+                <details class="pa-faq-item">
+                    <summary>
+                        <span>What if my account gets suspended?</span>
+                        <span class="pa-faq-plus" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="pa-faq-answer">
+                        <p> Message our <a href="/contact-us/">agency support</a>. We will contact the app admins to
+                            help fix the problem. </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="pa-bottom-cta">
+        <div class="pa-container pa-bottom-cta__grid">
+            <div>
+                <span class="pa-eyebrow">✦ READY TO GO LIVE?</span>
+                <h2>Start Earning Today.</h2>
+                <p> Verify your account, set up your profile, and join the global Poppo Live community. New to Poppo
+                    Live? Start from our <a href="/">home page</a>. </p>
+            </div>
+            <div class="pa-bottom-cta__buttons">
+                <a class="pa-button" href="https://invite-poppo.com/wHeJGn">Download App &amp; Become a Host</a>
+                <a class="pa-button pa-button--secondary" href="/about-us/">Learn About Us</a>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    (function () {
+        function init() {
+            var root = document.getElementById('plid-host-v1');
+            if (!root || root.dataset.ready === '1') return;
+            root.dataset.ready = '1';
+
+            var modal = document.createElement('div');
+            modal.className = 'pa3-modal';
+            modal.hidden = true;
+            modal.setAttribute('role', 'dialog');
+            modal.setAttribute('aria-modal', 'true');
+            modal.setAttribute('aria-label', 'Image preview');
+            modal.innerHTML = '<button type="button" class="pa3-modal__close" aria-label="Close image preview"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><img alt="" />';
+            document.body.appendChild(modal);
+
+            var photo = modal.querySelector('img');
+            var closeBtn = modal.querySelector('button');
+            var lastFocus = null;
+            var oldOverflow = '';
+
+            function close() {
+                if (modal.hidden) return;
+                modal.hidden = true;
+                photo.removeAttribute('src');
+                document.body.style.overflow = oldOverflow;
+                if (lastFocus && lastFocus.isConnected) lastFocus.focus();
+            }
+
+            function openModal(im, triggerBtn) {
+                if (!im) return;
+                lastFocus = triggerBtn || document.activeElement;
+                oldOverflow = document.body.style.overflow;
+                photo.src = im.currentSrc || im.src;
+                photo.alt = im.alt || 'Poppo Live Host';
+                modal.hidden = false;
+                document.body.style.overflow = 'hidden';
+                closeBtn.focus();
+            }
+
+            root.querySelectorAll('.pa-image-btn').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var im = button.querySelector('img');
+                    openModal(im, button);
+                });
+            });
+
+            closeBtn.addEventListener('click', close);
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) close();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (modal.hidden) return;
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    close();
+                }
+                if (e.key === 'Tab') {
+                    e.preventDefault();
+                    closeBtn.focus();
+                }
+            });
+
+            // Host Step Card Deck (Stacked Cards) Logic
+            var deck = root.querySelector('.host-step-deck');
+            if (deck) {
+                var cards = deck.querySelectorAll('.deck-card');
+                var dots = deck.querySelectorAll('.deck-dot');
+                var caption = deck.querySelector('.deck-caption');
+                var currentIndex = 0;
+                var totalCards = cards.length;
+                var isAnimating = false;
+
+                function renderDeck() {
+                    cards.forEach(function (card, i) {
+                        var pos = (i - currentIndex + totalCards) % totalCards;
+                        card.classList.remove('pos-0', 'pos-1', 'pos-2', 'pos-3', 'is-active');
+                        card.classList.add('pos-' + pos);
+                        if (pos === 0) {
+                            card.classList.add('is-active');
+                        }
+                    });
+
+                    dots.forEach(function (dot, i) {
+                        var active = (i === currentIndex);
+                        dot.classList.toggle('is-active', active);
+                        dot.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+
+                    if (caption && cards[currentIndex]) {
+                        var cardCaption = cards[currentIndex].getAttribute('data-caption');
+                        if (cardCaption) caption.textContent = cardCaption;
+                    }
+                }
+
+                function nextCard() {
+                    if (isAnimating) return;
+                    isAnimating = true;
+
+                    var currentCard = cards[currentIndex];
+                    if (currentCard) {
+                        currentCard.classList.add('is-sliding-out');
+                    }
+
+                    setTimeout(function () {
+                        if (currentCard) {
+                            currentCard.classList.remove('is-sliding-out');
+                        }
+                        currentIndex = (currentIndex + 1) % totalCards;
+                        renderDeck();
+                        setTimeout(function () {
+                            isAnimating = false;
+                        }, 80);
+                    }, 280);
+                }
+
+                function prevCard() {
+                    if (isAnimating) return;
+                    isAnimating = true;
+                    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+                    renderDeck();
+                    setTimeout(function () {
+                        isAnimating = false;
+                    }, 280);
+                }
+
+                function goToCard(targetIndex) {
+                    if (isAnimating || targetIndex === currentIndex) return;
+                    isAnimating = true;
+                    currentIndex = targetIndex;
+                    renderDeck();
+                    setTimeout(function () {
+                        isAnimating = false;
+                    }, 280);
+                }
+
+                // Click card or next button to advance
+                cards.forEach(function (card) {
+                    card.addEventListener('click', function (e) {
+                        if (e.target.closest('.deck-btn--zoom')) {
+                            return;
+                        }
+                        if (card.classList.contains('is-active') || e.target.closest('.deck-btn--next')) {
+                            e.preventDefault();
+                            nextCard();
+                        }
+                    });
+                });
+
+                // Zoom button click to open lightbox modal
+                cards.forEach(function (card) {
+                    var zoomBtn = card.querySelector('.deck-btn--zoom');
+                    if (zoomBtn) {
+                        zoomBtn.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            var img = card.querySelector('.deck-card__img');
+                            openModal(img, zoomBtn);
+                        });
+                    }
+                });
+
+                // Dots navigation
+                dots.forEach(function (dot) {
+                    dot.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        var targetIndex = parseInt(dot.getAttribute('data-index'), 10);
+                        if (!isNaN(targetIndex)) goToCard(targetIndex);
+                    });
+                });
+
+                // Touch swipe support for mobile
+                var touchStartX = 0;
+                var touchEndX = 0;
+                var stack = deck.querySelector('.deck-stack');
+                if (stack) {
+                    stack.addEventListener('touchstart', function (e) {
+                        touchStartX = e.changedTouches[0].screenX;
+                    }, { passive: true });
+                    stack.addEventListener('touchend', function (e) {
+                        touchEndX = e.changedTouches[0].screenX;
+                        if (touchStartX - touchEndX > 45) {
+                            nextCard();
+                        } else if (touchEndX - touchStartX > 45) {
+                            prevCard();
+                        }
+                    }, { passive: true });
+                }
+
+                // Initial render
+                renderDeck();
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+</script>

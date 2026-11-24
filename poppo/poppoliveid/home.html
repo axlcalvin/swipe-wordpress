@@ -1,0 +1,1367 @@
+<!-- POPPOLIVE.ID HOMEPAGE V2.1 | LIGHT FUTURISTIC x POPPO ASIA V4 CONCEPT | Ecosystem + Responsive Lightbox | Elementor HTML Widget -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+  #plid-home-v2 {
+    --plid-ink: #17214C;
+    --plid-muted: #596685;
+    --plid-blue: #3154E9;
+    --plid-purple: #6740EF;
+    --plid-magenta: #A52BCF;
+    --plid-pink: #D41491;
+    --plid-grad: linear-gradient(110deg, #3154E9 0%, #6740EF 40%, #A52BCF 72%, #D41491 100%);
+    --plid-card: linear-gradient(140deg, rgba(255, 255, 255, .98), rgba(247, 246, 255, .91));
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 0 0 calc(50% - 50vw) !important;
+    padding: 0 !important;
+    overflow: clip;
+    background: #FCFDFF;
+    color: var(--plid-ink) !important;
+    font-family: 'Manrope', Arial, sans-serif !important
+  }
+
+  #plid-home-v2 *,
+  #plid-home-v2 *::before,
+  #plid-home-v2 *::after {
+    box-sizing: border-box
+  }
+
+  #plid-home-v2 .container {
+    max-width: 1320px !important;
+    width: calc(100% - 64px) !important;
+    margin: 0 auto !important;
+    padding: 0 !important
+  }
+
+  #plid-home-v2 :is(h1, h2, h3) {
+    font-family: 'Space Grotesk', Arial, sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -.052em !important;
+    color: #182454 !important;
+    line-height: 1.13 !important;
+    margin: 0 !important;
+    text-wrap: balance
+  }
+
+  #plid-home-v2 p {
+    font-family: 'Manrope', Arial, sans-serif !important;
+    color: var(--plid-muted) !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin: 0 !important
+  }
+
+  #plid-home-v2 a {
+    text-decoration: none !important
+  }
+
+  #plid-home-v2 :is(a, summary, [role="button"]):focus-visible {
+    outline: 3px solid #A875FF !important;
+    outline-offset: 4px !important
+  }
+
+  #plid-home-v2 .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    letter-spacing: .16em !important;
+    text-transform: uppercase !important;
+    color: #6740EF !important;
+    border: 1px solid rgba(120, 86, 240, .26);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, .75);
+    box-shadow: 0 6px 20px rgba(100, 64, 220, .06);
+    padding: 11px 17px;
+    margin: 0 0 22px !important
+  }
+
+  #plid-home-v2 .eyebrow::before {
+    content: '✦';
+    color: #BD35D7;
+    font-size: 13px
+  }
+
+  #plid-home-v2 .section-title {
+    font-size: clamp(31px, 4.25vw, 57px) !important
+  }
+
+  #plid-home-v2 .btn {
+    font: 800 14px/1.3 'Space Grotesk', Arial, sans-serif !important;
+    min-height: 52px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 27px !important;
+    border-radius: 999px !important;
+    cursor: pointer;
+    white-space: normal;
+    transition: transform .23s, box-shadow .23s, background .23s !important
+  }
+
+  #plid-home-v2 :is(.btn--gradient, .btn--primary) {
+    background: var(--plid-grad) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, .32) !important;
+    box-shadow: 0 12px 28px rgba(102, 64, 239, .23), 0 0 21px rgba(212, 20, 145, .12)
+  }
+
+  #plid-home-v2 .btn--secondary {
+    background: linear-gradient(#fff, #F9F7FF) padding-box, var(--plid-grad) border-box !important;
+    color: #613BD8 !important;
+    border: 1.7px solid transparent !important;
+    box-shadow: 0 8px 19px rgba(103, 64, 239, .10)
+  }
+
+  #plid-home-v2 .btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 31px rgba(100, 61, 228, .28), 0 0 23px rgba(212, 20, 145, .16) !important
+  }
+
+  #plid-home-v2 .cta-group {
+    display: flex !important;
+    gap: 13px !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-top: 29px !important
+  }
+
+  #plid-home-v2 .hero {
+    position: relative;
+    padding: 145px 0 92px !important;
+    overflow: hidden !important;
+    background: radial-gradient(ellipse at 80% 29%, rgba(163, 119, 255, .29), transparent 41%), radial-gradient(ellipse at 7% 8%, rgba(87, 161, 255, .23), transparent 51%), linear-gradient(120deg, #F6FAFF, #F8F4FF 55%, #FFF2FC)
+  }
+
+  #plid-home-v2 .hero:before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 610px;
+    height: 610px;
+    right: -210px;
+    top: 40px;
+    border: 1px solid rgba(121, 83, 236, .17);
+    border-radius: 50%;
+    box-shadow: 0 0 0 76px rgba(102, 80, 235, .035), 0 0 0 165px rgba(175, 81, 218, .026)
+  }
+
+  #plid-home-v2 .hero>.container {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    align-items: center;
+    gap: clamp(28px, 4vw, 74px) !important
+  }
+
+  #plid-home-v2 .hero__content {
+    min-width: 0;
+    position: relative;
+    z-index: 2
+  }
+
+  #plid-home-v2 .hero__title {
+    font-size: clamp(43px, 5.6vw, 82px) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.068em !important;
+    max-width: 760px
+  }
+
+  #plid-home-v2 .hero__title em {
+    font-style: normal !important;
+    background: var(--plid-grad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important
+  }
+
+  #plid-home-v2 .hero__subtext {
+    font-size: 16px !important;
+    max-width: 640px;
+    margin-top: 25px !important
+  }
+
+  #plid-home-v2 .hero__media {
+    min-width: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 550px;
+    margin: 0 !important;
+    isolation: isolate;
+    cursor: zoom-in
+  }
+
+  #plid-home-v2 .hero__media:before {
+    content: '';
+    position: absolute;
+    inset: 7% 7%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100, 75, 255, .19), rgba(242, 110, 229, .13) 45%, transparent 71%);
+    filter: blur(10px);
+    z-index: -1
+  }
+
+  #plid-home-v2 .hero__media img {
+    position: relative;
+    display: block;
+    max-width: min(100%, 450px) !important;
+    max-height: 530px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 23px;
+    filter: drop-shadow(0 24px 30px rgba(57, 38, 149, .20));
+    animation: plidFloat 6s ease-in-out infinite
+  }
+
+  #plid-home-v2 .plid-float-chip {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(125deg, rgba(255, 255, 255, .96), rgba(243, 238, 255, .94));
+    border: 1px solid rgba(138, 84, 249, .47);
+    border-radius: 17px;
+    box-shadow: 0 13px 32px rgba(70, 45, 153, .12);
+    padding: 13px 17px;
+    color: #5534C7;
+    font: 800 11px/1.4 'Space Grotesk', sans-serif;
+    letter-spacing: .04em;
+    white-space: nowrap;
+    pointer-events: none;
+    backdrop-filter: blur(14px)
+  }
+
+  #plid-home-v2 .plid-float-chip--a {
+    top: 16%;
+    left: 1%
+  }
+
+  #plid-home-v2 .plid-float-chip--b {
+    right: 0%;
+    bottom: 18%
+  }
+
+  #plid-home-v2 .trust {
+    position: relative;
+    padding: 85px 0 93px !important;
+    background: linear-gradient(180deg, #fff, #F7FAFF)
+  }
+
+  #plid-home-v2 :is(.trust__header, .compare__header, .steps__header, .faq__header) {
+    max-width: 850px !important;
+    text-align: center !important;
+    margin: 0 auto 41px !important
+  }
+
+  #plid-home-v2 :is(.trust__header, .compare__header, .steps__header, .faq__header) .section-title {
+    margin: 0 0 16px !important
+  }
+
+  #plid-home-v2 .trust__grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px !important
+  }
+
+  #plid-home-v2 .stat-card {
+    position: relative;
+    min-width: 0;
+    padding: 30px !important;
+    border-radius: 26px !important;
+    min-height: 218px;
+    background: var(--plid-card) padding-box, var(--plid-grad) border-box;
+    border: 1.6px solid transparent !important;
+    box-shadow: 0 15px 39px rgba(90, 84, 175, .10), 0 2px 8px rgba(112, 77, 242, .045) !important;
+    transition: transform .25s, box-shadow .25s !important;
+    overflow: hidden
+  }
+
+  #plid-home-v2 .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 38px rgba(106, 78, 200, .17), 0 0 19px rgba(171, 61, 224, .10) !important
+  }
+
+  #plid-home-v2 .stat-card__number {
+    font: 800 clamp(43px, 5vw, 69px)/1 'Space Grotesk', sans-serif !important;
+    letter-spacing: -.07em;
+    background: var(--plid-grad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    margin: 0 0 20px !important
+  }
+
+  #plid-home-v2 .stat-card__desc {
+    color: #556180 !important;
+    font-size: 13px !important;
+    max-width: 350px
+  }
+
+  /* ECOSYSTEM IMAGE — directly after Trust & Scale statistics */
+  #plid-home-v2 .plid-ecosystem {
+    margin: 36px auto 0 !important;
+    max-width: 1160px;
+    width: 100%;
+  }
+
+  #plid-home-v2 .plid-ecosystem__frame {
+    position: relative;
+    display: block;
+    cursor: zoom-in;
+    overflow: hidden;
+    border: 1.5px solid rgba(113, 76, 230, .28);
+    border-radius: 26px;
+    background: linear-gradient(130deg, #F0F5FF, #F6EEFF);
+    box-shadow: 0 20px 44px rgba(91, 67, 177, .15), 0 0 32px rgba(176, 68, 214, .08);
+    transition: transform .26s ease, box-shadow .26s ease;
+  }
+
+  #plid-home-v2 .plid-ecosystem__frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 23px 48px rgba(101, 69, 198, .21), 0 0 30px rgba(205, 58, 198, .13)
+  }
+
+  #plid-home-v2 .plid-ecosystem__frame img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    transition: transform .35s ease;
+  }
+
+  #plid-home-v2 .plid-ecosystem__frame:hover img {
+    transform: scale(1.012)
+  }
+
+  #plid-home-v2 .plid-ecosystem__zoom {
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+    padding: 10px 17px;
+    border-radius: 100px;
+    color: #fff !important;
+    background: rgba(20, 21, 66, .83);
+    border: 1px solid rgba(255, 255, 255, .36);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+    backdrop-filter: blur(10px);
+    font: 700 12px/1.4 'Manrope', Arial, sans-serif !important;
+    pointer-events: none
+  }
+
+  @media(max-width:800px) {
+    #plid-home-v2 .plid-ecosystem {
+      margin-top: 27px !important
+    }
+
+    #plid-home-v2 .plid-ecosystem__frame {
+      border-radius: 19px
+    }
+  }
+
+  @media(max-width:560px) {
+    #plid-home-v2 .plid-ecosystem {
+      margin-top: 21px !important
+    }
+
+    #plid-home-v2 .plid-ecosystem__frame {
+      border-radius: 14px
+    }
+
+    #plid-home-v2 .plid-ecosystem__zoom {
+      right: 9px;
+      bottom: 9px;
+      padding: 7px 11px;
+      font-size: 10px !important
+    }
+  }
+
+  #plid-home-v2 .plid-paths {
+    position: relative;
+    padding: 95px 0 105px;
+    background:
+      radial-gradient(ellipse at 13% 26%, rgba(115, 167, 255, .15), transparent 42%), radial-gradient(ellipse at 86% 72%, rgba(236, 106, 221, .12), transparent 40%), linear-gradient(145deg, #F5F8FF, #F9F5FF)
+  }
+
+  #plid-home-v2 .plid-paths>.split-section {
+    padding: 0 !important;
+    background: none !important
+  }
+
+  #plid-home-v2 .plid-paths>.split-section+.split-section {
+    margin-top: 30px !important
+  }
+
+  #plid-home-v2 .split-section>.container {
+    position: relative;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr) !important;
+    align-items: center !important;
+    gap: clamp(28px, 5vw, 70px) !important;
+    padding: 42px 45px !important;
+    border-radius: 32px !important;
+    background: linear-gradient(120deg, rgba(255, 255, 255, .98), rgba(249, 248, 255, .94)) padding-box, var(--plid-grad) border-box;
+    border: 1.7px solid transparent !important;
+    box-shadow: 0 18px 45px rgba(90, 75, 178, .11), inset 0 1px rgba(255, 255, 255, .7);
+    min-height: 480px
+  }
+
+  #plid-home-v2 .split-section--reverse>.container {
+    grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr) !important
+  }
+
+  #plid-home-v2 .split-section__content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  #plid-home-v2 .split-section__content .section-title {
+    font-size: clamp(32px, 3.8vw, 54px) !important;
+    margin-bottom: 19px !important
+  }
+
+  #plid-home-v2 .split-section__content>p {
+    font-size: 14px !important
+  }
+
+  #plid-home-v2 .feature-list {
+    list-style: none !important;
+    display: grid !important;
+    gap: 12px !important;
+    padding: 0 !important;
+    margin: 24px 0 28px !important;
+    width: 100%
+  }
+
+  #plid-home-v2 .feature-list li {
+    position: relative;
+    list-style: none !important;
+    padding: 0 0 0 37px !important;
+    margin: 0 !important;
+    color: #354366 !important;
+    font-size: 13px !important;
+    line-height: 1.75 !important
+  }
+
+  #plid-home-v2 .feature-list li:before {
+    content: '✓';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--plid-grad);
+    font: 800 12px 'Manrope', sans-serif;
+    color: #fff;
+    box-shadow: 0 4px 11px rgba(121, 68, 224, .21)
+  }
+
+  #plid-home-v2 .feature-list strong {
+    color: #252E61 !important
+  }
+
+  #plid-home-v2 .split-section__cta {
+    margin-top: auto !important
+  }
+
+  #plid-home-v2 .split-section__media {
+    position: relative;
+    min-width: 0;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-in;
+    padding: 23px !important;
+    border-radius: 25px !important;
+    background: radial-gradient(circle at 30% 20%, rgba(130, 171, 255, .22), transparent 48%), linear-gradient(135deg, #F5F1FF, #ECF3FF) !important;
+    border: 1px solid rgba(141, 104, 240, .22) !important;
+    overflow: hidden;
+    min-height: 365px
+  }
+
+  #plid-home-v2 .split-section__media img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: 430px !important;
+    object-fit: contain !important;
+    border-radius: 17px;
+    filter: drop-shadow(0 12px 17px rgba(65, 58, 134, .16));
+    transition: transform .25s
+  }
+
+  #plid-home-v2 .split-section__media:hover img {
+    transform: scale(1.025)
+  }
+
+  #plid-home-v2 .split-section--reverse .split-section__content {
+    order: 2
+  }
+
+  #plid-home-v2 .split-section--reverse .split-section__media {
+    order: 1
+  }
+
+  #plid-home-v2 .compare {
+    position: relative;
+    padding: 94px 0 104px !important;
+    background: #FFFFFF
+  }
+
+  #plid-home-v2 .compare__content {
+    border: 1.7px solid transparent !important;
+    border-radius: 28px !important;
+    background: linear-gradient(#fff, #FCFAFF) padding-box, var(--plid-grad) border-box;
+    padding: 26px !important;
+    box-shadow: 0 18px 44px rgba(96, 70, 175, .10);
+    min-width: 0
+  }
+
+  #plid-home-v2 .compare-table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    min-width: 685px !important;
+    border: 1px solid #DDD7F8 !important;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff
+  }
+
+  #plid-home-v2 .compare__content:has(.compare-table) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch
+  }
+
+  #plid-home-v2 .compare-table th {
+    background: var(--plid-grad) !important;
+    color: #fff !important;
+    font: 800 14px/1.55 'Manrope', sans-serif !important;
+    padding: 18px 22px !important;
+    text-align: left !important
+  }
+
+  #plid-home-v2 .compare-table td {
+    background: #fff !important;
+    color: #354261 !important;
+    padding: 20px 22px !important;
+    font: 500 13px/1.7 'Manrope', sans-serif !important;
+    vertical-align: top;
+    border-bottom: 1px solid #EAE7F7 !important;
+    width: 50%
+  }
+
+  #plid-home-v2 .compare-table tr:nth-child(even) td {
+    background: #F7F7FF !important
+  }
+
+  #plid-home-v2 .compare-table tr:last-child td {
+    border-bottom: 0 !important
+  }
+
+  #plid-home-v2 .compare-table td+td {
+    border-left: 1px solid #E8E3FA !important
+  }
+
+  #plid-home-v2 .compare-table td strong {
+    color: #372C99 !important;
+    font-weight: 800
+  }
+
+  #plid-home-v2 .compare__content>div:last-child {
+    text-align: center !important;
+    margin: 27px 0 3px !important
+  }
+
+  #plid-home-v2 .steps {
+    padding: 97px 0 104px !important;
+    background: radial-gradient(ellipse at 85% 24%, rgba(226, 123, 228, .16), transparent 41%), linear-gradient(145deg, #F2F7FF, #F8F4FF)
+  }
+
+  #plid-home-v2 .steps-list {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px !important;
+    align-items: stretch
+  }
+
+  #plid-home-v2 .step-item {
+    background: linear-gradient(#fff, #FCFBFF) padding-box, var(--plid-grad) border-box !important;
+    border: 1.5px solid transparent !important;
+    border-radius: 23px !important;
+    padding: 23px 19px 27px !important;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    box-shadow: 0 10px 29px rgba(96, 64, 189, .08);
+    transition: transform .25s, box-shadow .25s
+  }
+
+  #plid-home-v2 .step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 29px rgba(111, 71, 206, .17)
+  }
+
+  #plid-home-v2 .step-item__number {
+    display: grid;
+    place-items: center;
+    width: 57px;
+    height: 57px;
+    border-radius: 16px;
+    color: #fff;
+    background: var(--plid-grad);
+    box-shadow: 0 8px 18px rgba(117, 69, 224, .25);
+    font: 800 23px/1 'Space Grotesk', sans-serif
+  }
+
+  #plid-home-v2 .step-item__text {
+    color: #28365F;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.6
+  }
+
+  #plid-home-v2 .faq {
+    padding: 94px 0 104px !important;
+    background: #fff
+  }
+
+  #plid-home-v2 .faq-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 18px !important;
+    align-items: start
+  }
+
+  #plid-home-v2 .faq-item {
+    min-width: 0;
+    border: 1.5px solid rgba(131, 105, 234, .32) !important;
+    border-radius: 21px !important;
+    background: linear-gradient(125deg, #fff, #F8F7FF) !important;
+    box-shadow: 0 11px 29px rgba(98, 75, 191, .08);
+    overflow: hidden;
+    transition: box-shadow .2s, border-color .2s
+  }
+
+  #plid-home-v2 .faq-item:hover {
+    border-color: #AE78EE !important;
+    box-shadow: 0 12px 29px rgba(111, 67, 204, .13)
+  }
+
+  #plid-home-v2 .plid-faq-details {
+    display: block;
+    width: 100%
+  }
+
+  #plid-home-v2 .plid-faq-question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    list-style: none !important;
+    padding: 24px 25px !important
+  }
+
+  #plid-home-v2 .plid-faq-question::-webkit-details-marker {
+    display: none
+  }
+
+  #plid-home-v2 .plid-faq-question h3 {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+    letter-spacing: -.03em !important;
+    color: #252D64 !important
+  }
+
+  #plid-home-v2 .plid-faq-icon {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    flex: 0 0 29px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--plid-grad);
+    font-size: 22px;
+    line-height: 1;
+    transition: transform .2s
+  }
+
+  #plid-home-v2 details[open] .plid-faq-icon {
+    transform: rotate(45deg)
+  }
+
+  #plid-home-v2 .plid-faq-answer {
+    padding: 0 25px 25px !important
+  }
+
+  #plid-home-v2 .plid-faq-answer p {
+    font-size: 13px !important;
+    color: #5B6585 !important
+  }
+
+  #plid-home-v2 .closing {
+    padding: 86px 0 94px !important;
+    position: relative;
+    background: radial-gradient(ellipse at 1% 12%, rgba(110, 178, 255, .27), transparent 46%), radial-gradient(ellipse at 90% 70%, rgba(235, 126, 224, .26), transparent 47%), linear-gradient(120deg, #EFF5FF, #F5EFFF 51%, #FFE9F8) !important;
+    border-top: 1px solid #E2D8FF;
+    overflow: hidden
+  }
+
+  #plid-home-v2 .closing__gradient {
+    position: absolute;
+    inset: auto -20% -260px;
+    min-height: 360px;
+    background: radial-gradient(ellipse at center, rgba(161, 93, 238, .15), transparent 64%);
+    pointer-events: none
+  }
+
+  #plid-home-v2 .closing .container {
+    position: relative;
+    z-index: 2
+  }
+
+  #plid-home-v2 .closing .reveal-on-scroll {
+    text-align: center;
+    max-width: 850px;
+    margin: auto
+  }
+
+  #plid-home-v2 .closing__title {
+    font-size: clamp(36px, 4.9vw, 62px) !important;
+    margin-bottom: 18px !important
+  }
+
+  #plid-home-v2 .closing__subtext {
+    max-width: 690px;
+    margin: 0 auto !important
+  }
+
+  #plid-home-v2 .closing .cta-group {
+    justify-content: center
+  }
+
+  #plid-home-v2 .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important
+  }
+
+  @keyframes plidFloat {
+
+    0%,
+    100% {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-11px)
+    }
+  }
+
+  @media(max-width:1120px) {
+    #plid-home-v2 .container {
+      width: calc(100% - 48px) !important
+    }
+
+    #plid-home-v2 .hero>.container {
+      grid-template-columns: 1.08fr .92fr;
+      gap: 24px !important
+    }
+
+    #plid-home-v2 .hero__media {
+      min-height: 445px
+    }
+
+    #plid-home-v2 .hero__media img {
+      max-height: 440px !important
+    }
+
+    #plid-home-v2 .steps-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    #plid-home-v2 .split-section>.container {
+      padding: 32px !important
+    }
+  }
+
+  @media(max-width:800px) {
+    #plid-home-v2 .hero {
+      padding: 121px 0 70px !important
+    }
+
+    #plid-home-v2 .hero>.container {
+      grid-template-columns: 1fr;
+      gap: 35px !important
+    }
+
+    #plid-home-v2 .hero__title {
+      font-size: clamp(43px, 7.7vw, 67px) !important
+    }
+
+    #plid-home-v2 .hero__media {
+      min-height: 410px;
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto !important
+    }
+
+    #plid-home-v2 .hero__media img {
+      max-height: 415px !important
+    }
+
+    #plid-home-v2 .trust__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    #plid-home-v2 .split-section>.container,
+    #plid-home-v2 .split-section--reverse>.container {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important
+    }
+
+    #plid-home-v2 .split-section--reverse .split-section__content {
+      order: 1
+    }
+
+    #plid-home-v2 .split-section--reverse .split-section__media {
+      order: 2
+    }
+
+    #plid-home-v2 .split-section__media {
+      min-height: 285px
+    }
+
+    #plid-home-v2 .split-section__media img {
+      max-height: 340px !important
+    }
+
+    #plid-home-v2 .faq-grid {
+      grid-template-columns: 1fr
+    }
+  }
+
+  @media(max-width:560px) {
+    #plid-home-v2 .container {
+      width: calc(100% - 28px) !important
+    }
+
+    #plid-home-v2 .hero {
+      padding: 112px 0 52px !important
+    }
+
+    #plid-home-v2 .hero__title {
+      font-size: clamp(37px, 11vw, 52px) !important
+    }
+
+    #plid-home-v2 .hero__subtext {
+      font-size: 14px !important
+    }
+
+    #plid-home-v2 .cta-group .btn {
+      width: 100%;
+      min-height: 49px
+    }
+
+    #plid-home-v2 .hero__media {
+      min-height: 320px
+    }
+
+    #plid-home-v2 .hero__media img {
+      max-height: 325px !important;
+      max-width: 90% !important
+    }
+
+    #plid-home-v2 .plid-float-chip {
+      font-size: 9px;
+      padding: 9px 10px;
+      border-radius: 12px
+    }
+
+    #plid-home-v2 .plid-float-chip--a {
+      top: 6%
+    }
+
+    #plid-home-v2 .plid-float-chip--b {
+      bottom: 6%
+    }
+
+    #plid-home-v2 :is(.trust, .compare, .steps, .faq) {
+      padding: 69px 0 76px !important
+    }
+
+    #plid-home-v2 .plid-paths {
+      padding: 72px 0 79px
+    }
+
+    #plid-home-v2 .trust__grid {
+      grid-template-columns: 1fr;
+      gap: 14px !important
+    }
+
+    #plid-home-v2 .stat-card {
+      min-height: auto;
+      padding: 25px !important
+    }
+
+    #plid-home-v2 .stat-card__number {
+      font-size: 51px !important
+    }
+
+    #plid-home-v2 .split-section>.container {
+      padding: 23px !important;
+      border-radius: 24px !important
+    }
+
+    #plid-home-v2 .split-section__media {
+      padding: 14px !important;
+      min-height: 250px
+    }
+
+    #plid-home-v2 .compare__content {
+      padding: 12px !important
+    }
+
+    #plid-home-v2 .compare-table {
+      min-width: 630px !important
+    }
+
+    #plid-home-v2 .compare-table :is(th, td) {
+      padding: 14px 16px !important
+    }
+
+    #plid-home-v2 .steps-list {
+      grid-template-columns: 1fr;
+      gap: 12px !important
+    }
+
+    #plid-home-v2 .step-item {
+      min-height: auto;
+      padding: 19px !important;
+      flex-direction: row;
+      align-items: center;
+      gap: 17px
+    }
+
+    #plid-home-v2 .step-item__number {
+      width: 50px;
+      height: 50px;
+      flex: 0 0 50px;
+      font-size: 20px
+    }
+
+    #plid-home-v2 .plid-faq-question {
+      padding: 19px !important
+    }
+
+    #plid-home-v2 .plid-faq-answer {
+      padding: 0 19px 19px !important
+    }
+
+    #plid-home-v2 .closing {
+      padding: 72px 0 76px !important
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    #plid-home-v2 * {
+      animation: none !important;
+      transition: none !important
+    }
+  }
+</style>
+<div class="plid-home-v2" id="plid-home-v2">
+  <!-- HERO SECTION -->
+  <section aria-label="Poppo Live Agency homepage hero" class="hero">
+    <div class="container">
+      <div class="hero__content reveal-on-scroll">
+        <span class="eyebrow">Welcome to the Creator Economy</span>
+        <h1 class="hero__title">Don't Just Stream. Build a <em>Real</em> Business. </h1>
+        <p class="hero__subtext">Poppo Live Agency gives you the tools to start, grow, and earn from live streaming. Whether you want to be a top creator or build a team of streamers, we provide the training, support, and systems you need to succeed globally.</p>
+        <div class="cta-group">
+          <a aria-label="Start Your Agency" class="btn btn--gradient" href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=13200998&amp;c=poppo">Start Your Agency</a>
+          <a aria-label="Become a Host" class="btn btn--secondary" href="https://invite-poppo.com/wHeJGn">Become a Host</a>
+        </div>
+        <div class="hero-tg-action">
+          <a href="https://t.me/PoppoLiveService_bot" target="_blank" rel="noopener noreferrer" class="btn btn--telegram" id="hero-cta-telegram">
+            <svg class="hero-tg-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            <span>Get Help on Telegram</span>
+          </a>
+        </div>
+      </div>
+      <figure aria-label="Preview Poppo Live application image" class="hero__media reveal-on-scroll plid-image-preview" role="button" tabindex="0">
+        <img alt="Poppo Live app interface showing live stream discovery and creator rooms" height="900" loading="eager" src="https://poppolive.id/wp-content/uploads/2023/11/1-3.webp" width="800" />
+        <span aria-hidden="true" class="plid-float-chip plid-float-chip--a">✦ LIVE STREAMING</span>
+        <span aria-hidden="true" class="plid-float-chip plid-float-chip--b">↗ CREATOR NETWORK</span>
+      </figure>
+    </div>
+  </section>
+  <!-- TRUST & SCALE SECTION -->
+  <section aria-label="Trust and Scale" class="trust">
+    <div class="container">
+      <div class="trust__header reveal-on-scroll">
+        <h2 class="section-title">Trusted by Thousands of Creators Worldwide.</h2>
+        <p>We help people turn their free time into real income. Join a fast-growing network that supports the next generation of streamers.</p>
+      </div>
+      <div class="trust__grid reveal-on-scroll">
+        <div class="stat-card">
+          <div class="stat-card__number">4.5★</div>
+          <p class="stat-card__desc">Highly rated by our agency partners and hosts for trust and easy payouts.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number">10M+</div>
+          <p class="stat-card__desc">A massive user base on Play Store and App Store means more viewers and more gifts for you.</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number">150+</div>
+          <p class="stat-card__desc">Earn from a global audience. Your income is not limited by your local location. </p>
+        </div>
+      </div>
+      <!-- Poppo Live Roles & Ecosystem: standalone optimized embedded visual -->
+      <div class="plid-ecosystem reveal-on-scroll">
+        <figure class="plid-ecosystem__frame plid-image-preview" role="button" tabindex="0" aria-label="View Poppo Live Roles and Ecosystem image">
+          <img src="https://poppolive.id/wp-content/uploads/2026/11/Poppo-Ecosystem-1.png" alt="Poppo Live Roles and Ecosystem: Viewers, Hosts, Agents, points value and commission ratio" width="1350" height="860" loading="lazy" decoding="async" />
+          <span class="plid-ecosystem__zoom" aria-hidden="true">⊕ View Ecosystem</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- SPLIT 1: FOR HOSTS -->
+  <div aria-label="Poppo Live paths for Hosts and Agencies" class="plid-paths">
+    <section aria-label="For Hosts" class="split-section">
+      <div class="container">
+        <div class="split-section__content reveal-on-scroll">
+          <span class="eyebrow">For Hosts</span>
+          <h2 class="section-title">Make Money Doing What You Love.</h2>
+          <p>Poppo Live is a direct way for creators to earn. Turn your live streams and fan interactions into real cash. We guarantee a 70% share of the gifts you receive, backed by our secure payment system.</p>
+          <ul class="feature-list">
+            <li>Host fun Live Rooms and Party chats.</li>
+            <li>Earn from 1-on-1 PK Battles.</li>
+            <li>Get bonus rewards for completing daily streaming tasks.</li>
+            <li>Build your personal brand and reach fans worldwide.</li>
+          </ul>
+          <div class="split-section__cta">
+            <a aria-label="Learn About Host" class="btn btn--primary" href="/host/">Learn About Host</a>
+          </div>
+        </div>
+        <figure aria-label="Preview Poppo Live app showing live room with top contributors and interactive gifts" class="split-section__media reveal-on-scroll plid-image-preview" role="button" tabindex="0">
+          <img alt="Poppo Live app showing live room with top contributors and interactive gifts" height="800" loading="lazy" src="https://poppolive.id/wp-content/uploads/2025/03/4.png" width="600" />
+        </figure>
+      </div>
+    </section>
+    <section aria-label="For Agencies" class="split-section split-section--reverse">
+      <div class="container">
+        <div class="split-section__content reveal-on-scroll">
+          <span class="eyebrow">For Agencies</span>
+          <h2 class="section-title">Create Your Own Streaming Team.</h2>
+          <p>As an Agency Partner, you are the boss. You invite new hosts, help them grow, and earn extra commission from the total gifts your team receives.</p>
+          <ul class="feature-list">
+            <li>
+              <strong>Recruit:</strong> Invite talented hosts and sub-agents to your team.
+            </li>
+            <li>
+              <strong>Manage:</strong> Use our easy dashboard to track your team's daily earnings.
+            </li>
+            <li>
+              <strong>Earn:</strong> Get up to 20% extra commission from your team's total volume.
+            </li>
+            <li>
+              <strong>Grow:</strong> Build a business that makes money every day, even when you are offline.
+            </li>
+          </ul>
+          <div class="split-section__cta">
+            <a aria-label="Learn About Agency" class="btn btn--primary" href="/agency/">Learn About Agency</a>
+          </div>
+        </div>
+        <figure aria-label="Preview Poppo Live agency party room with multi-host grid and live chat" class="split-section__media reveal-on-scroll plid-image-preview" role="button" tabindex="0">
+          <img alt="Poppo Live agency party room with multi-host grid and live chat" height="800" loading="lazy" src="https://poppolive.id/wp-content/uploads/2023/11/4.webp" width="600" />
+        </figure>
+      </div>
+    </section>
+  </div>
+  <!-- SPLIT 2: FOR AGENCIES -->
+  <!-- DIFFERENTIATOR / COMPARE -->
+  <section aria-label="Why Join Our Agency" class="compare">
+    <div class="container">
+      <div class="compare__header reveal-on-scroll">
+        <h2 class="section-title">Why Join Our Poppo Live Agency?</h2>
+        <p>You can download the app and stream alone, but joining our agency gives you a massive advantage. We treat your success as our success.</p>
+      </div>
+      <div class="compare__content reveal-on-scroll">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Streaming Alone (No Agency)</th>
+              <th>Joining Our Poppo Live Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>No Guidance:</strong> You have to guess how to get more viewers and gifts.
+              </td>
+              <td>
+                <strong>Step-by-Step Training:</strong> We teach you how to grow your room and attract high-paying fans.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Slow Problem Solving:</strong> If your account gets stuck, you wait for slow bot support.
+              </td>
+              <td>
+                <strong>Fast Human Support:</strong> Chat directly with our team to fix account or payment issues quickly.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Limited Income:</strong> You only earn from your own streaming hours.
+              </td>
+              <td>
+                <strong>Team Bonuses:</strong> Earn your own stream income PLUS extra commission from your team's success.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Risk of Mistakes:</strong> Easy to break rules and get banned without knowing why.
+              </td>
+              <td>
+                <strong>Safe &amp; Secure:</strong> We guide you on the rules to keep your account safe and active forever.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Zero Motivation:</strong> Streaming alone can be lonely and hard to stay consistent.
+              </td>
+              <td>
+                <strong>Active Community:</strong> Join a group of motivated creators and team builders who share tips daily.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top: 3rem;">
+          <a aria-label="Learn More About Us" class="btn btn--primary" href="/about-us/">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOW IT WORKS (STEPS) -->
+  <section aria-label="How it Works" class="steps">
+    <div class="container">
+      <div class="steps__header reveal-on-scroll">
+        <h2 class="section-title">Start in 5 Easy Steps</h2>
+        <p>Skip the confusing setup. Our simple guide gets your account ready to earn in just a few minutes. </p>
+      </div>
+      <div class="steps-list reveal-on-scroll">
+        <div class="step-item">
+          <div class="step-item__number">01</div>
+          <div class="step-item__text">Choose your path (Build an Agency or Stream as a Host).</div>
+        </div>
+        <div class="step-item">
+          <div class="step-item__number">02</div>
+          <div class="step-item__text">Download the Poppo Live app using our secure link.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-item__number">03</div>
+          <div class="step-item__text">Create your account and choose a good username.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-item__number">04</div>
+          <div class="step-item__text">Complete the quick Face Verification to prove you are real.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-item__number">05</div>
+          <div class="step-item__text">Go live, invite friends, and start earning.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section aria-label="Frequently Asked Questions" class="faq">
+    <div class="container">
+      <div class="faq__header reveal-on-scroll">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p>Quick answers to help you start.</p>
+      </div>
+      <div class="faq-grid reveal-on-scroll">
+        <div class="faq-item">
+          <details class="plid-faq-details">
+            <summary class="plid-faq-question">
+              <h3 class="faq-item__q">What is the difference between a Host and an Agency?</h3>
+              <span aria-hidden="true" class="plid-faq-icon">+</span>
+            </summary>
+            <div class="plid-faq-answer">
+              <p class="faq-item__a">A Host earns money by streaming and interacting with fans. An Agency earns money by building a team of Hosts and getting a percentage of the team's total earnings.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details class="plid-faq-details">
+            <summary class="plid-faq-question">
+              <h3 class="faq-item__q">How much money does a Host keep?</h3>
+              <span aria-hidden="true" class="plid-faq-icon">+</span>
+            </summary>
+            <div class="plid-faq-answer">
+              <p class="faq-item__a">Hosts keep 70% of all digital gifts they receive. There are no hidden fees.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details class="plid-faq-details">
+            <summary class="plid-faq-question">
+              <h3 class="faq-item__q">Do I get paid just for streaming?</h3>
+              <span aria-hidden="true" class="plid-faq-icon">+</span>
+            </summary>
+            <div class="plid-faq-answer">
+              <p class="faq-item__a">Yes. If you stream for at least 1 hour a day, you can unlock daily salary bonuses on top of your gift earnings.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details class="plid-faq-details">
+            <summary class="plid-faq-question">
+              <h3 class="faq-item__q">Is my money and data safe?</h3>
+              <span aria-hidden="true" class="plid-faq-icon">+</span>
+            </summary>
+            <div class="plid-faq-answer">
+              <p class="faq-item__a">Yes. We use strong security to protect your data. You must create a secret PIN to withdraw your money, ensuring only you can access it.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CLOSING CTA -->
+  <section aria-label="Get Started" class="closing">
+    <div class="closing__gradient"></div>
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <h2 class="section-title closing__title">Ready to Start Earning?</h2>
+        <p class="closing__subtext">The app is free to download and easy to use. Join our Poppo Live Agency today and start building your income.</p>
+        <div class="cta-group">
+          <a aria-label="Join for Free Now" class="btn btn--gradient" href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=13200998&amp;c=poppo">Join for Free Now</a>
+          <a aria-label="Become a Host" class="btn btn--secondary" href="https://invite-poppo.com/wHeJGn">Become a Host</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  (function() {
+    function init() {
+      var root = document.getElementById('plid-home-v2');
+      if (!root || root.dataset.loaded === '1') return;
+      root.dataset.loaded = '1';
+      var modal = null,
+        photo = null,
+        closeButton = null,
+        lastFocus = null,
+        oldOverflow = '',
+        oldHtmlOverflow = '';
+
+      function ensureModal() {
+        if (modal) return;
+        modal = document.createElement('div');
+        modal.className = 'plid-home-modal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-label', 'Poppo Live image preview');
+        modal.hidden = true;
+        modal.innerHTML = ' < button type = "button"
+        class = "plid-home-modal-close"
+        aria - label = "Close image preview" > < svg viewBox = "0 0 24 24"
+        width = "22"
+        height = "22"
+        fill = "none"
+        stroke = "currentColor"
+        stroke - width = "2.5"
+        stroke - linecap = "round"
+        aria - hidden = "true" > < path d = "M18 6 6 18M6 6l12 12" / > < /svg> < /button> < img alt = "" / > ';
+        var css = document.createElement('style');
+        css.textContent = `
+.plid-home-modal[hidden]{display:none!important}
+.plid-home-modal,.plid-home-modal *{box-sizing:border-box!important}
+.plid-home-modal{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;max-width:none!important;max-height:none!important;z-index:2147483647!important;display:flex!important;align-items:center!important;justify-content:center!important;margin:0!important;padding:calc(78px + env(safe-area-inset-top,0px)) 24px calc(22px + env(safe-area-inset-bottom,0px))!important;overflow:hidden!important;overscroll-behavior:contain!important;background:rgba(7,9,28,.94)!important;backdrop-filter:blur(13px)!important;-webkit-backdrop-filter:blur(13px)!important}
+.plid-home-modal img{display:block!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;margin:auto!important;border-radius:13px!important;box-shadow:0 17px 55px rgba(0,0,0,.34)!important}
+.plid-home-modal .plid-home-modal-close{position:absolute!important;top:calc(16px + env(safe-area-inset-top,0px))!important;right:calc(20px + env(safe-area-inset-right,0px))!important;left:auto!important;bottom:auto!important;z-index:2!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 46px!important;width:46px!important;height:46px!important;min-width:46px!important;min-height:46px!important;padding:0!important;margin:0!important;border-radius:50%!important;border:1px solid rgba(255,255,255,.52)!important;background:linear-gradient(125deg,#3154E9,#6740EF 56%,#D41491)!important;color:#fff!important;box-shadow:0 8px 25px rgba(0,0,0,.34)!important;cursor:pointer!important;transform:none!important;transition:transform .2s ease,box-shadow .2s ease!important;appearance:none!important;-webkit-appearance:none!important;line-height:1!important}
+.plid-home-modal .plid-home-modal-close:hover{transform:scale(1.06)!important;box-shadow:0 9px 28px rgba(167,66,243,.40)!important}
+.plid-home-modal .plid-home-modal-close:focus-visible{outline:3px solid #fff!important;outline-offset:3px!important}
+.plid-home-modal .plid-home-modal-close svg{display:block!important;width:22px!important;height:22px!important;stroke:#fff!important;pointer-events:none!important;flex:none!important}
+@media(max-width:1024px){.plid-home-modal{padding-left:16px!important;padding-right:16px!important}}
+@media(max-width:600px){.plid-home-modal{padding:calc(74px + env(safe-area-inset-top,0px)) 10px calc(15px + env(safe-area-inset-bottom,0px))!important}.plid-home-modal img{border-radius:9px!important}.plid-home-modal .plid-home-modal-close{top:calc(13px + env(safe-area-inset-top,0px))!important;right:calc(13px + env(safe-area-inset-right,0px))!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}}
+@media(prefers-reduced-motion:reduce){.plid-home-modal .plid-home-modal-close{transition:none!important}}
+`;
+        document.head.appendChild(css);
+        document.body.appendChild(modal); // avoid Elementor clipping and stacking contexts
+        photo = modal.querySelector('img');
+        closeButton = modal.querySelector('.plid-home-modal-close');
+        closeButton.addEventListener('click', close);
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) close()
+        });
+      }
+
+      function open(fig) {
+        var img = fig.querySelector('img');
+        if (!img) return;
+        ensureModal();
+        lastFocus = document.activeElement;
+        photo.src = img.currentSrc || img.src;
+        photo.alt = img.alt || 'Poppo Live';
+        oldOverflow = document.body.style.overflow;
+        oldHtmlOverflow = document.documentElement.style.overflow;
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        modal.hidden = false;
+        closeButton.focus();
+      }
+
+      function close() {
+        if (!modal || modal.hidden) return;
+        modal.hidden = true;
+        document.body.style.overflow = oldOverflow;
+        document.documentElement.style.overflow = oldHtmlOverflow;
+        photo.removeAttribute('src');
+        if (lastFocus && lastFocus.isConnected && typeof lastFocus.focus === 'function') lastFocus.focus();
+      }
+      root.querySelectorAll('.plid-image-preview').forEach(function(fig) {
+        fig.addEventListener('click', function() {
+          open(fig)
+        });
+        fig.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            open(fig)
+          }
+        });
+      });
+      document.addEventListener('keydown', function(e) {
+        if (!modal || modal.hidden) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          close()
+        } else if (e.key === 'Tab') {
+          e.preventDefault();
+          closeButton.focus()
+        }
+      });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+    else init();
+  })();
+</script>

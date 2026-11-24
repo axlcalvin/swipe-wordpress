@@ -1,0 +1,163 @@
+<!-- POPPOLIVE.ID HEADER V8 | VALID HTML / CSS / JS FOR ELEMENTOR -->
+<style>
+/* PoppoLive.id | Light Futuristic V6 | Scoped Elementor-safe */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+#plid6-header,#plid6-header *{box-sizing:border-box}
+#plid6-header{--plid-grad:linear-gradient(107deg,#2249E4 0%,#4B40EC 31%,#7A35EC 58%,#AE29CC 78%,#E0179A 100%);position:fixed!important;inset:0 0 auto 0!important;width:100%!important;z-index:999990!important;pointer-events:none;font-family:'Manrope',Arial,sans-serif}
+#plid6-header a{text-decoration:none!important}
+#plid6-header .plid6-shell{pointer-events:auto;position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1280px;width:calc(100% - 36px);min-height:76px;margin:14px auto 0;padding:12px 22px;border:2px solid rgba(248,240,255,.46);border-radius:24px;background:var(--plid-grad);box-shadow:0 14px 42px rgba(54,39,133,.24),0 0 0 1px rgba(255,255,255,.1) inset,0 0 20px rgba(147,54,227,.14);isolation:isolate}
+#plid6-header .plid6-shell:before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(104deg,rgba(104,195,255,.17),transparent 38%,rgba(255,158,236,.10));pointer-events:none;z-index:-1}
+#plid6-header .plid6-brand{display:flex;align-items:center;flex:none;min-width:0;max-width:230px}
+#plid6-header .plid6-logo{display:block;max-width:100%;width:auto;height:44px;object-fit:contain;object-position:left center;filter:drop-shadow(0 1px 3px rgba(14,9,51,.22))}
+#plid6-header .plid6-brand:hover .plid6-logo{filter:drop-shadow(0 0 9px rgba(255,255,255,.32)) drop-shadow(0 2px 4px rgba(14,9,51,.28))}
+#plid6-header .plid6-nav{display:flex!important;align-items:center;justify-content:flex-end;gap:4px;margin-left:auto;min-width:0}
+#plid6-header .plid6-navlink{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-height:42px;padding:10px 13px;border:1px solid transparent;border-radius:12px;background:transparent;color:rgba(255,255,255,.9)!important;font:800 12px/1.25 'Manrope',Arial,sans-serif;transition:background .2s,box-shadow .2s,transform .2s,color .2s}
+#plid6-header .plid6-navlink:hover,#plid6-header .plid6-navlink:focus-visible{background:rgba(255,255,255,.16)!important;border-color:rgba(255,255,255,.35);box-shadow:0 7px 17px rgba(26,13,86,.17),0 0 11px rgba(255,255,255,.12);color:#fff!important;transform:translateY(-1px)}
+#plid6-header .plid6-navlink.is-active,#plid6-header .plid6-navlink[aria-current=page]{background:linear-gradient(105deg,#5D8BFF,#9874FF 48%,#F653C6)!important;color:#fff!important;border:1px solid rgba(255,255,255,.48);box-shadow:0 6px 20px rgba(31,17,102,.25),0 0 13px rgba(255,148,242,.35)}
+#plid6-header .plid6-mobile{display:none;position:relative;flex:none;margin-left:auto}
+#plid6-header .plid6-toggle{list-style:none;display:grid;place-items:center;width:46px;height:46px;margin:0;padding:0;border:1.5px solid rgba(255,255,255,.58);border-radius:14px;background:rgba(255,255,255,.13);box-shadow:0 6px 18px rgba(28,15,88,.18);cursor:pointer;transition:background .2s,box-shadow .2s}
+#plid6-header .plid6-toggle::-webkit-details-marker{display:none}
+#plid6-header .plid6-toggle:hover{background:rgba(255,255,255,.23);box-shadow:0 5px 18px rgba(28,15,88,.26)}
+#plid6-header .plid6-toggle .plid6-lines{display:grid;gap:5px}
+#plid6-header .plid6-toggle .plid6-lines i{display:block;width:22px;height:2.5px;border-radius:5px;background:#fff;transition:transform .2s,opacity .2s}
+#plid6-header .plid6-mobile[open] .plid6-lines i:first-child{transform:translateY(7.5px) rotate(45deg)}
+#plid6-header .plid6-mobile[open] .plid6-lines i:nth-child(2){opacity:0}
+#plid6-header .plid6-mobile[open] .plid6-lines i:last-child{transform:translateY(-7.5px) rotate(-45deg)}
+#plid6-header .plid6-drawer{display:none;position:absolute;top:calc(100% + 18px);right:0;width:min(360px,calc(100vw - 34px));padding:13px;border:2px solid transparent;border-radius:20px;background:linear-gradient(#fff,#FBF7FF) padding-box,var(--plid-grad) border-box;box-shadow:0 20px 55px rgba(35,22,111,.27);z-index:3}
+#plid6-header .plid6-mobile[open] .plid6-drawer{display:grid;gap:5px}
+#plid6-header .plid6-drawer .plid6-navlink{justify-content:flex-start;text-align:left;color:#263565!important;padding:14px 15px;font-size:14px;width:100%;min-height:48px}
+#plid6-header .plid6-drawer .plid6-navlink:hover,#plid6-header .plid6-drawer .plid6-navlink:focus-visible{color:#612ECF!important;background:linear-gradient(105deg,#EDF2FF,#F8ECFF,#FFEFFA)!important;border-color:#D9A5F9}
+#plid6-header .plid6-drawer .plid6-navlink.is-active,#plid6-header .plid6-drawer .plid6-navlink[aria-current=page]{color:#fff!important}
+@media(max-width:1120px){#plid6-header .plid6-shell{gap:12px;padding:10px 15px}#plid6-header .plid6-logo{height:39px}#plid6-header .plid6-nav{gap:1px}#plid6-header .plid6-navlink{padding:10px 9px;font-size:11px}}
+@media(max-width:960px){#plid6-header .plid6-nav{display:none!important}#plid6-header .plid6-mobile{display:block}#plid6-header .plid6-shell{width:calc(100% - 24px);margin-top:10px;min-height:68px;padding:9px 14px;border-radius:20px}#plid6-header .plid6-logo{height:41px}}
+@media(max-width:480px){#plid6-header .plid6-shell{min-height:64px;padding:8px 12px}#plid6-header .plid6-logo{height:36px;max-width:205px}#plid6-header .plid6-toggle{width:43px;height:43px}#plid6-header .plid6-drawer{right:0;top:calc(100% + 14px)}}
+@media(prefers-reduced-motion:reduce){#plid6-header *{transition:none!important}}
+
+
+/* V7: wide premium navbar, symmetric edges like approved poppo.asia reference */
+#plid6-header .plid6-shell{
+  max-width:1760px!important;
+  width:calc(100% - 64px)!important;
+  min-height:92px;
+  margin:18px auto 0;
+  padding:13px clamp(22px,2vw,35px)!important;
+  gap:clamp(24px,3vw,62px)!important;
+  border-radius:27px;
+}
+#plid6-header .plid6-brand{flex:0 0 auto!important;max-width:255px!important}
+#plid6-header .plid6-logo{height:50px!important;max-width:245px!important}
+#plid6-header .plid6-nav{
+  display:flex!important;
+  flex:0 1 885px!important;
+  width:min(885px,100%)!important;
+  justify-content:space-between!important;
+  gap:clamp(3px,.7vw,13px)!important;
+  margin-left:auto!important;
+}
+#plid6-header .plid6-navlink{
+  min-height:48px!important;
+  padding:12px clamp(11px,1vw,20px)!important;
+  font-size:clamp(12px,.78vw,14px)!important;
+  font-weight:800!important;
+  border-radius:15px!important;
+  line-height:1.25!important;
+}
+@media(max-width:1360px){
+  #plid6-header .plid6-shell{width:calc(100% - 44px)!important;min-height:82px!important;gap:18px!important;padding:10px 22px!important}
+  #plid6-header .plid6-logo{height:44px!important}
+  #plid6-header .plid6-nav{flex:0 1 770px!important}
+  #plid6-header .plid6-navlink{font-size:12px!important;padding:10px 11px!important}
+}
+@media(max-width:1120px){
+  #plid6-header .plid6-shell{min-height:76px!important;width:calc(100% - 32px)!important;padding:9px 18px!important}
+  #plid6-header .plid6-logo{height:39px!important}
+  #plid6-header .plid6-nav{flex:1 1 auto!important;gap:3px!important}
+  #plid6-header .plid6-navlink{padding:9px 8px!important;font-size:11px!important}
+}
+@media(max-width:960px){
+  #plid6-header .plid6-shell{width:calc(100% - 24px)!important;margin-top:10px!important;min-height:70px!important;padding:9px 15px!important;gap:12px!important;border-radius:21px!important}
+  #plid6-header .plid6-nav{display:none!important}
+  #plid6-header .plid6-logo{height:42px!important;max-width:205px!important}
+  #plid6-header .plid6-mobile{display:block!important;margin-left:auto!important}
+  #plid6-header .plid6-drawer .plid6-navlink{font-size:14px!important;padding:14px 15px!important;min-height:48px!important}
+}
+@media(max-width:480px){
+  #plid6-header .plid6-shell{min-height:64px!important;padding:8px 12px!important}
+  #plid6-header .plid6-logo{height:36px!important;max-width:195px!important}
+}
+/* Elementor header template can have its own width; navbar is fixed to viewport. */
+body.admin-bar #plid6-header{top:32px!important}
+@media(max-width:782px){body.admin-bar #plid6-header{top:46px!important}}
+
+
+/* V8: compact vertical rhythm, closer navigation — preserves original full-width bar. */
+#plid6-header .plid6-shell{
+  max-width:1760px!important;
+  width:calc(100% - 64px)!important;
+  min-height:76px!important;
+  margin:16px auto 0!important;
+  padding:9px clamp(20px,1.8vw,32px)!important;
+  gap:clamp(18px,2.2vw,36px)!important;
+  border-radius:24px!important;
+}
+#plid6-header .plid6-logo{height:44px!important;max-width:235px!important}
+#plid6-header .plid6-nav{
+  flex:0 1 785px!important;
+  width:min(785px,100%)!important;
+  justify-content:space-between!important;
+  gap:clamp(5px,.75vw,14px)!important;
+  margin-left:auto!important;
+}
+#plid6-header .plid6-navlink{
+  min-height:40px!important;
+  padding:8px clamp(8px,.85vw,15px)!important;
+  font-size:clamp(12px,.72vw,13px)!important;
+  border-radius:12px!important;
+}
+@media(max-width:1360px){
+  #plid6-header .plid6-shell{width:calc(100% - 44px)!important;min-height:72px!important;padding:9px 20px!important}
+  #plid6-header .plid6-logo{height:40px!important}
+  #plid6-header .plid6-nav{flex:0 1 715px!important;gap:7px!important}
+  #plid6-header .plid6-navlink{min-height:38px!important;padding:8px 10px!important;font-size:12px!important}
+}
+@media(max-width:1120px){
+  #plid6-header .plid6-shell{width:calc(100% - 32px)!important;min-height:68px!important;padding:8px 16px!important}
+  #plid6-header .plid6-logo{height:37px!important}
+  #plid6-header .plid6-nav{flex:0 1 auto!important;gap:4px!important}
+  #plid6-header .plid6-navlink{min-height:36px!important;padding:7px 8px!important;font-size:11px!important}
+}
+@media(max-width:960px){
+  #plid6-header .plid6-shell{width:calc(100% - 24px)!important;min-height:66px!important;margin-top:10px!important;padding:8px 14px!important;border-radius:20px!important}
+  #plid6-header .plid6-nav{display:none!important}
+  #plid6-header .plid6-logo{height:40px!important;max-width:205px!important}
+  #plid6-header .plid6-mobile{display:block!important;margin-left:auto!important}
+  #plid6-header .plid6-drawer .plid6-navlink{min-height:47px!important;padding:13px 15px!important;font-size:14px!important}
+}
+@media(max-width:480px){
+  #plid6-header .plid6-shell{min-height:62px!important;padding:7px 11px!important}
+  #plid6-header .plid6-logo{height:36px!important;max-width:190px!important}
+  #plid6-header .plid6-toggle{width:42px!important;height:42px!important}
+}
+
+</style>
+<header id="plid6-header" aria-label="Poppo Live Agency main navigation">
+  <div class="plid6-shell">
+    <a class="plid6-brand" href="/" aria-label="Poppo Live Agency Home"><img class="plid6-logo" src="https://poppolive.id/wp-content/uploads/2023/11/logo-1.png" alt="Poppo Live Agency" width="220" height="50" loading="eager" decoding="async"></a>
+    <nav class="plid6-nav" aria-label="Main menu"><a href="/" data-path="/" class="plid6-navlink">Home</a>
+<a href="/agency/" data-path="/agency/" class="plid6-navlink">Build Your Agency</a>
+<a href="/host/" data-path="/host/" class="plid6-navlink">Host Earnings</a>
+<a href="/about-us/" data-path="/about-us/" class="plid6-navlink">About Us</a>
+<a href="/category/blog/" data-path="/category/blog/" class="plid6-navlink">Blog</a>
+<a href="/contact-us/" data-path="/contact-us/" class="plid6-navlink">Support</a></nav>
+    <details class="plid6-mobile">
+      <summary class="plid6-toggle" aria-label="Open or close navigation menu"><span class="plid6-lines" aria-hidden="true"><i></i><i></i><i></i></span></summary>
+      <nav class="plid6-drawer" aria-label="Mobile navigation"><a href="/" data-path="/" class="plid6-navlink">Home</a>
+<a href="/agency/" data-path="/agency/" class="plid6-navlink">Build Your Agency</a>
+<a href="/host/" data-path="/host/" class="plid6-navlink">Host Earnings</a>
+<a href="/about-us/" data-path="/about-us/" class="plid6-navlink">About Us</a>
+<a href="/category/blog/" data-path="/category/blog/" class="plid6-navlink">Blog</a>
+<a href="/contact-us/" data-path="/contact-us/" class="plid6-navlink">Support</a></nav>
+    </details>
+  </div>
+</header>
+<script>(function(){function init(){var h=document.getElementById('plid6-header');if(!h||h.dataset.bound)return;h.dataset.bound='1';var p=(location.pathname||'/').replace(/\/+$/,'/')||'/';h.querySelectorAll('a[data-path]').forEach(function(a){var u=a.getAttribute('data-path');var active=(u===p)||(u==='/category/blog/'&&p.indexOf('/category/blog/')===0);a.classList.toggle('is-active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});var d=h.querySelector('details');if(d){d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){d.open=false})});document.addEventListener('keydown',function(e){if(e.key==='Escape')d.open=false});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false})}}init();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);})();</script>

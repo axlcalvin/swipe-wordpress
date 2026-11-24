@@ -1,0 +1,1214 @@
+<!-- POPPOAPP.COM HOMEPAGE V1.1 | ECOSYSTEM IMAGE AFTER 20% COMMISSION POINTS | ELEMENTOR READY -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+  #poppoapp-home-v1 {
+    --pa-ink: #17214C;
+    --pa-muted: #596685;
+    --pa-blue: #3154E9;
+    --pa-purple: #6740EF;
+    --pa-pink: #D41491;
+    --pa-grad: linear-gradient(110deg, #3154E9 0%, #6740EF 40%, #A52BCF 72%, #D41491 100%);
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 0 0 calc(50% - 50vw) !important;
+    padding: 0 !important;
+    overflow: clip;
+    position: relative;
+    isolation: isolate;
+    background: #FCFDFF;
+    color: var(--pa-ink);
+    font-family: 'Manrope', Arial, sans-serif
+  }
+
+  #poppoapp-home-v1,
+  #poppoapp-home-v1 *,
+  #poppoapp-home-v1 *:before,
+  #poppoapp-home-v1 *:after {
+    box-sizing: border-box
+  }
+
+  #poppoapp-home-v1 .container {
+    max-width: 1320px !important;
+    width: calc(100% - 64px) !important;
+    padding: 0 !important;
+    margin: 0 auto !important
+  }
+
+  #poppoapp-home-v1 :is(h1, h2, h3) {
+    font-family: 'Space Grotesk', Arial, sans-serif !important;
+    letter-spacing: -.047em !important;
+    line-height: 1.13 !important;
+    color: #182454 !important;
+    margin: 0 !important;
+    font-weight: 700 !important;
+    text-wrap: balance
+  }
+
+  #poppoapp-home-v1 p {
+    font-family: 'Manrope', Arial, sans-serif !important;
+    line-height: 1.8 !important;
+    margin: 0 !important;
+    color: #596685 !important
+  }
+
+  #poppoapp-home-v1 a {
+    text-decoration: none !important
+  }
+
+  #poppoapp-home-v1 :is(a, button):focus-visible {
+    outline: 3px solid #A875FF !important;
+    outline-offset: 4px
+  }
+
+  #poppoapp-home-v1 .section {
+    padding: 95px 0 103px !important
+  }
+
+  #poppoapp-home-v1 .section__title {
+    font-size: clamp(32px, 4vw, 56px) !important;
+    margin-bottom: 17px !important
+  }
+
+  #poppoapp-home-v1 .section__lead {
+    font-size: 15px !important;
+    max-width: 740px
+  }
+
+  #poppoapp-home-v1 .btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 51px;
+    padding: 14px 27px !important;
+    border-radius: 999px !important;
+    font: 800 14px/1.4 'Space Grotesk', sans-serif !important;
+    transition: transform .22s, box-shadow .22s;
+    white-space: normal;
+    text-align: center
+  }
+
+  #poppoapp-home-v1 .btn--gradient {
+    color: white !important;
+    background: var(--pa-grad) !important;
+    border: 1px solid rgba(255, 255, 255, .25) !important;
+    box-shadow: 0 12px 27px rgba(103, 64, 239, .24)
+  }
+
+  #poppoapp-home-v1 .btn--secondary {
+    color: #613BD8 !important;
+    background: linear-gradient(#fff, #F9F7FF) padding-box, var(--pa-grad) border-box !important;
+    border: 1.5px solid transparent !important;
+    box-shadow: 0 8px 18px rgba(103, 64, 239, .11)
+  }
+
+  #poppoapp-home-v1 .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 17px 34px rgba(102, 64, 239, .25)
+  }
+
+  #poppoapp-home-v1 .hero {
+    padding: 149px 0 96px !important;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 78% 24%, rgba(166, 116, 252, .26), transparent 44%), radial-gradient(ellipse at 0 0, rgba(105, 179, 255, .25), transparent 47%), linear-gradient(125deg, #F5FAFF, #F7F3FF 56%, #FFF0FA)
+  }
+
+  #poppoapp-home-v1 .hero:before {
+    content: '';
+    position: absolute;
+    width: 590px;
+    height: 590px;
+    right: -190px;
+    top: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(126, 84, 236, .17);
+    box-shadow: 0 0 0 85px rgba(111, 81, 240, .035), 0 0 0 168px rgba(192, 73, 200, .025);
+    pointer-events: none
+  }
+
+  #poppoapp-home-v1 .hero__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: clamp(25px, 4.6vw, 70px);
+    align-items: center
+  }
+
+  #poppoapp-home-v1 .hero__eyebrow,
+  #poppoapp-home-v1 .pa-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(120, 86, 240, .24);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, .77);
+    padding: 10px 16px;
+    color: #6740EF !important;
+    font: 800 11px/1.4 'Manrope', sans-serif !important;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 22px
+  }
+
+  #poppoapp-home-v1 .hero__eyebrow:before,
+  #poppoapp-home-v1 .pa-eyebrow:before {
+    content: '✦';
+    margin-right: 8px;
+    color: #A52BCF
+  }
+
+  #poppoapp-home-v1 .hero__title {
+    font-size: clamp(42px, 5.55vw, 78px) !important;
+    letter-spacing: -.062em !important;
+    max-width: 740px
+  }
+
+  #poppoapp-home-v1 .hero__title:after {
+    content: '';
+    display: block;
+    width: 115px;
+    height: 5px;
+    background: var(--pa-grad);
+    border-radius: 5px;
+    margin: 24px 0 20px
+  }
+
+  #poppoapp-home-v1 .hero__subhead {
+    font-size: 16px !important;
+    max-width: 620px
+  }
+
+  #poppoapp-home-v1 .hero__cta-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 27px
+  }
+
+  #poppoapp-home-v1 .hero__media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 535px;
+    padding: 15px;
+    min-width: 0
+  }
+
+  #poppoapp-home-v1 .hero__media:before {
+    content: '';
+    position: absolute;
+    inset: 9%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124, 102, 246, .22), rgba(233, 100, 221, .11) 50%, transparent 76%);
+    filter: blur(16px)
+  }
+
+  #poppoapp-home-v1 .hero__media img {
+    position: relative;
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 510px !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 23px 30px rgba(69, 49, 150, .21));
+    animation: paFloat 6s ease-in-out infinite
+  }
+
+  #poppoapp-home-v1 .india-users {
+    padding: 26px 0 !important;
+    background: linear-gradient(110deg, #F0F6FF, #F6F0FF, #FFF0F9)
+  }
+
+  #poppoapp-home-v1 .india-users__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 44px);
+    flex-wrap: wrap;
+    padding: 20px 27px;
+    border: 1.5px solid rgba(118, 76, 236, .24);
+    border-radius: 23px;
+    background: rgba(255, 255, 255, .83);
+    box-shadow: 0 10px 28px rgba(78, 59, 161, .07)
+  }
+
+  #poppoapp-home-v1 .india-users__label {
+    font-weight: 800 !important;
+    color: #26366F !important;
+    font-size: 14px !important
+  }
+
+  #poppoapp-home-v1 .india-users__logo {
+    max-width: 175px !important;
+    max-height: 55px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain
+  }
+
+  #poppoapp-home-v1 .india-users__cta {
+    min-height: 43px;
+    padding: 11px 21px !important;
+    font-size: 12px !important
+  }
+
+  #poppoapp-home-v1 .trust {
+    background: linear-gradient(180deg, #fff, #F7FAFF)
+  }
+
+  #poppoapp-home-v1 .trust__heading {
+    text-align: center;
+    font-size: clamp(33px, 4vw, 55px) !important;
+    margin: 0 auto 40px !important
+  }
+
+  #poppoapp-home-v1 .trust__stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px
+  }
+
+  #poppoapp-home-v1 .trust__stats>div {
+    padding: 31px 28px;
+    min-height: 210px;
+    border: 1.5px solid transparent;
+    border-radius: 26px;
+    background: linear-gradient(#fff, #FAF9FF) padding-box, var(--pa-grad) border-box;
+    box-shadow: 0 15px 37px rgba(86, 66, 168, .10);
+    transition: transform .22s, box-shadow .22s
+  }
+
+  #poppoapp-home-v1 .trust__stats>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 42px rgba(104, 67, 193, .17)
+  }
+
+  #poppoapp-home-v1 .trust__stat-num {
+    display: inline-block;
+    font: 800 clamp(43px, 5vw, 67px)/1.05 'Space Grotesk', sans-serif !important;
+    letter-spacing: -.055em;
+    background: var(--pa-grad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 18px !important
+  }
+
+  #poppoapp-home-v1 .trust__stat-label {
+    font-size: 14px !important
+  }
+
+  #poppoapp-home-v1 .differentiator {
+    background: radial-gradient(ellipse at 0 20%, rgba(112, 170, 255, .22), transparent 45%), radial-gradient(ellipse at 95% 90%, rgba(230, 106, 217, .18), transparent 43%), linear-gradient(140deg, #F1F7FF, #F8F1FF)
+  }
+
+  #poppoapp-home-v1 .differentiator__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+    gap: 45px;
+    align-items: center
+  }
+
+  #poppoapp-home-v1 .differentiator__statement {
+    font-size: clamp(34px, 4.4vw, 60px) !important;
+    margin: 0 0 23px !important
+  }
+
+  #poppoapp-home-v1 .differentiator__statement em {
+    font-style: normal;
+    background: var(--pa-grad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+
+  #poppoapp-home-v1 .differentiator__support {
+    font-size: 15px !important
+  }
+
+  #poppoapp-home-v1 .differentiator__points {
+    display: grid;
+    gap: 15px
+  }
+
+  #poppoapp-home-v1 .differentiator__point {
+    border: 1.5px solid transparent;
+    border-radius: 21px;
+    padding: 22px 24px;
+    background: linear-gradient(#fff, #FCFBFF) padding-box, var(--pa-grad) border-box;
+    box-shadow: 0 10px 27px rgba(99, 73, 177, .10)
+  }
+
+  #poppoapp-home-v1 .differentiator__point-label {
+    font: 800 13px/1.4 'Space Grotesk', sans-serif !important;
+    color: #5830C6 !important;
+    margin: 0 0 6px !important
+  }
+
+  #poppoapp-home-v1 .differentiator__point-text {
+    font-size: 13px !important
+  }
+
+  #poppoapp-home-v1 .benefit {
+    background: #fff
+  }
+
+  #poppoapp-home-v1 :is(.benefit__header, .faq__header, .ecosystem__intro) {
+    max-width: 840px;
+    text-align: center;
+    margin: 0 auto 42px
+  }
+
+  #poppoapp-home-v1 :is(.benefit__header, .faq__header, .ecosystem__intro) .section__lead {
+    margin-inline: auto !important
+  }
+
+  #poppoapp-home-v1 .benefit__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px
+  }
+
+  #poppoapp-home-v1 .benefit__tile {
+    position: relative;
+    min-height: 297px;
+    padding: 27px 23px;
+    border-radius: 25px !important;
+    border: 1.5px solid transparent;
+    background: linear-gradient(#fff, #FCFBFF) padding-box, var(--pa-grad) border-box !important;
+    box-shadow: 0 14px 36px rgba(87, 60, 177, .10);
+    transition: transform .22s, box-shadow .22s
+  }
+
+  #poppoapp-home-v1 .benefit__tile:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 42px rgba(103, 72, 201, .17)
+  }
+
+  #poppoapp-home-v1 .benefit__num {
+    display: grid;
+    place-items: center;
+    width: 57px;
+    height: 57px;
+    border-radius: 17px;
+    background: var(--pa-grad);
+    color: white;
+    font: 800 21px 'Space Grotesk', sans-serif;
+    margin-bottom: 25px;
+    box-shadow: 0 7px 19px rgba(110, 64, 236, .25)
+  }
+
+  #poppoapp-home-v1 .benefit__title {
+    font-size: 21px !important;
+    margin: 0 0 13px !important
+  }
+
+  #poppoapp-home-v1 .benefit__desc {
+    font-size: 13px !important
+  }
+
+  #poppoapp-home-v1 .ecosystem {
+    background: radial-gradient(ellipse at 3% 12%, rgba(118, 172, 255, .15), transparent 42%), linear-gradient(145deg, #F5F9FF, #FAF4FF)
+  }
+
+  #poppoapp-home-v1 .ecosystem__figure {
+    margin: 0 auto 26px !important;
+    max-width: 1170px
+  }
+
+  #poppoapp-home-v1 .differentiator .ecosystem__figure {
+    margin: clamp(34px, 5vw, 60px) auto 0 !important;
+    max-width: 1170px
+  }
+
+  #poppoapp-home-v1 .ecosystem__open {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1.7px solid rgba(119, 81, 228, .29);
+    border-radius: 27px;
+    overflow: hidden;
+    cursor: zoom-in;
+    background: #F0F4FF;
+    box-shadow: 0 21px 49px rgba(100, 67, 196, .16);
+    transition: transform .25s, box-shadow .25s
+  }
+
+  #poppoapp-home-v1 .ecosystem__open:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 52px rgba(112, 74, 203, .22)
+  }
+
+  #poppoapp-home-v1 .ecosystem__open img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important
+  }
+
+  #poppoapp-home-v1 .ecosystem__zoom {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .45);
+    padding: 10px 16px;
+    border-radius: 90px;
+    background: rgba(22, 20, 76, .83);
+    font: 800 12px 'Manrope', sans-serif;
+    pointer-events: none
+  }
+
+  #poppoapp-home-v1 .ecosystem__comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1170px;
+    margin: 0 auto
+  }
+
+  #poppoapp-home-v1 .ecosystem__role {
+    border: 1.6px solid transparent;
+    border-radius: 25px;
+    background: linear-gradient(#fff, #FAF9FF) padding-box, var(--pa-grad) border-box;
+    padding: 28px;
+    box-shadow: 0 14px 32px rgba(101, 75, 191, .1)
+  }
+
+  #poppoapp-home-v1 .ecosystem__role-icon {
+    display: grid;
+    place-items: center;
+    background: var(--pa-grad);
+    color: #fff;
+    font-size: 24px;
+    width: 51px;
+    height: 51px;
+    border-radius: 15px;
+    margin-bottom: 16px
+  }
+
+  #poppoapp-home-v1 .ecosystem__role h3 {
+    font-size: 23px !important;
+    margin-bottom: 10px !important
+  }
+
+  #poppoapp-home-v1 .ecosystem__role p {
+    font-size: 13px !important;
+    margin-bottom: 18px !important
+  }
+
+  #poppoapp-home-v1 .ecosystem__role a {
+    font-weight: 800;
+    color: #6536D8 !important;
+    font-size: 13px
+  }
+
+  #poppoapp-home-v1 .ecosystem__role a:hover {
+    color: #D41491 !important
+  }
+
+  #poppoapp-home-v1 .feature {
+    background: #fff
+  }
+
+  #poppoapp-home-v1 .feature__inner {
+    display: grid;
+    grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+    gap: 58px;
+    align-items: start
+  }
+
+  #poppoapp-home-v1 .feature__intro {
+    position: sticky;
+    top: 130px
+  }
+
+  #poppoapp-home-v1 .feature__intro .section__lead {
+    margin-bottom: 26px !important
+  }
+
+  #poppoapp-home-v1 .feature__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px
+  }
+
+  #poppoapp-home-v1 .feature__item {
+    padding: 25px 22px 27px;
+    border: 1.5px solid transparent;
+    border-radius: 23px;
+    background: linear-gradient(#fff, #FBFAFF) padding-box, var(--pa-grad) border-box;
+    box-shadow: 0 11px 31px rgba(94, 64, 178, .09);
+    min-height: 245px
+  }
+
+  #poppoapp-home-v1 .feature__item-num {
+    display: inline-block;
+    color: #7136E0;
+    background: #F3ECFF;
+    border: 1px solid #E0D2FF;
+    border-radius: 70px;
+    padding: 8px 12px;
+    margin-bottom: 19px;
+    font: 800 11px 'Manrope', sans-serif
+  }
+
+  #poppoapp-home-v1 .feature__item-title {
+    font-size: 20px !important;
+    margin-bottom: 11px !important
+  }
+
+  #poppoapp-home-v1 .feature__item-desc {
+    font-size: 13px !important
+  }
+
+  #poppoapp-home-v1 .faq {
+    background: linear-gradient(145deg, #F6FAFF, #F8F3FF)
+  }
+
+  #poppoapp-home-v1 .faq__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 1010px;
+    margin: 0 auto
+  }
+
+  #poppoapp-home-v1 .faq__item {
+    border: 1.5px solid rgba(130, 96, 228, .3);
+    background: linear-gradient(115deg, #fff, #FAF8FF);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 11px 28px rgba(93, 65, 173, .08)
+  }
+
+  #poppoapp-home-v1 .faq__question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 0;
+    background: transparent;
+    padding: 22px 24px;
+    cursor: pointer;
+    text-align: left;
+    color: #252F65;
+    font: 800 17px/1.5 'Space Grotesk', sans-serif
+  }
+
+  #poppoapp-home-v1 .faq__toggle {
+    display: grid;
+    place-items: center;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--pa-grad);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    transition: transform .2s
+  }
+
+  #poppoapp-home-v1 .faq__item[data-open='true'] .faq__toggle {
+    transform: rotate(45deg)
+  }
+
+  #poppoapp-home-v1 .faq__answer {
+    display: none;
+    padding: 0 24px 24px
+  }
+
+  #poppoapp-home-v1 .faq__item[data-open='true'] .faq__answer {
+    display: block
+  }
+
+  #poppoapp-home-v1 .faq__answer-inner p {
+    font-size: 14px !important
+  }
+
+  #poppoapp-home-v1 .cta {
+    background: radial-gradient(ellipse at 9% 2%, rgba(102, 160, 255, .27), transparent 43%), radial-gradient(ellipse at 93% 89%, rgba(224, 104, 220, .24), transparent 49%), linear-gradient(115deg, #EEF6FF, #F7EEFF 57%, #FFE9F9)
+  }
+
+  #poppoapp-home-v1 .cta__tile {
+    padding: 55px 65px;
+    border-radius: 32px;
+    border: 1.5px solid transparent;
+    background: linear-gradient(120deg, rgba(255, 255, 255, .95), rgba(251, 247, 255, .96)) padding-box, var(--pa-grad) border-box;
+    box-shadow: 0 20px 50px rgba(103, 67, 180, .14);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px
+  }
+
+  #poppoapp-home-v1 .cta__title {
+    font-size: clamp(34px, 4vw, 56px) !important;
+    margin-bottom: 16px !important
+  }
+
+  #poppoapp-home-v1 .cta__sub {
+    max-width: 650px;
+    font-size: 15px !important
+  }
+
+  #poppoapp-home-v1 .cta__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 245px
+  }
+
+  #poppoapp-home-v1 .btn--on-gradient {
+    background: var(--pa-grad) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, .3) !important;
+    box-shadow: 0 10px 26px rgba(106, 61, 219, .18)
+  }
+
+  @keyframes paFloat {
+
+    0%,
+    100% {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-12px)
+    }
+  }
+
+  @media(max-width:1100px) {
+    #poppoapp-home-v1 .benefit__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    #poppoapp-home-v1 .benefit__tile {
+      min-height: 240px
+    }
+
+    #poppoapp-home-v1 .feature__inner {
+      gap: 30px
+    }
+  }
+
+  @media(max-width:800px) {
+    #poppoapp-home-v1 .container {
+      width: calc(100% - 42px) !important
+    }
+
+    #poppoapp-home-v1 .hero {
+      padding: 126px 0 70px !important
+    }
+
+    #poppoapp-home-v1 .hero__inner,
+    #poppoapp-home-v1 .differentiator__inner,
+    #poppoapp-home-v1 .feature__inner {
+      grid-template-columns: 1fr;
+      gap: 35px
+    }
+
+    #poppoapp-home-v1 .hero__media {
+      min-height: 360px;
+      max-width: 570px;
+      margin: 0 auto
+    }
+
+    #poppoapp-home-v1 .hero__media img {
+      max-height: 440px !important
+    }
+
+    #poppoapp-home-v1 .feature__intro {
+      position: static
+    }
+
+    #poppoapp-home-v1 .trust__stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    #poppoapp-home-v1 .cta__tile {
+      padding: 39px;
+      flex-direction: column;
+      align-items: stretch
+    }
+
+    #poppoapp-home-v1 .cta__actions {
+      flex-direction: row;
+      min-width: 0
+    }
+  }
+
+  @media(max-width:560px) {
+    #poppoapp-home-v1 .container {
+      width: calc(100% - 28px) !important
+    }
+
+    #poppoapp-home-v1 .section {
+      padding: 70px 0 76px !important
+    }
+
+    #poppoapp-home-v1 .hero {
+      padding: 117px 0 56px !important
+    }
+
+    #poppoapp-home-v1 .hero__title {
+      font-size: clamp(37px, 11vw, 54px) !important
+    }
+
+    #poppoapp-home-v1 .hero__subhead {
+      font-size: 14px !important
+    }
+
+    #poppoapp-home-v1 .hero__cta-group {
+      flex-direction: column
+    }
+
+    #poppoapp-home-v1 .hero__cta-group .btn {
+      width: 100%
+    }
+
+    #poppoapp-home-v1 .hero__media {
+      min-height: 270px
+    }
+
+    #poppoapp-home-v1 .hero__media img {
+      max-height: 325px !important
+    }
+
+    #poppoapp-home-v1 .trust__stats,
+    #poppoapp-home-v1 .benefit__grid,
+    #poppoapp-home-v1 .feature__list,
+    #poppoapp-home-v1 .ecosystem__comparison {
+      grid-template-columns: 1fr
+    }
+
+    #poppoapp-home-v1 .trust__stats>div {
+      min-height: auto
+    }
+
+    #poppoapp-home-v1 .benefit__tile,
+    #poppoapp-home-v1 .feature__item {
+      min-height: auto
+    }
+
+    #poppoapp-home-v1 .india-users__inner {
+      flex-direction: column;
+      text-align: center
+    }
+
+    #poppoapp-home-v1 .ecosystem__open {
+      border-radius: 15px
+    }
+
+    #poppoapp-home-v1 .ecosystem__zoom {
+      bottom: 8px;
+      right: 8px;
+      padding: 7px 10px;
+      font-size: 10px
+    }
+
+    #poppoapp-home-v1 .ecosystem__role {
+      padding: 24px
+    }
+
+    #poppoapp-home-v1 .faq__question {
+      font-size: 15px;
+      padding: 19px
+    }
+
+    #poppoapp-home-v1 .faq__answer {
+      padding: 0 19px 19px
+    }
+
+    #poppoapp-home-v1 .cta__tile {
+      padding: 27px 22px;
+      border-radius: 24px
+    }
+
+    #poppoapp-home-v1 .cta__actions {
+      flex-direction: column
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    #poppoapp-home-v1 * {
+      animation: none !important;
+      transition: none !important
+    }
+  }
+
+  body.pa-lightbox-active {
+    overflow: hidden !important
+  }
+
+  #pa-lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483640;
+    background: rgba(9, 8, 28, .94);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 66px 18px 20px;
+    box-sizing: border-box
+  }
+
+  #pa-lightbox-overlay.is-open {
+    display: flex
+  }
+
+  #pa-lightbox-overlay img {
+    display: block;
+    max-width: min(95vw, 1500px);
+    max-height: calc(100dvh - 105px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 9px;
+    box-shadow: 0 20px 65px rgba(0, 0, 0, .36)
+  }
+
+  #pa-lightbox-close {
+    position: fixed;
+    top: max(15px, env(safe-area-inset-top));
+    right: max(17px, env(safe-area-inset-right));
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .42);
+    background: linear-gradient(110deg, #3154E9, #6740EF, #D41491);
+    color: #fff;
+    cursor: pointer;
+    z-index: 2147483641;
+    padding: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .35)
+  }
+
+  #pa-lightbox-close svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    fill: none
+  }
+
+  body.admin-bar #pa-lightbox-close {
+    top: 48px
+  }
+
+  @media(max-width:782px) {
+    body.admin-bar #pa-lightbox-close {
+      top: 61px
+    }
+  }
+</style>
+<div id="poppoapp-home-v1" class="pa-home">
+  <section aria-label="Poppo Live introduction" class="hero">
+    <div class="container container--wide">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Livestream earning platform</span>
+          <h1 class="hero__title">Earn More with Poppo Live - Up to 20% Commission</h1>
+          <p class="hero__subhead">Join the fastest-growing livestream platform with 10M+ users worldwide. Get the highest commission rates, instant withdrawals, and 24/7 support.</p>
+          <div class="hero__cta-group">
+            <a class="btn btn--gradient" href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=10597147&amp;c=poppo">Join as Agent Now</a>
+            <a class="btn btn--secondary" href="https://invite-poppo.com/Dd35r5">Start Streaming Today</a>
+          </div>
+          <div class="hero-tg-action">
+            <a href="https://t.me/PoppoLiveService_bot" target="_blank" rel="noopener noreferrer" class="btn btn--telegram" id="hero-cta-telegram">
+              <svg class="hero-tg-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span>Get Help on Telegram</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__media hero__media--showcase">
+          <img alt="Poppo Live app on smartphone showing live stream explore feed with global hosts" height="1260" loading="eager" src="https://poppoapp.com/wp-content/uploads/2025/03/1.png" width="852" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Vone Live for Indian users" class="india-users">
+    <div class="container">
+      <div class="india-users__inner">
+        <p class="india-users__label">For Indian Users</p>
+        <img alt="Vone Live logo" class="india-users__logo" height="88" loading="lazy" src="https://poppoapp.com/wp-content/uploads/2025/03/logo-witle@2x.06c101e-2.png" width="288" />
+        <a class="btn btn--gradient india-users__cta" href="https://vonelive.in/" rel="noopener noreferrer" target="_blank">Visit Vone Live</a>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Trust and reach" class="trust section">
+    <div class="container">
+      <div class="trust__inner">
+        <h2 class="trust__heading">Trusted by Millions Worldwide</h2>
+        <div class="trust__stats">
+          <div>
+            <p class="trust__stat-num">4.5★</p>
+            <p class="trust__stat-label">Google Play rating from 242K reviews</p>
+          </div>
+          <div>
+            <p class="trust__stat-num">10M+</p>
+            <p class="trust__stat-label">Downloads across Google Play and App Store</p>
+          </div>
+          <div>
+            <p class="trust__stat-num">180+</p>
+            <p class="trust__stat-label">Countries with active Poppo Live users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Why Poppo Live" class="differentiator section">
+    <div class="container">
+      <div class="differentiator__inner">
+        <div>
+          <h2 class="differentiator__statement">Get up to <em>20% commission</em> on every stream, paid within 24 hours. </h2>
+          <p class="differentiator__support">Withdraw earnings instantly with a minimum $10 payout. No hidden fees, no waiting periods, no complicated conditions to clear your money.</p>
+        </div>
+        <div class="differentiator__points">
+          <div class="differentiator__point">
+            <p class="differentiator__point-label">Commission</p>
+            <p class="differentiator__point-text">Up to 20% on every qualifying stream</p>
+          </div>
+          <div class="differentiator__point">
+            <p class="differentiator__point-label">Withdrawal floor</p>
+            <p class="differentiator__point-text">$10 minimum, cleared within 24 hours</p>
+          </div>
+          <div class="differentiator__point">
+            <p class="differentiator__point-label">Fees</p>
+            <p class="differentiator__point-text">Transparent rates, no hidden deductions</p>
+          </div>
+        </div>
+      </div>
+      <!-- Ecosystem infographic: after the Commission / Withdrawal / Fees list -->
+      <figure class="ecosystem__figure">
+        <button class="ecosystem__open pa-preview" type="button" aria-label="Open full Poppo Live Roles and Ecosystem image">
+          <img src="https://poppoapp.com/wp-content/uploads/2026/11/Poppo-Ecosystem-1.png" alt="Poppo Live Roles and Ecosystem showing viewers sending gifts to hosts, hosts earning points, agents earning commission, points value and commission tiers" width="1350" height="860" loading="lazy" decoding="async" />
+          <span class="ecosystem__zoom" aria-hidden="true">⤢ &nbsp; View full image</span>
+        </button>
+      </figure>
+    </div>
+  </section>
+  <section aria-label="Key benefits" class="benefit section">
+    <div class="container">
+      <div class="benefit__header">
+        <h2 class="section__title">Built for real earning</h2>
+        <p class="section__lead">Four reasons agents and hosts choose Poppo Live over other livestream platforms. </p>
+      </div>
+      <div class="benefit__grid">
+        <article class="benefit__tile benefit__tile--dark">
+          <span class="benefit__num">01</span>
+          <h3 class="benefit__title">Highest Commission Rates</h3>
+          <p class="benefit__desc">Earn up to 20% based on performance, with a tiered structure that rewards scale from 4% all the way to the top.</p>
+        </article>
+        <article class="benefit__tile">
+          <span class="benefit__num">02</span>
+          <h3 class="benefit__title">Fast Withdrawals</h3>
+          <p class="benefit__desc">Get paid within 24 hours, with a minimum payout of just $10 to your preferred payment method.</p>
+        </article>
+        <article class="benefit__tile">
+          <span class="benefit__num">03</span>
+          <h3 class="benefit__title">Global Platform</h3>
+          <p class="benefit__desc">Access 10M+ active users across 180 countries, giving your content and your network real worldwide reach.</p>
+        </article>
+        <article class="benefit__tile benefit__tile--gradient">
+          <span class="benefit__num">04</span>
+          <h3 class="benefit__title">24/7 Support</h3>
+          <p class="benefit__desc">Dedicated support over WhatsApp and Telegram, ready to help agents and hosts any time of day.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="ecosystem section" aria-labelledby="pa-ecosystem-heading">
+    <div class="container">
+      <div class="ecosystem__intro">
+        <span class="pa-eyebrow">THE POPPO LIVE ECOSYSTEM</span>
+        <h2 id="pa-ecosystem-heading" class="section__title">More Opportunities for Hosts &amp; Agents.</h2>
+        <p class="section__lead">Discover how viewers, Hosts, and Agents are connected through live interactions, points, and team performance.</p>
+      </div>
+      <div class="ecosystem__comparison" aria-label="Host and Agent opportunity comparison">
+        <article class="ecosystem__role">
+          <span class="ecosystem__role-icon" aria-hidden="true">✦</span>
+          <h3>Become a Host</h3>
+          <p>Earn through live streaming and viewer gifts and interactions.</p>
+          <a href="https://invite-poppo.com/Dd35r5">Start Streaming Today <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <article class="ecosystem__role">
+          <span class="ecosystem__role-icon" aria-hidden="true">↗</span>
+          <h3>Become an Agent</h3>
+          <p>Manage host networks and earn performance-based commission of up to 20%.</p>
+          <a href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=10597147&amp;c=poppo">Join as Agent Now <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Platform features" class="feature section">
+    <div class="container">
+      <div class="feature__inner">
+        <div class="feature__intro">
+          <h2 class="section__title">Tools that scale your income</h2>
+          <p class="section__lead">From tiered commission to a real-time dashboard, every feature is built to help agents and hosts earn more with less friction.</p>
+          <a class="btn btn--gradient" href="/agency/">Join as Agent Now</a>
+        </div>
+        <div class="feature__list">
+          <div class="feature__item">
+            <span class="feature__item-num">Commission</span>
+            <h3 class="feature__item-title">Tiered Commission System</h3>
+            <p class="feature__item-desc">Grow from 4% to 20% as you scale. The more points your network generates, the higher your rate climbs automatically.</p>
+          </div>
+          <div class="feature__item">
+            <span class="feature__item-num">Revenue</span>
+            <h3 class="feature__item-title">Dual Revenue Streams</h3>
+            <p class="feature__item-desc">Earn from both LIVE and PARTY sessions plus Chat activities, so income never depends on a single format.</p>
+          </div>
+          <div class="feature__item">
+            <span class="feature__item-num">Network</span>
+            <h3 class="feature__item-title">Sub-Agent Network</h3>
+            <p class="feature__item-desc">Invite sub-agents, build your team, and earn passive income from every host they bring into the network.</p>
+          </div>
+          <div class="feature__item">
+            <span class="feature__item-num">Insights</span>
+            <h3 class="feature__item-title">Real-Time Dashboard</h3>
+            <p class="feature__item-desc">Track earnings, host performance, and daily points with live analytics designed for fast decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Frequently asked questions" class="faq section">
+    <div class="container">
+      <div class="faq__inner">
+        <div class="faq__header">
+          <h2 class="section__title">Questions, answered</h2>
+          <p class="section__lead">Everything you need to know before joining Poppo Live as an agent or host.</p>
+        </div>
+        <div class="faq__list">
+          <div class="faq__item" data-open="false">
+            <button aria-controls="poppoapp-home-faq-1" aria-expanded="false" class="faq__question" type="button">
+              <span>What is Poppo Live?</span>
+              <span aria-hidden="true" class="faq__toggle">+</span>
+            </button>
+            <div class="faq__answer" id="poppoapp-home-faq-1" role="region">
+              <div class="faq__answer-inner">
+                <p>Poppo Live is a global livestream social platform launched in 2022, connecting over 10 million users across 180 countries. It allows hosts to earn through live streaming and agents to earn commission by managing host networks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item" data-open="false">
+            <button aria-controls="poppoapp-home-faq-2" aria-expanded="false" class="faq__question" type="button">
+              <span>How much can I earn as a Poppo Live agent?</span>
+              <span aria-hidden="true" class="faq__toggle">+</span>
+            </button>
+            <div class="faq__answer" id="poppoapp-home-faq-2" role="region">
+              <div class="faq__answer-inner">
+                <p>Agents earn between 4% to 20% commission based on monthly points generated by their hosts. Level D (0-2M points) earns 4%, while Level S (150M+ points) earns 20%. Commission applies to both LIVE/PARTY and Chat activities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item" data-open="false">
+            <button aria-controls="poppoapp-home-faq-3" aria-expanded="false" class="faq__question" type="button">
+              <span>How do withdrawals work on Poppo Live?</span>
+              <span aria-hidden="true" class="faq__toggle">+</span>
+            </button>
+            <div class="faq__answer" id="poppoapp-home-faq-3" role="region">
+              <div class="faq__answer-inner">
+                <p>Withdrawals are processed within 24 hours with a minimum payout of $10. You can withdraw points earned as either an agent or host by setting up a payment method in the app and creating a secure payout password.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item" data-open="false">
+            <button aria-controls="poppoapp-home-faq-4" aria-expanded="false" class="faq__question" type="button">
+              <span>How long does host verification take?</span>
+              <span aria-hidden="true" class="faq__toggle">+</span>
+            </button>
+            <div class="faq__answer" id="poppoapp-home-faq-4" role="region">
+              <div class="faq__answer-inner">
+                <p>Host face verification typically takes 1-3 business days. Once approved, you can start streaming immediately and begin earning from viewer gifts and interactions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Start earning" class="cta section">
+    <div class="container">
+      <div class="cta__tile">
+        <div>
+          <h2 class="cta__title">Ready to Start Earning?</h2>
+          <p class="cta__sub">Join 10M+ users on the fastest-growing livestream platform. Pick your path and start earning today.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--on-gradient" href="https://static.vshowapi.com/guild/agency_invite/register/?inviter_id=10597147&amp;c=poppo">Join as Agent Now</a>
+          <a class="btn btn--on-gradient" href="https://invite-poppo.com/Dd35r5">Start Streaming Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  (function() {
+      function init() {
+        var root = document.getElementById('poppoapp-home-v1');
+        if (!root || root.dataset.bound) return;
+        root.dataset.bound = '1';
+        var items = root.querySelectorAll('.faq__item');
+        items.forEach(function(item) {
+          var btn = item.querySelector('.faq__question');
+          if (!btn) return;
+          btn.addEventListener('click', function() {
+            var opening = item.getAttribute('data-open') !== 'true';
+            items.forEach(function(other) {
+              other.dataset.open = 'false';
+              var b = other.querySelector('.faq__question');
+              if (b) b.setAttribute('aria-expanded', 'false')
+            });
+            if (opening) {
+              item.dataset.open = 'true';
+              btn.setAttribute('aria-expanded', 'true')
+            }
+          })
+        });
+        var trigger = root.querySelector('.pa-preview');
+        if (!trigger) return;
+        var overlay = document.getElementById('pa-lightbox-overlay');
+        if (!overlay) {
+          overlay = document.createElement('div');
+          overlay.id = 'pa-lightbox-overlay';
+          overlay.setAttribute('role', 'dialog');
+          overlay.setAttribute('aria-modal', 'true');
+          overlay.setAttribute('aria-label', 'Poppo Live Ecosystem image preview');
+          overlay.innerHTML = ' < button type = "button"
+          id = "pa-lightbox-close"
+          aria - label = "Close image preview" > < svg viewBox = "0 0 24 24"
+          aria - hidden = "true" > < path d = "M5 5L19 19M19 5L5 19" / > < /svg> < /button> < img alt = "Full Poppo Live Roles and Ecosystem infographic" > ';document.body.appendChild(overlay)}var pic=overlay.querySelector('
+          img '),close=overlay.querySelector('
+          button '),oldFocus=null;function hide(){overlay.classList.remove('
+          is - open ');document.body.classList.remove('
+          pa - lightbox - active ');pic.removeAttribute('
+          src ');if(oldFocus)oldFocus.focus()}function show(){oldFocus=document.activeElement;pic.src=trigger.querySelector('
+          img ').src;overlay.classList.add('
+          is - open ');document.body.classList.add('
+          pa - lightbox - active ');close.focus()}trigger.addEventListener('
+          click ',show);close.addEventListener('
+          click ',hide);overlay.addEventListener('
+          click ',function(e){if(e.target===overlay)hide()});document.addEventListener('
+          keydown ',function(e){if(!overlay.classList.contains('
+          is - open '))return;if(e.key==='
+          Escape ')hide();if(e.key==='
+          Tab '){e.preventDefault();close.focus()}})}if(document.readyState==='
+          loading ')document.addEventListener('
+          DOMContentLoaded ',init);else init()})();
+</script>

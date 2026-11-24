@@ -1,0 +1,486 @@
+<style>
+    /* Emma Live V5 header – Elementor Theme Builder custom CSS. Separate from frontpage. */
+    .emma-nav-header {
+        --nav-ink: #f9f6ff;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999999 !important;
+        padding: 13px 20px;
+        background: transparent !important;
+        pointer-events: none;
+        font-family: Inter, system-ui, Arial, sans-serif !important
+    }
+
+    body.admin-bar .emma-nav-header {
+        top: 32px
+    }
+
+    @media(max-width:782px) {
+        body.admin-bar .emma-nav-header {
+            top: 46px
+        }
+    }
+
+    .emma-nav-header * {
+        box-sizing: border-box
+    }
+
+    .emma-nav-shell {
+        max-width: 1340px;
+        margin: auto;
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 8px 15px 8px 10px;
+        border: 1px solid #ac80ffba;
+        border-radius: 999px;
+        pointer-events: auto;
+        background: linear-gradient(110deg, #1b1259e8, #1c1145df 59%, #20104de8);
+        backdrop-filter: blur(23px);
+        -webkit-backdrop-filter: blur(23px);
+        box-shadow: 0 8px 27px #0007, 0 0 18px #935bfc47;
+        transition: background .2s ease, box-shadow .2s ease
+    }
+
+    .emma-nav-header.is-scrolled .emma-nav-shell {
+        background: linear-gradient(100deg, #110b38f5, #241052f5);
+        box-shadow: 0 13px 35px #000a, 0 0 25px #ae5cfb56
+    }
+
+    .emma-nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        flex-shrink: 0;
+        text-decoration: none !important
+    }
+
+    .emma-nav-brand img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: left center;
+        border-radius: 50%;
+        box-shadow: 0 0 14px #a86dfc4c
+    }
+
+    .emma-nav-wordmark {
+        font: 900 28px/1 Inter, system-ui, sans-serif !important;
+        letter-spacing: -1.5px;
+        background: linear-gradient(100deg, #c6eaff, #fff, #ffa4ee);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent !important
+    }
+
+    .emma-nav-wordmark span {
+        color: #ffa2eb !important;
+        -webkit-text-fill-color: #ffa2eb
+    }
+
+    .emma-nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 3px;
+        min-width: 0
+    }
+
+    .emma-nav-header .emma-nav-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 41px;
+        padding: 0 15px;
+        color: #e9e2ff !important;
+        font: 650 13px/1.25 Inter, system-ui, sans-serif !important;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        text-decoration: none !important;
+        white-space: nowrap;
+        position: relative;
+        transition: background .2s ease, box-shadow .2s ease, transform .2s ease, color .2s ease
+    }
+
+    .emma-nav-header .emma-nav-link:hover,
+    .emma-nav-header .emma-nav-link:focus-visible {
+        color: white !important;
+        transform: translateY(-1px);
+        background: linear-gradient(105deg, #8240dc8a, #d549cf67);
+        border-color: #d18cf4;
+        box-shadow: 0 0 18px #c14bee7c
+    }
+
+    .emma-nav-header .emma-nav-link.is-current {
+        color: white !important;
+        background: linear-gradient(95deg, #723add, #b946d1);
+        border-color: #ffa7fc;
+        box-shadow: 0 0 20px #d64dedac, inset 0 1px #ffffff59;
+        text-shadow: 0 0 7px #fff9
+    }
+
+    .emma-nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        flex-shrink: 0
+    }
+
+    .emma-nav-header .emma-nav-cta {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 43px;
+        padding: 10px 19px;
+        border-radius: 99px !important;
+        font: 800 12px/1.2 Inter, system-ui, sans-serif !important;
+        text-decoration: none !important;
+        white-space: nowrap;
+        color: white !important;
+        transition: transform .2s, box-shadow .2s, filter .2s
+    }
+
+    .emma-nav-header .emma-nav-outline {
+        border: 2px solid #d377fb !important;
+        background: #22114e95 !important;
+        box-shadow: 0 0 12px #a546d35c
+    }
+
+    .emma-nav-header .emma-nav-primary {
+        border: 1px solid #e8b5ff !important;
+        background: linear-gradient(110deg, #fa65e4, #985df7, #46c7ff) !important;
+        box-shadow: 0 0 20px #cf5de6a3
+    }
+
+    .emma-nav-header .emma-nav-cta:hover,
+    .emma-nav-header .emma-nav-cta:focus-visible {
+        transform: translateY(-2px);
+        filter: brightness(1.13);
+        box-shadow: 0 0 27px #e96be0a8, 0 0 16px #80caff80 !important
+    }
+
+    .emma-nav-toggle {
+        display: none;
+        background: #221451;
+        border: 1px solid #9b73f0;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        color: white;
+        cursor: pointer;
+        font-size: 21px;
+        flex-shrink: 0
+    }
+
+    .emma-nav-mobile-actions {
+        display: none
+    }
+
+    @media(max-width:1130px) {
+        .emma-nav-wordmark {
+            font-size: 23px !important
+        }
+
+        .emma-nav-brand img {
+            width: 42px;
+            height: 42px
+        }
+
+        .emma-nav-header .emma-nav-link {
+            padding: 0 10px;
+            font-size: 12px !important
+        }
+
+        .emma-nav-header .emma-nav-cta {
+            padding: 9px 12px;
+            font-size: 11px !important
+        }
+    }
+
+    @media(max-width:960px) {
+        .emma-nav-header {
+            padding: 10px 12px
+        }
+
+        .emma-nav-shell {
+            border-radius: 22px;
+            min-height: 60px;
+            justify-content: space-between;
+            padding: 9px 12px
+        }
+
+        .emma-nav-actions {
+            display: none
+        }
+
+        .emma-nav-toggle {
+            display: grid;
+            place-items: center
+        }
+
+        .emma-nav-links {
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            right: 0;
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 7px;
+            padding: 15px;
+            border: 1px solid #a879ef;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #130b39fa, #281351fa);
+            box-shadow: 0 18px 45px #000b;
+            backdrop-filter: blur(20px)
+        }
+
+        .emma-nav-links.is-open {
+            display: flex
+        }
+
+        .emma-nav-header .emma-nav-link {
+            justify-content: flex-start;
+            padding: 11px 15px;
+            white-space: normal;
+            min-height: 45px;
+            font-size: 14px !important
+        }
+
+        .emma-nav-mobile-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px;
+            margin-top: 11px;
+            padding-top: 13px;
+            border-top: 1px solid #ffffff27
+        }
+
+        .emma-nav-mobile-actions .emma-nav-cta {
+            width: 100%;
+            text-align: center
+        }
+
+        .emma-nav-wordmark {
+            font-size: 25px !important
+        }
+    }
+
+    @media(max-width:450px) {
+        .emma-nav-mobile-actions {
+            grid-template-columns: 1fr
+        }
+
+        .emma-nav-header .emma-nav-cta {
+            font-size: 13px !important
+        }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+        .emma-nav-header * {
+            transition: none !important
+        }
+    }
+
+    /* FINAL visual polish: themed navigation stays legible against Elementor/Astra defaults */
+    #emma-site-header .emma-nav-link,
+    #emma-site-header .emma-nav-cta,
+    #emma-site-header .emma-nav-brand {
+        text-decoration: none !important;
+    }
+
+    #emma-site-header .emma-nav-link.is-current:after {
+        content: "";
+        position: absolute;
+        left: 28%;
+        right: 28%;
+        bottom: 4px;
+        height: 2px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #b8ddff, #f9a2ec);
+        box-shadow: 0 0 9px #ff83ed;
+        pointer-events: none
+    }
+
+    #emma-site-header .emma-nav-link:hover:not(.is-current) {
+        background: linear-gradient(110deg, #7333c795, #b93fb975);
+        border-color: #e29eff;
+        box-shadow: 0 0 21px #bf6bff88, inset 0 1px #ffffff26
+    }
+
+    #emma-site-header .emma-nav-cta:focus-visible,
+    #emma-site-header .emma-nav-link:focus-visible {
+        outline: 2px solid #b8ddff;
+        outline-offset: 3px
+    }
+
+    @media(max-width:960px) {
+        #emma-site-header .emma-nav-link.is-current:after {
+            left: 16px;
+            right: auto;
+            width: 36px;
+            bottom: 3px
+        }
+    }
+
+
+    /* V7: transparent-to-dark header, avoid white strips around header template. */
+    html:has(#emma-site-header),
+    body:has(#emma-site-header) {
+        background-color: #080720 !important;
+        margin: 0 !important
+    }
+
+    body:has(#emma-site-header) .elementor-location-header,
+    body:has(#emma-site-header) [data-elementor-type="header"],
+    body:has(#emma-site-header) .elementor-location-header .elementor-widget-container {
+        background: transparent !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important
+    }
+
+    #emma-site-header a,
+    #emma-site-header a:hover,
+    #emma-site-header a:focus {
+        text-decoration: none !important
+    }
+
+    /* V5 mobile navigation: centered SVG bars instead of font glyph */
+    #emma-site-header .emma-nav-toggle {
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        place-items: center !important;
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        border: 1px solid #bc8cff !important;
+        border-radius: 15px !important;
+        background: linear-gradient(145deg, #321b65, #211445) !important;
+        color: #f9f4ff !important;
+        box-shadow: inset 0 1px 0 #ffffff22 !important;
+        line-height: 1 !important;
+    }
+
+    #emma-site-header .emma-nav-hamburger {
+        width: 23px !important;
+        height: 23px !important;
+        display: block !important;
+        margin: auto !important;
+        overflow: visible !important;
+        flex: none !important;
+    }
+
+    #emma-site-header .emma-nav-hamburger path {
+        transform-origin: 12px 12px;
+        transition: transform .22s ease, opacity .16s ease;
+    }
+
+    #emma-site-header .emma-nav-toggle.is-open .emma-nav-line-top {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    #emma-site-header .emma-nav-toggle.is-open .emma-nav-line-middle {
+        opacity: 0;
+    }
+
+    #emma-site-header .emma-nav-toggle.is-open .emma-nav-line-bottom {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    #emma-site-header .emma-nav-toggle:hover {
+        background: linear-gradient(145deg, #6d37c0, #683a92) !important;
+        box-shadow: 0 0 17px #bb6aff77 !important;
+    }
+
+    #emma-site-header .emma-nav-toggle:focus-visible {
+        outline: 2px solid #b8ddff !important;
+        outline-offset: 3px !important;
+    }
+
+    @media(max-width:960px) {
+        #emma-site-header .emma-nav-toggle {
+            display: flex !important;
+        }
+    }
+
+    @media(max-width:480px) {
+        #emma-site-header .emma-nav-shell {
+            gap: 8px !important;
+            padding: 8px 11px !important;
+        }
+
+        #emma-site-header .emma-nav-brand {
+            min-width: 0 !important;
+            gap: 8px !important;
+        }
+
+        #emma-site-header .emma-nav-wordmark {
+            font-size: clamp(18px, 5.4vw, 25px) !important;
+            white-space: nowrap !important;
+        }
+
+        #emma-site-header .emma-nav-brand img {
+            width: 43px !important;
+            height: 43px !important;
+            flex-shrink: 0 !important;
+        }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+        #emma-site-header .emma-nav-hamburger path {
+            transition: none !important;
+        }
+    }
+</style>
+<!-- EMMA LIVE FINAL HEADER: paste entire file into Elementor Theme Builder > Header > HTML widget. CSS + JS included. -->
+<header id="emma-site-header" class="emma-nav-header" aria-label="Emma Live header">
+    <div class="emma-nav-shell">
+        <a href="/" class="emma-nav-brand" aria-label="Emma Live Home"><img width="54" height="54"
+                src="data:image/webp;base64,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"
+                alt="Emma Live mascot logo"><span class="emma-nav-wordmark">Emma<span>Live</span></span></a>
+        <nav id="emma-nav-links" class="emma-nav-links" aria-label="Main navigation">
+            <a class="emma-nav-link" href="/">Home</a><a class="emma-nav-link" href="/host">Become a Host</a><a
+                class="emma-nav-link" href="/agency">Become an Agency</a><a class="emma-nav-link"
+                href="https://emmalive.app/blog/">News</a><a class="emma-nav-link"
+                href="https://emmalive.app/contact-us/">Contact Support</a>
+            <div class="emma-nav-mobile-actions"><a class="emma-nav-cta emma-nav-outline"
+                    href=" https://guild.selalive.com/#/register?code=3xEVCq" target="_blank"
+                    rel="noopener noreferrer">♧ &nbsp; Join as Agent</a><a class="emma-nav-cta emma-nav-primary"
+                    href="https://guild.selalive.com/#/download/?code=3xEVCq" target="_blank"
+                    rel="noopener noreferrer">✦
+                    &nbsp; Join as Host</a></div>
+        </nav>
+        <div class="emma-nav-actions"><a class="emma-nav-cta emma-nav-outline"
+                href="https://guild.selalive.com/#/register?code=3xEVCq" target="_blank" rel="noopener noreferrer">♧
+                &nbsp; Join as Agent</a><a class="emma-nav-cta emma-nav-primary"
+                href="https://guild.selalive.com/#/download/?code=3xEVCq" target="_blank" rel="noopener noreferrer">✦
+                &nbsp; Join as Host</a></div>
+        <button type="button" id="emma-nav-toggle" class="emma-nav-toggle" aria-label="Open navigation menu"
+            aria-controls="emma-nav-links" aria-expanded="false"><svg class="emma-nav-hamburger" viewBox="0 0 24 24"
+                width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                aria-hidden="true">
+                <path class="emma-nav-line-top" d="M5 7h14" />
+                <path class="emma-nav-line-middle" d="M5 12h14" />
+                <path class="emma-nav-line-bottom" d="M5 17h14" />
+            </svg></button>
+    </div>
+</header>
+<script>(function () {
+        const header = document.getElementById('emma-site-header'), toggle = document.getElementById('emma-nav-toggle'), nav = document.getElementById('emma-nav-links'); if (!header || !toggle || !nav) return;
+        const clean = s => ((s || '/').replace(/\/index\.html$/, '/').replace(/\/+$|^$/g, '') || '/');
+        const path = clean(location.pathname), isNewsSearch = path === '/' && new URLSearchParams(location.search).has('s'); nav.querySelectorAll('.emma-nav-link').forEach(a => { const url = new URL(a.href, location.href), linkPath = clean(url.pathname), isNewsLink = linkPath === '/' && url.searchParams.has('s'); if (isNewsLink ? isNewsSearch : (linkPath === path && !(path === '/' && isNewsSearch))) { a.classList.add('is-current'); a.setAttribute('aria-current', 'page') } });
+        const close = () => { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open navigation menu'); toggle.classList.remove('is-open') };
+        toggle.addEventListener('click', () => { let next = !nav.classList.contains('is-open'); nav.classList.toggle('is-open', next); toggle.setAttribute('aria-expanded', String(next)); toggle.setAttribute('aria-label', next ? 'Close navigation menu' : 'Open navigation menu'); toggle.classList.toggle('is-open', next) });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', close)); document.addEventListener('click', e => { if (!header.contains(e.target)) close() }); document.addEventListener('keydown', e => { if (e.key === 'Escape') close() });
+        const onScroll = () => header.classList.toggle('is-scrolled', scrollY > 16); addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    })();</script>
